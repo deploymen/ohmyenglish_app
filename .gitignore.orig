@@ -1,0 +1,11 @@
+/vendor
+/node_modules
+.env*
+/_ref
+/public/season3
+/public/bower_components
+<<<<<<< HEAD
+public/assets/css/bootstrap.min_bk.css
+=======
+/public/templates/admin
+>>>>>>> github/develop-backend

@@ -1,0 +1,173 @@
+.generic-quiz .master{background: #21B93B}
+.genQuizEachContent{background: #18942D; position: relative; padding-bottom: 50px}
+
+.quizWrap{margin-bottom: 40px}
+.quizWrap .title{margin-bottom: 30px}
+
+.genQuiz{text-align: center; background: #DF2666; padding: 30px 40px; margin-bottom: 20px}
+.genQuiz h3{color: #FFF200; font-family: grinched; font-size: 30px; text-shadow:-0.5px 3px 0 #142A3A; font-weight: normal; text-transform: uppercase; line-height: 36px; margin: 0 30px 20px; line-height: 108px; min-height: 108px}
+.genQuiz h3 span{line-height: normal; display: inline-block; vertical-align: bottom; position: relative;}
+.genQuiz p.info{min-height: 100px}
+.genQuiz .btnZm{margin-bottom: 0}
+
+
+/*article props*/
+.malaysianEnglish h3 span:before{content:''; position: absolute; display: block;width:60px; height: 50px; background: url('../images/article/malaysian-english-left.png'); top: -40px; left: -30px}
+.malaysianEnglish h3 span:after{content:''; position: absolute; display: block;width:70px; height: 60px; background: url('../images/article/malaysian-english-right.png'); top: -50px; right: -35px}
+
+.describeYou h3 span:before{content:''; position: absolute; display: block;width:40px; height: 45px; background: url('../images/article/describe-you-left.png'); top: -30px; left: -30px}
+.describeYou h3 span:after{content:''; position: absolute; display: block;width:35px; height: 65px; background: url('../images/article/describe-you-right.png'); top: -30px; right: -30px}
+
+.omeCharacter h3 span:before{content:''; position: absolute; display: block;width:60px; height: 50px; background: url('../images/article/ome-character-left.png'); top: -30px; left: -50px}
+.omeCharacter h3 span:after{content:''; position: absolute; display: block;width:60px; height: 40px; background: url('../images/article/ome-character-right.png'); top: -25px; right: -50px}
+
+/*generic quiz content*/
+.quiz-container{text-align: center; background: #FF4888; position: relative; }
+.quizTop{background: #DF2767; padding: 5px 30px}
+.complete .quizTop{background: #FF4888; transition:all .5s ease-out}
+.complete .quizTop .info{height: 0; overflow: hidden; margin: 0; transition:all .5s ease-out}
+
+.quizTop .bubble{ position: absolute; font-family: grinched; font-size: 18px; color: #000000; text-transform: uppercase;width: 131px; height: 105px; background: url('../images/learn/spritesLearn.png') -152px -195px; display: inline-block; text-align: center;top:15px; left: 10%; padding:13px 10px}
+.bubble span, .bubble b{display: block;}
+.complete .quizTop .bubble{opacity: 0; transition:all .5s ease-out}
+
+.quizTop h1{margin: 10px 0; color: #FFC813; font-family: grinched; line-height: 45px; text-transform: capitalize;}
+.complete .quizTop h1{margin:30px 0 ; transition:all .5s ease-out}
+.quiz-wrap{max-width: 480px; margin: auto; position: relative; z-index: 1}
+
+.quizBottom{padding-top: 50px; padding-bottom: 150px; transition:all .5s ease-out; position: relative; overflow: hidden;}
+.complete .quizBottom{height: 0; padding: 0; overflow: hidden}
+.quiz-title{font-size: 20px; font-weight: bold;}
+.quiz-option a {background:#FFD416 ;border-radius:40px;display:inline-block;max-width:480px;width:100%;padding:15px 40px;font-size:16px;color:#142a3a;margin-top:15px;  }
+.quiz-option a:hover {background:#FF9F15}
+.disabled .quiz-option a:hover{background:#FF9F15;}
+.quiz-option a.quiz-wrong, .disabled .quiz-option a.quiz-wrong:hover {background:#e74b3c; }
+.quiz-option a.quiz-correct, .disabled .quiz-option a.quiz-correct:hover {background:#1faa37;}
+.quiz-option a .quiz-letters {font-weight:bold;}
+
+.quiz-container-result{height: 0; position: relative; transition:height .5s ease-out; overflow: hidden;}
+.complete .quiz-container-result{height: auto; overflow: visible;}
+
+.quiz-container-result h2{color: #FFFFFF; font-size: 50px; text-transform: uppercase; font-weight: bold; padding-top: 55px; line-height: 55px}
+.quiz-container-result .info{font-size: 20px}
+
+.quiz-container-result .bubble{display: none;}
+
+/*custom for english word describe you*/
+.describeYou .quiz-container-result  h2:before{content: ''; width: 58px; height: 55px; background: url('../images/learn/spritesLearn.png'); display: inline-block; margin: auto; top: 0; left: 0; right: 0; position: absolute;}
+.describeYou .result1 h2:before{background-position: -152px -300px}
+.describeYou .result2 h2:before{background-position: -152px -355px}
+.describeYou .result3 h2:before{background-position: -152px -410px}
+.describeYou .result4 h2:before{background-position: -152px -465px}
+.describeYou .result5 h2:before{background-position: -152px -520px}
+.describeYou .result6 h2:before{background-position: -152px -575px}
+a
+.btn_xs{margin-bottom: 15px}
+
+
+.btn_share, .showSocialButtons{position: absolute; right: 0; bottom: 0; width: 112px; height: 50px}
+.showSocialButtons{opacity: 0}
+
+.socialPlugin .socials, .socialPlugin .socials.opened{position: relative; left: 35px; top: -20px }
+.socialPlugin .socials:after{margin: -1px auto !important; border-top: 15px solid #3B5998 !important}
+.socialPlugin .socials .fa-twitter:after{background-image:linear-gradient(#25C4FF 25%, #ffffff 75%) !important; color: #25C4FF !important}
+.btn_share{margin: 20px auto 15px; position: relative;}
+
+@media only screen {
+
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN ABOVE 768px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  /*article props - describeYou*/
+  .describeYou .quizBottom .leftFront{ width: 149px; height: 211px; background: url('../images/learn/gen-quiz/describe-you-left-front.png'); position: absolute; left: 200px; bottom:10px}
+  .describeYou .quizBottom .rightFront{ width: 139px; height: 174px; background: url('../images/learn/gen-quiz/describe-you-right-front.png'); position: absolute; right: 200px; bottom:10px}
+
+  /*article props - malaysianEnglish*/
+  .malaysianEnglish .quizBottom .leftFront{ width: 258px; height: 220px; background: url('../images/learn/gen-quiz/malaysian-english-left-front.png'); position: absolute; left: 80px; bottom:0}
+  .malaysianEnglish .quizBottom .rightFront{ width: 356px; height: 214px; background: url('../images/learn/gen-quiz/malaysian-english-right-front.png'); position: absolute; right: 10px; bottom:0}
+
+  .quiz-container-result .bubble{ position: absolute; font-family: grinched; font-size: 18px; color: #000000; text-transform: uppercase;width: 131px; height: 105px; background: url('../images/learn/spritesLearn.png') -152px -195px; display: inline-block; text-align: center; padding:24px 10px; top:-25px; left: 5%;}
+  
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN ABOVE 1280px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1280px) {
+  /* above 1280px */
+  .quiz-container-result .bubble{ top:-75px; left: 15%;}
+
+  /*article props - describeYou*/
+  .describeYou .quizBottom .leftBack{ width: 114px; height: 129px; background: url('../images/learn/gen-quiz/describe-you-left-back.png'); position: absolute; left: 50px; bottom: 50px}
+  .describeYou .quizBottom .rightBack{ width: 205px; height: 229px; background: url('../images/learn/gen-quiz/describe-you-right-back.png'); position: absolute; right: 50px; bottom: 10px}
+  .describeYou .quiz-container-result .leftFront{width: 289px; height: 329px; background: url('../images/learn/gen-quiz/describe-you-result-left.png'); position: absolute;; bottom: 0; left: 75px}
+  .describeYou .quiz-container-result .rightFront{width: 249px; height: 315px; background: url('../images/learn/gen-quiz/describe-you-result-right.png'); position: absolute;; bottom: 0; right: 75px}
+
+  /*article props - malaysianEnglish*/
+  .malaysianEnglish .quiz-container-result .leftFront{width: 266px; height: 339px; background: url('../images/learn/gen-quiz/malaysian-english-result-left.png'); position: absolute;; bottom: 0; left: 75px}
+  .malaysianEnglish .quiz-container-result .rightFront{width: 255px; height: 321px; background: url('../images/learn/gen-quiz/malaysian-english-result-right.png'); position: absolute;; bottom: 0; right: 75px}
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 1279px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1279px) {
+  /* below 1279px */
+
+  .genQuiz h3{line-height: 72px; min-height: 72px}
+  .genQuiz p.info{min-height: 40px}
+
+  .malaysianEnglish h3 span:before{left: -80px}
+  .malaysianEnglish h3 span:after{right: -85px}
+
+  .describeYou h3 span:before{left: -80px}
+  .describeYou h3 span:after{right: -80px}
+
+  .omeCharacter h3 span:before{left: -100px}
+  .omeCharacter h3 span:after{right: -100px}
+
+  .quizTop .bubble{ top:150px; left: 5px}
+
+  /*article props - describeYou*/
+  .describeYou .quizBottom .leftFront{  left: 0; bottom:0; transform:scale(0.8);}
+  .describeYou .quizBottom .rightFront{ right: 0; bottom:0; transform:scale(0.8);}
+
+  /*article props - malaysianEnglish*/
+  .malaysianEnglish .quizBottom .leftFront{ left: -90px; }
+  .malaysianEnglish .quizBottom .rightFront{ right: -80px; }
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 767px                                                                                                                                             */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+  /* below 767px */
+
+  .genQuiz{padding:30px 10px;}
+  .genQuiz h3{line-height: 108px; min-height: 108px}
+  .genQuiz p.info{padding: 0 10px}
+
+  .malaysianEnglish h3 span:before{left:-35px}
+  .malaysianEnglish h3 span:after{right:-40px}
+  .describeYou h3 span:before{left: -35px}
+  .describeYou h3 span:after{right: -35px}
+  .omeCharacter h3 span:before{left: -30px}
+  .omeCharacter h3 span:after{right: -30px}
+
+
+  .complete .quizTop{padding: 5px 0}
+
+  .quiz-container-result h2{font-size: 38px}
+
+  .complete .quizTop h1{margin-bottom: 0}
+  .quizTop .bubble{position: relative; top: 0; left: 0}
+  .complete .quizTop .bubble{height: 0; padding: 0; overflow: hidden;}
+  .quizBottom{padding: 15px}
+
+}

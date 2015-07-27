@@ -1,0 +1,143 @@
+.article .master{background: #00B2F4}
+.articleContent{background: #54CAF6; position: relative;}
+.articleContent .col-lg-3:nth-child(4n+1){clear: left;}
+.articleContent .col-sm-4:nth-child(3n+1){clear: none;}
+
+/*landing*/
+.list-thumb{border-radius:5px; position: relative; display: block;background: #224A66; overflow: hidden; transition: all .5s ease-out; margin-bottom: 15px}
+.list-thumb:hover{background: #DF2767}
+.list-thumb i{font-style: normal;}
+.list-thumb .note{position: absolute; left: 10px; top: 10px; border-radius: 5px; padding: 5px 10px; background: #DF2767}
+.list-thumb img{width: 100%}
+.list-thumb .desc{ display: inline-block; padding: 15px 30px}
+.list-thumb h2{color: #FFFFFF; font-size: 16px;  min-height: 72px; line-height: 18px; margin-bottom: 10px}
+.list-thumb .date{color: #00B2F4; transition: color .5s ease-out;}
+.list-thumb:hover .date{color: #FFFFFF}
+
+.btnWrap{text-align: center;}
+
+
+/*single*/
+.articleSingle{width: 80%; padding: 40px 80px; margin:auto; margin-bottom: 150px; border-radius: 5px; background: #0BA2D9; position: relative;}
+.articleSingle:before{content: ""; height: 100%; background:#00B1F4; position: absolute; left: 0; right:10px; border-radius: 5px 5px 0 0; top: 0}
+.articleSingle:after{content: ""; height: 50px; background:#00B1F4; position: absolute; left: 0; right:10px; border-radius: 0 0 5px 5px; bottom: -50px}
+.articleHeader{color: #132A38; position: relative;}
+.articleHeader h1{font-family: grinched; margin: 0; text-transform: capitalize; line-height: 46px; margin-right: 150px; margin-bottom: 10px}
+.articleHeader .publishDate{font-weight: bold; font-size: 15px}
+
+.btn_share, .showSocialButtons{position: absolute; right: 0; bottom: 0; width: 112px; height: 50px}
+.showSocialButtons{opacity: 0}
+.socialPlugin .socials, .socialPlugin .socials.opened{position: relative; left: 35px; top: -20px }
+.socialPlugin .socials:after{margin: -1px auto !important; border-top: 15px solid #3B5998 !important}
+.socialPlugin .socials .fa-twitter:after{background-image:linear-gradient(#25C4FF 25%, #ffffff 75%) !important; color: #25C4FF !important}
+
+.articleBody{position: relative; margin-top: 40px; font-size: 16px; margin-right: 150px}
+.articleBody h2 {color: #11435E; font-weight: bold;}
+.articleBody img{ border-radius: 5px; background: #5FD4FF; padding: 6px; max-width: 690px}
+.articleBody .caption{ font-size: 12px;}
+.articleBody .caption a{text-decoration: underline;}
+
+.articleXsell .container{text-align: center;}
+.articleXsell{background: #014A81; position: relative;padding-bottom: 40px}
+.articleXsell .title{width: 20%; font-size: 30px; display: inline-block; margin: 25px 10px 0; float: left;}
+
+.articleXsell .xsellList{ width: 621px; margin: auto 30px; display: inline-block; float: right }
+.xsellList #articleSlider{width: 100%; display: block; position: relative;height: 230px; overflow: hidden;}
+
+
+.xsellList li{display: inline-block; vertical-align: top;}
+.xsellList li h3{font-weight: normal; color: #FFFFFF; font-size: 16px;}
+.xsellList li{float: left; margin-bottom: 25px}
+
+#btn-list-next, #btn-list-prev{position: absolute; top: 40%; z-index: 1; font-size: 26px; color: #DB2764; display: none;}
+#btn-list-next span, #btn-list-prev span{display: none}
+#btn-list-next{right: 15px; }
+#btn-list-prev{right:678px}
+
+.btnImg span{margin-left: -10px; margin-right: -10px; text-transform: capitalize; line-height: 20px; }
+
+
+
+
+/*side nav*/
+.inner-char-navigation {position:absolute;right:0px;top:30%; z-index: 1}
+.inner-char-navigation .arrow-right,.inner-char-navigation .arrow-left,.inner-char-navigation .show-all {background-color:#2399ca;margin-top:5px;text-align:center;}
+.inner-char-navigation .arrow-right a, .inner-char-navigation .arrow-left a, .inner-char-navigation .show-all a {font-size:24px;color:#FFFFFF;	display:block;width:60px;height:60px;}
+.inner-char-navigation .arrow-right a, .inner-char-navigation .arrow-left a {line-height:60px;}
+.inner-char-navigation .arrow-right a {padding-left:5px;}
+.inner-char-navigation .arrow-left a {padding-right:5px; }
+.inner-char-navigation .show-all a {line-height:50px;}
+.inner-char-navigation .arrow-right a:hover, .inner-char-navigation .arrow-left a:hover, .inner-char-navigation .show-all a:hover {background-color:#ffca12;}
+
+@media only screen {
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 1279px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1279px) {
+	/* below 1279px */
+
+	.articleContent .col-lg-3:nth-child(4n+1){clear: none;}
+	.articleContent .col-sm-4:nth-child(3n+1){clear: left;}
+
+	.articleSingle{width: 100%; padding: 40px 25px 40px 40px; margin-bottom: 100px}
+	.articleBody{margin-right: 25px}
+
+  .articleBody img{ max-width: 648px}
+
+  .articleXsell .xsellList{margin: auto; float: none;}
+	.articleXsell .title{float: none; width: 100%; margin:0;}
+  #btn-list-prev{left: 15px; right: auto}
+
+	/*side nav*/
+	.inner-char-navigation {top:20%;}
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN ABOVE 768px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN ABOVE 1280px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1280px) {
+  /* above 1280px */
+  .iconPen{position: absolute; width: 80px; height: 150px; background: url('../images/learn/article-pen.png'); display: block; left: -40px; top: 200px}
+  .iconBook{position: absolute; width: 190px; height: 140px; background: url('../images/learn/article-book.png'); display: block; right: -60px; bottom: -120px; z-index: 1}
+
+  .articleXsell .container{width: 1000px}
+  
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 767px                                                                                                                                             */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+  /* below 767px */
+  .articleSingle{padding: 30px 20px}
+  .articleSingle:before{right: 6px}
+  .articleHeader h1{margin-right: 50px; font-size: 36px}
+  .articleBody{margin-right: 6px}
+  .articleBody img{ width: 100%}
+
+  .btn_share{position: relative; margin-left: 0}
+
+  /*side nav*/
+  .inner-char-navigation {top:6%;}
+  .articleXsell .title{float: none; width:100%;}
+  .articleXsell .title, .listArticle{margin-bottom: 30px}
+  .xsellList #articleSlider{ height: 170px}
+  .articleXsell .xsellList{ min-width: 240px; width: 240px; float: none}
+
+  .xsellList li{width: 120px}
+  .xsellList li a{transform: scale(0.6);transform-origin: 50% 0% ; margin:0; left: -28px}
+  .xsellList li .btnZm:hover, .xsellList li .btnZm.active, .xsellList li .btnZm.selected{transform: scale(0.65) !important}
+  #btn-list-next, #btn-list-prev{top:51%}
+  #btn-list-prev{right:auto; left: 15px}
+
+}

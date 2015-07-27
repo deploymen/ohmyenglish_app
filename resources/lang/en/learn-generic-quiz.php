@@ -1,0 +1,72 @@
+<?php
+
+return [
+	'page' => 'Personality Quiz',
+	'title' => 'Personality Quiz | Learn | Oh My English! Class of 2015 | Astro',
+
+	'meta_title' => 'Personality Quiz | Learn | Oh My English! Class of 2015 | Astro',
+	'meta_description' => 'Have fun with our Oh My English! Class of 2015 Personality Quizzes. Non-stop enjoyment guaranteed',
+	'meta_keyword' => 'oh my english, season 4, class of 2015, henry middleton, learn english',
+
+	'content_title' => 'Personality Quiz',
+	'content_info' => "In need of more entertainment? Have fun with our personality quizzes and get the answers you're looking for! Non-stop enjoyment is guaranteed.",
+	'content_sub_title' => 'Pick a quiz and get started',
+
+	'question' => 'Question',
+	'you_are' => 'You are...',
+
+	'quiz1_meta_title' => 'How malaysian is your english? | Personality Quiz | Learn | Oh My English! Class of 2015 | Astro',
+	'quiz1_meta_description' => "How many times do you say 'lah', 'jer' & 'dei' in a day? Find out how Malaysian your English really is!",
+	'quiz1_title' => 'How malaysian is your english?',
+	'quiz1_info' => "How many times do you say 'lah', 'jer' & 'dei' in a day? Find out how Malaysian your English really is!",
+
+	'quiz1_result1_title' => 'So Malaysian!',
+	'quiz1_result1_info' => 'Could you try saying a sentence without lah?!',
+	'quiz1_result1_share_title' => 'I am so Malaysian!',
+	'quiz1_result2_title' => '50% Malaysian!',
+	'quiz1_result2_info' => 'You like to mix things up!',
+	'quiz1_result2_share_title' => 'I am 50% Malaysian!',
+	'quiz1_result3_title' => 'Where’s Malaysia?!',
+	'quiz1_result3_info' => 'It’s like you’ve never even been there!',
+	'quiz1_result3_share_title' => 'I am not Malaysian!',
+	'quiz1_result4_title' => '75% Malaysian!',
+	'quiz1_result4_info' => 'Letting the lah creep in!',
+	'quiz1_result4_share_title' => 'I am 75% Malaysian!',
+	'quiz1_result5_title' => 'Just 25% Malaysian!',
+	'quiz1_result5_info' => 'Almost Queen’s English!',
+	'quiz1_result5_share_title' => 'I am just 25% Malaysian!',
+	'quiz1_result6_title' => 'What a mix!',
+	'quiz1_result6_info' => 'Sometimes you’re really Malaysian, sometimes you’re not!',
+	'quiz1_result6_share_title' => 'I am a Mix!',
+
+	'quiz2_meta_title' => 'Which english word describes you? | Personality Quiz | Learn | Oh My English! Class of 2015 | Astro',
+	'quiz2_meta_description' => 'English is a rich language with hundreds of words to describe things and people. Find out which English word best describes you!',
+	'quiz2_title' => 'Which english word describes you?',
+	'quiz2_info' => 'English is a rich language with hundreds of words to describe things and people. Find out which English word best describes you!',
+
+	'quiz2_result1_title' => "Industrious",
+	'quiz2_result1_info' => "You’re seriously hardworking!",
+	'quiz2_result1_share_title' => "I got 'Industrious'!",
+	'quiz2_result2_title' => "Diplomatic",
+	'quiz2_result2_info' => "You’re good with your words, and with people!",
+	'quiz2_result2_share_title' => "I got 'Diplomatic'!",
+	'quiz2_result3_title' => "Ingenious",
+	'quiz2_result3_info' => "You have plenty of original and creative ideas!",
+	'quiz2_result3_share_title' => "I got 'Ingenious'!",
+	'quiz2_result4_title' => "Charitable",
+	'quiz2_result4_info' => "You have lots to give, and you give it!",
+	'quiz2_result4_share_title' => "I got 'Charitable'!",
+	'quiz2_result5_title' => "Streetwise",
+	'quiz2_result5_info' => "You’re so clever, you know what to do in any situation!",
+	'quiz2_result5_share_title' => "I got 'Streetwise'!",
+	'quiz2_result6_title' => "Ambitious",
+	'quiz2_result6_info' => "You know what you want, and you know how to get it!",
+	'quiz2_result6_share_title' => "I got 'Ambitious'!",
+
+	'quiz3_title' => 'Which ome character are you?',
+	'quiz3_info' => 'Ever wondered if you were in Oh My English, which character would you be? Wonder no more! Take our quiz and find out which character you are most like.',
+
+	'takeQuiz_btn' => 'Take other quizzes',
+	'take_btn' => 'Take the quiz',
+	'share_btn' => 'Share',
+];

@@ -1,0 +1,7 @@
+/vendor
+/node_modules
+.env*
+/_ref
+/public/season3
+/public/bower_components
+/public/templates/admin

@@ -1,0 +1,72 @@
+<?php
+
+return [
+	'page' => 'Kuiz Personaliti',
+	'title' => 'Kuiz Personaliti | Belajar | Oh My English! Class of 2015 | Astro',
+
+	'meta_title' => 'Kuiz Personaliti | Belajar | Oh My English! Class of 2015 | Astro',
+	'meta_description' => 'Cuba kuiz-kuiz Oh My English! Class of 2015 dan dapatkan jawapan yang anda cari! Gerenti seronok. Pilih kuiz anda dan mula hari ini!',
+	'meta_keyword' => 'oh my english, season 4, class of 2015, henry middleton, learn english',
+
+	'content_title' => 'Kuiz Personaliti',
+	'content_info' => 'Inginkan lebih lagi? Cuba kuiz-kuiz kami dan dapatkan jawapan yang anda cari! Gerenti seronok.',
+	'content_sub_title' => 'Pilih kuiz dan mula',
+
+	'question' => 'Soalan',
+	'you_are' => 'Anda adalah...',
+
+	'quiz1_meta_title' => 'How malaysian is your english? | Oh My English! Class of 2015 | Astro',
+	'quiz1_meta_description' => "Berapa kalikah anda menggunakan 'lah', 'jer' & 'dei' setiap hari? Ketahui tahap slanga Bahasa Inggeris Malaysia anda!",
+	'quiz1_title' => 'How malaysian is your english?',
+	'quiz1_info' => "Berapa kalikah anda menggunakan 'lah', 'jer' & 'dei' setiap hari? Ketahui tahap slanga Bahasa Inggeris Malaysia anda!",
+
+	'quiz1_result1_title' => 'So Malaysian!',
+	'quiz1_result1_info' => 'Bolehkah anda cuba bercakap sepatah ayat tanpa lah?!',
+	'quiz1_result1_share_title' => 'Saya memang orang Malaysia!',
+	'quiz1_result2_title' => '50% Malaysian!',
+	'quiz1_result2_info' => 'Anda suka bahasa rojak!',
+	'quiz1_result2_share_title' => 'Saya 50% orang Malaysia!',
+	'quiz1_result3_title' => 'Where’s Malaysia?!',
+	'quiz1_result3_info' => 'Ibarat anda tak pernah sampai ke sana!',
+	'quiz1_result3_share_title' => 'Saya bukan orang Malaysia!',
+	'quiz1_result4_title' => '75% Malaysian!',
+	'quiz1_result4_info' => 'Lah makin menjadi-jadi!',
+	'quiz1_result4_share_title' => 'Saya 75% orang Malaysia!',
+	'quiz1_result5_title' => 'Just 25% Malaysian!',
+	'quiz1_result5_info' => 'Hampir serupa dengan Bahasa Inggeris dari London!',
+	'quiz1_result5_share_title' => 'Saya cuma 25% sahaja orang Malaysia!',
+	'quiz1_result6_title' => 'What a mix!',
+	'quiz1_result6_info' => 'Kadang-kadang anda memang orang Malaysia, kadang-kadang tidak!',
+	'quiz1_result6_share_title' => 'Saya memang rojak!',
+
+	'quiz2_meta_title' => 'Which english word describes you? | Kuiz Personaliti | Belajar | Oh My English! Class of 2015 | Astro',
+	'quiz2_meta_description' => 'Bahasa Inggeris mempunyai beratus perkataan untuk menggambarkan barang dan orang. Apa ayat Bahasa Inggeris anda?',
+	'quiz2_title' => 'Which english word describes you?',
+	'quiz2_info' => 'Bahasa Inggeris mempunyai beratus perkataan untuk menggambarkan barang dan orang. Apa ayat Bahasa Inggeris anda?',
+
+	'quiz2_result1_title' => "Industrious",
+	'quiz2_result1_info' => "Anda memang kerja kuat!",
+	'quiz2_result1_share_title' => "Saya dapat 'Industrious'!",
+	'quiz2_result2_title' => "Diplomatic",
+	'quiz2_result2_info' => "Anda hebat dengan kata-kata, dan dengan orang lain!",
+	'quiz2_result2_share_title' => "Saya dapat 'Diplomatic'!",
+	'quiz2_result3_title' => "Ingenious",
+	'quiz2_result3_info' => "Anda banyak idea yang kreatif dan asli!",
+	'quiz2_result3_share_title' => "Saya dapat 'Ingenious'!",
+	'quiz2_result4_title' => "Charitable",
+	'quiz2_result4_info' => "Anda suka memberi pada orang lain!",
+	'quiz2_result4_share_title' => "Saya dapat 'Charitable'!",
+	'quiz2_result5_title' => "Streetwise",
+	'quiz2_result5_info' => "Anda memang panjang akal dalam apa-apa keadaan!",
+	'quiz2_result5_share_title' => "Saya dapat 'Streetwise'!",
+	'quiz2_result6_title' => "Ambitious",
+	'quiz2_result6_info' => "Anda tahu apa yang anda mahu, dan anda dapatkannya!",
+	'quiz2_result6_share_title' => "Saya dapat 'Ambitious'!",
+
+	'quiz3_title' => 'Which ome character are you?',
+	'quiz3_info' => 'Ever wondered if you were in Oh My English, which character would you be? Wonder no more! Take our quiz and find out which character you are most like.',
+
+	'takeQuiz_btn' => 'Cuba kuiz-kuiz lain',
+	'take_btn' => 'Jawab kuiz',
+	'share_btn' => 'Kongsi',
+];

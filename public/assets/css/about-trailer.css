@@ -1,0 +1,233 @@
+/* CSS for About Trailer Inner Page */
+@media only screen {
+	.about .master{background: #00AEEF}
+
+	.aboutTrailerContent {
+		background:#29a3cf;	
+		padding-bottom:100px;
+	}
+	
+	.about-trailer .title {
+		font-size:26px;	
+	}
+	
+	.info-text,  .info-center-text {
+		font-size:16px;	
+		text-align:center;
+	}
+	
+	
+	.about-trailer .video-frame {
+		width:570px;
+		height:475px;
+		background: url(../images/about/trailer/trailer_background.png) 0 0 no-repeat;
+		position:relative;
+		float:right;
+	}
+	
+	.video-frame .video-player {
+		width:472px;
+		height:282px;
+		background-color:#000000;
+		top:140px;
+		left:40px;
+		position:absolute;
+	}
+	
+	h1.trailer-episode, .trailer-episode-title {
+		margin:0px;
+		padding:0px;
+		line-height:0px;	
+	}
+	
+	h1.trailer-episode {
+		line-height:0px;
+	}
+	
+	h1.trailer-episode-title {
+		line-height:1em;
+	}
+	
+	.trailer-episode, .trailer-episode-title {
+		font-family:grinched;
+		color:#fdf22b;
+		text-transform:uppercase;
+	}
+	
+	.trailer-episode {
+		font-size:26px;	
+	}
+	
+	.trailer-episode-title {
+		font-size:46px;	
+	}
+	
+	.trailer-details {
+		font-size:20px;
+		color:#5e115e;
+		font-weight:bold;	
+	}
+	
+	.trailer-info {
+		margin-top:100px;	
+	}
+	
+	.trailer-right .info-text {
+		text-align:left;
+		margin-top:20px;
+		padding-right: 50px	
+	}
+	
+	/*trailer list*/
+	  .trailerList{ background: #24479c; padding:20px 0; text-align: center;}
+	  .trailerList .container{padding-top: 0; position: relative;}
+	  .trailerList .title{width: 20%; font-size: 30px; display: inline-block; margin: 0px 10px 0; float: left; text-shadow:0 0 5px #ee3885,0 0 5px #ee3885,0 0 5px #ee3885,0 0 5px #ee3885,0 0 5px #ee3885,0 0 5px #ee3885,0 0 5px #ee3885,0 0 5px #ee3885,0 0 5px #ee3885,0 0 5px #ee3885}
+	  .trailerList #listItem{ width: 588px; margin: auto 30px; display: inline-block; float: right }
+	  .trailerList #listItem li{float: left; margin:15px 0}
+	  .trailerList #trailerSlider{width: 100%; display: block; position: relative;height: 160px; overflow: hidden;}
+	  #btn-list-next, #btn-list-prev{position: absolute; top: 40%; z-index: 1; font-size: 26px; color: #FEF22C}
+	  #btn-list-next:hover, #btn-list-prev:hover{color:#FFFFFF;}
+
+	  #btn-list-next span, #btn-list-prev span{display: none}
+	  #btn-list-next{right: 15px; }
+	  #btn-list-prev{right:640px}
+	
+	.trailerList .title:before{
+		content: ""; 
+		background: url('../images/about-inner/camera.png'); 
+		width: 105px; 
+		height: 55px; 
+		display: block; 
+		margin: auto; 
+		margin-top:15px;
+		margin-bottom: 15px;
+	}
+
+
+	.btnEpi, .btnEpi.locked{
+		margin: 0
+	}
+	
+	
+	
+	
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 1279px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1279px) {
+	.about-trailer .video-frame {
+		clear:both;
+		float:none;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.trailer-info {
+		margin-top:50px;	
+	}
+
+	.trailerList #listItem{width: 438px}
+  	#btn-list-prev{right: 488px}
+	.trailerList .title {
+		width:25%;  
+  }
+
+  .trailer-right .info-text {
+		padding-right: 0;	
+	}
+	
+	
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN ABOVE 1280px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1280px) {
+  /* above 1280px */
+  .trailerList .container{width: 950px}
+  
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 767px                                                                                                                                             */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	.aboutTrailerContent {
+		padding-bottom:20px;
+	}
+	
+   .about-trailer .video-frame {
+		background: url(../images/about/trailer/trailer_background_mobile.png) 0 0 no-repeat;
+		position:relative;
+		float:none;
+		margin-left:auto;
+		margin-right:auto;
+		width:320px;
+		height:241px;
+	}
+	
+	.video-frame .video-player {
+		width:274px;
+		height:164px;
+		background-color:#000000;
+		top:50px;
+		left:20px;
+		position:absolute;
+	}
+	
+  /* below 767px */
+  .trailerList .title{float: none; width: 100%; margin: 0}
+  .trailerList #listItem{width: 265px }
+  .trailerList #trailerSlider{ height: 120px}
+  #btn-list-prev{right:auto; left: 15px}
+  #btn-list-next, #btn-list-prev { top:68%; }
+  .trailerList #listItem li a{transform: scale(0.6);transform-origin: auto 10%; margin:0; left: 3px}
+  .trailerList #listItem li .btnZm:hover, .trailerList #listItem li .btnZm.active, .trailerList #listItem li .btnZm.selected, .trailerList #listItem li .btnZm.locked{transform: scale(0.65) !important}
+  .trailerList #listItem li{width: 120px; margin: 0}
+
+
+
+  @keyframes btnZmMobile {
+    0%, 20%, 40%, 60%, 80%, 100% {
+      /*-webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);*/
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+      /*-webkit-transform: scale3d(1, 1, 1);
+      -webkit-perspective: 0;*/
+      transform: scale3d(0.65, 0.65, 0.65);
+      perspective: 0;
+    }
+    20% {
+      /*-webkit-transform: scale3d(1.1, 1.1, 1.1);*/
+      transform: scale3d(0.7, 0.7, 0.7);
+    }
+    40% {
+      /*-webkit-transform: scale3d(1, 1, 1);*/
+      transform: scale3d(0.65, 0.65, 0.65);
+    }
+    60% {
+      /*-webkit-transform: scale3d(1.03, 1.03, 1.03);*/
+      transform: scale3d(0.69, 0.69, 0.69);
+    }
+    80% {
+      /*-webkit-transform: scale3d(1, 1, 1);
+      -webkit-perspective: 0;*/
+      transform: scale3d(0.65, 0.65, 0.65);
+      perspective: 0;
+    }
+    100% {
+      /*-webkit-transform: scale3d(1, 1, 1);*/
+      transform: scale3d(0.65, 0.65, 0.65);
+
+    }
+  }
+
+  .btnZm:hover {
+    /*-webkit-animation-name: btnZm;*/
+    animation-name: btnZmMobile;
+  }
+
+}

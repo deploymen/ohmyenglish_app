@@ -1,0 +1,724 @@
+.withSkinner .content{max-width: 1280px}
+
+.overlay {
+  background: #fff;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+/* meet char */
+.meet-char {
+  background: #69cdf1;
+}
+.meet-char > .content {
+  position: relative;
+  margin: auto;
+  width: 1280px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  /* char list */
+  /* end of char list */
+  /* button */
+  /* end of button */
+}
+.meet-char > .content .char-list {
+  position: relative;
+  /*height: 556px;*/
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 45px;
+  overflow: hidden;
+}
+.meet-char > .content .char-list.ready {
+  -transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.meet-char > .content .char-list.expand {
+  height: 1118px;
+}
+.meet-char > .content .char-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-left: -6px;
+  margin-top: -6px;
+  width: 1298px;
+}
+.meet-char > .content .char-list ul li {
+  position: relative;
+  float: left;
+  display: block;
+  background: #1888b6;
+  background: -moz-radial-gradient(center, ellipse cover, #aee2f7 0%, #1888b6 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #aee2f7), color-stop(100%, #1888b6));
+  background: -webkit-radial-gradient(center, ellipse cover, #aee2f7 0%, #1888b6 100%);
+  background: -o-radial-gradient(center, ellipse cover, #aee2f7 0%, #1888b6 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #aee2f7 0%, #1888b6 100%);
+  background: radial-gradient(ellipse at center, #aee2f7 0%, #1888b6 100%);
+  width: 209px;
+  height: 275px;
+  margin: 3px;
+  padding: 0;
+  overflow: hidden;
+}
+.meet-char > .content .char-list ul li.main {
+  position: absolute;
+  width: 423px;
+  height: 553px;
+  margin-left: -213px;
+  left: 50%;
+  top: -3px;
+  z-index: 10;
+}
+.meet-char > .content .char-list ul li.main .char-item {
+  position: relative;
+  width: 423px;
+  height: 553px;
+  overflow: hidden;
+  /* char know more option */
+  /* end of char know more option */
+}
+.meet-char > .content .char-list ul li.main .char-item img {
+  display: none;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor:pointer;
+  
+}
+
+.meet-char > .content .char-list ul li.main .char-item.expand .char-know-more,
+.meet-char > .content .char-list ul li.main .char-item:hover .char-know-more {
+  bottom: 0;
+}
+.meet-char > .content .char-list ul li.main .char-item .char-know-more {
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  width: 423px;
+  height: 60px;
+  background: #0b323c;
+  z-index: 50;
+  color: #ffffff;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-align: center;
+  -transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content {
+  position: relative;
+  width: 423px;
+  height: 60px;
+  /* character name */
+  /* end of character name */
+}
+.meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a {
+  display: block;
+  width: auto;
+  height: 60px;
+  background: #124d5c;
+  color: #ffffff;
+  padding: 18px 0;
+  text-align: center;
+}
+.meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a:hover {
+  background: #2888a0;
+}
+.meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a.left {
+  float: left;
+  width: 211px;
+}
+.meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a.right {
+  float: right;
+  width: 212px;
+}
+.meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content .char-name {
+  display: block;
+  clear: both;
+  padding: 18px;
+}
+.meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content .char-name .fa{margin-left: 10px}
+.meet-char > .content .char-list ul li.main .char-item.desktop:hover img,
+.meet-char > .content .char-list ul li.main .char-item.expand img {
+  animation: playMainCharFrame 1s steps(3) infinite;
+  -webkit-animation: playMainCharFrame 1s steps(3) infinite;
+  -moz-animation: playMainCharFrame 1s steps(3) infinite;
+}
+/*.meet-char > .content .char-list ul li.main .btn-feed {
+  position: absolute;
+  display: block;
+  top: 25px;
+  right: 0px;
+  width: 101px;
+  height: 118px;
+  background: url(../img/btn_feed_me.png) 0 0 no-repeat;
+  z-index: 10;
+}
+.meet-char > .content .char-list ul li.main .btn-feed:hover {
+  background-position: 0 -118px;
+}
+.meet-char > .content .char-list ul li.main .btn-feed span {
+  display: none;
+}*/
+.meet-char > .content .char-list ul li.empty {
+  background: none;
+  width: 423px;
+}
+.meet-char > .content .char-list ul li.empty.slot2 {
+  display: none;
+}
+.meet-char > .content .char-list ul li.and-more {
+  width: 627px;
+  height: 275px;
+  padding: 110px 0;
+  background: none;
+  font: 3.4em grinched, helvetica, arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+.meet-char > .content .char-list ul li .char-item {
+  display: block;
+  width: 209px;
+  height: 275px;
+  overflow: hidden;
+  /* char know more option */
+  /* end of char know more option */
+}
+.meet-char > .content .char-list ul li .char-item.expand .char-know-more,
+.meet-char > .content .char-list ul li .char-item:hover .char-know-more {
+  bottom: 0;
+}
+.meet-char > .content .char-list ul li .char-item img {
+  display: none;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor:pointer;
+}
+.meet-char > .content .char-list ul li .char-item .char-know-more {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 209px;
+  height: 30px;
+  background: #0b323c;
+  z-index: 50;
+  color: #ffffff;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  text-align: center;
+  -transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content {
+  position: relative;
+  width: 209px;
+  height: 30px;
+  /* character name */
+  /* end of character name */
+}
+.meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a {
+  display: block;
+  width: auto;
+  height: 30px;
+  background: #124d5c;
+  color: #ffffff;
+  padding: 8px 0;
+  text-align: center;
+}
+.meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a.show-char-info {
+  background: #206a7e;
+}
+.meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a:hover {
+  background: #2888a0;
+}
+.meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a.left {
+  float: left;
+  width: 104px;
+}
+.meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a.right {
+  float: right;
+  width: 105px;
+}
+.meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content .char-name {
+  display: block;
+  clear: both;
+  padding: 8px;
+}
+.meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content .fa{margin-left: 5px}
+.meet-char > .content .char-list ul li .char-item.desktop:hover img,
+.meet-char > .content .char-list ul li .char-item.expand img {
+  animation: playCharFrame 1s steps(3) infinite;
+  -webkit-animation: playCharFrame 1s steps(3) infinite;
+  -moz-animation: playCharFrame 1s steps(3) infinite;
+}
+.meet-char > .content .char-list ul li .char-item.hidden-char:hover img {
+  animation: none;
+  -webkit-animation: none;
+  -moz-animation: none;
+}
+/*.meet-char > .content .button {
+  display: block;
+  margin: auto;
+  width: 290px;
+  height: 42px;
+  padding: 8px;
+  background: url(../img/btn.png) 0 0 no-repeat;
+  font: 1.25em montserrat, helvetica, arial;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+.meet-char > .content .button.small {
+  width: 176px;
+  background-image: url(../img/btn_small.png);
+}
+.meet-char > .content .button:hover {
+  background-position: 0 -42px;
+}
+.meet-char > .content .button.hide {
+  display: none;
+}*/
+/* end of meet char */
+@media only screen {
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 1279px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1279px) {
+  /* below 1279px */
+  /* meet char */
+  .meet-char > .content {
+    width: 768px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+    /* char list */
+    /* end of char list */
+  }
+  .meet-char > .content .char-list {
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    /*height: 756px;*/
+  }
+  .meet-char > .content .char-list.expand {
+    height: 1518px;
+  }
+  .meet-char > .content .char-list ul {
+    margin-left: -6px;
+    margin-top: -6px;
+    width: 786px;
+  }
+  .meet-char > .content .char-list ul li {
+    width: 188px;
+    height: 248px;
+    margin: 3px;
+    padding: 0;
+  }
+  .meet-char > .content .char-list ul li.main {
+    width: 384px;
+    height: 502px;
+    margin: 0;
+    right: -3px;
+  }
+  .meet-char > .content .char-list ul li.main .char-item {
+    width: 384px;
+    height: 502px;
+    /* char know more option */
+    /* end of char know more option */
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more {
+    left: 0;
+    bottom: -40px;
+    width: 384px;
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content {
+    width: 384px;
+    height: 40px;
+    /* character name */
+    /* end of character name */
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a {
+    width: auto;
+    height: 40px;
+    padding: 10px 0;
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a.left {
+    width: 192px;
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a.right {
+    width: 192px;
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content .char-name {
+    display: block;
+    clear: both;
+    padding: 10px;
+  }
+  .meet-char > .content .char-list ul li.main .char-item.desktop:hover img,
+  .meet-char > .content .char-list ul li.main .char-item.expand img {
+    animation: playMainCharFrameMid 1s steps(3) infinite;
+    -webkit-animation: playMainCharFrameMid 1s steps(3) infinite;
+    -moz-animation: playMainCharFrameMid 1s steps(3) infinite;
+  }
+  .meet-char > .content .char-list ul li.empty {
+    width: 381px;
+  }
+  .meet-char > .content .char-list ul li.empty.slot2 {
+    display: block;
+  }
+  .meet-char > .content .char-list ul li.empty.slot3 {
+    display: none;
+  }
+  .meet-char > .content .char-list ul li.and-more {
+    width: 564px;
+    height: 248px;
+    padding: 110px 0;
+    font: 3.4em grinched, helvetica, arial, sans-serif;
+    color: #ffffff;
+  }
+  .meet-char > .content .char-list ul li .char-item {
+    width: 188px;
+    height: 248px;
+    /* char know more option */
+    /* end of char know more option */
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more {
+    left: 0;
+    bottom: -30px;
+    width: 188px;
+    height: 30px;
+    font-size: 0.85em;
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content {
+    width: 188px;
+    height: 30px;
+    /* character name */
+    /* end of character name */
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a {
+    width: auto;
+    height: 30px;
+    padding: 8px 0;
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a.left {
+    width: 94px;
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a.right {
+    width: 94px;
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content .char-name {
+    padding: 8px;
+  }
+  .meet-char > .content .char-list ul li .char-item.desktop:hover img,
+  .meet-char > .content .char-list ul li .char-item.expand img {
+    animation: playCharFrameMid 1s steps(3) infinite;
+    -webkit-animation: playCharFrameMid 1s steps(3) infinite;
+    -moz-animation: playCharFrameMid 1s steps(3) infinite;
+  }
+  
+  .char_inner_txt {
+		color:#FFFFFF;
+		margin:0px; 
+		padding:0px;
+  }
+  
+  /* end of meet char */
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN ABOVE 1280px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1280px) {
+  /* above 1280px */
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 767px                                                                                                                                             */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+  /* below 767px */
+
+  /* meet char */
+  .meet-char > .content {
+    width: 320px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /* char list */
+    /* end of char list */
+  }
+  .meet-char > .content .char-list {
+    /*height: 847px;*/
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  .meet-char > .content .char-list.expand {
+    height: 2338px;
+  }
+  .meet-char > .content .char-list ul {
+    margin-left: -3px;
+    margin-top: -3px;
+    width: 338px;
+  }
+  .meet-char > .content .char-list ul li {
+    width: 157px;
+    height: 207px;
+    margin: 3px;
+    padding: 0;
+    overflow: hidden;
+  }
+  .meet-char > .content .char-list ul li.main {
+    position: relative;
+    width: 320px;
+    height: 418px;
+    margin: 3px;
+    left: 0;
+    top: 0;
+  }
+  /*.meet-char > .content .char-list ul li.main .btn-feed {
+    top: 20px;
+    right: 3px;
+    width: 77px;
+    height: 90px;
+    background-size: 77px 180px;
+  }
+  .meet-char > .content .char-list ul li.main .btn-feed:hover {
+    background-position: 0 -90px;
+  }*/
+  .meet-char > .content .char-list ul li.main .char-item {
+    width: 320px;
+    height: 418px;
+    /* char know more option */
+    /* end of char know more option */
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more {
+    left: 0;
+    bottom: -40px;
+    width: 320px;
+    height: 40px;
+    font-size: 1.25em;
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content {
+    width: 320px;
+    height: 40px;
+    /* character name */
+    /* end of character name */
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a {
+    width: auto;
+    height: 40px;
+    padding: 10px 0;
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a.left {
+    width: 160px;
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content a.right {
+    width: 160px;
+  }
+  .meet-char > .content .char-list ul li.main .char-item .char-know-more .char-know-more-content .char-name {
+    display: block;
+    clear: both;
+    padding: 10px;
+  }
+  .meet-char > .content .char-list ul li.main .char-item.desktop:hover img,
+  .meet-char > .content .char-list ul li.main .char-item.expand img {
+    animation: playMainCharFrameSmall 1s steps(3) infinite;
+    -webkit-animation: playMainCharFrameSmall 1s steps(3) infinite;
+    -moz-animation: playMainCharFrameSmall 1s steps(3) infinite;
+  }
+  .meet-char > .content .char-list ul li.empty {
+    display: none;
+  }
+  .meet-char > .content .char-list ul li.empty.slot2 {
+    display: none;
+  }
+  .meet-char > .content .char-list ul li.and-more {
+    width: 157px;
+    height: 207px;
+    padding: 45px 0;
+    font: 2em grinched, helvetica, arial, sans-serif;
+  }
+  .meet-char > .content .char-list ul li .char-item {
+    width: 157px;
+    height: 207px;
+    /* char know more option */
+    /* end of char know more option */
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more {
+    left: 0;
+    bottom: -30px;
+    width: 157px;
+    height: 30px;
+    font-size: 0.75em;
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content {
+    width: 157px;
+    height: 30px;
+    /* character name */
+    /* end of character name */
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a {
+    width: auto;
+    height: 30px;
+    padding: 8px 0;
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a.left {
+    width: 78px;
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content a.right {
+    width: 79px;
+  }
+  .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content .char-name {
+    padding: 8px;
+  }
+  .meet-char > .content .char-list ul li .char-item.desktop:hover img,
+  .meet-char > .content .char-list ul li .char-item.expand img {
+    animation: playCharFrameSmall 1s steps(3) infinite;
+    -webkit-animation: playCharFrameSmall 1s steps(3) infinite;
+    -moz-animation: playCharFrameSmall 1s steps(3) infinite;
+  }
+  /* end of meet char */
+
+/* char overlay */
+.char-overlay {
+  
+  top: 125px;
+  left: 50%;
+  margin-left: -380px;
+  width: 760px;
+  height: 415px;
+  z-index: 101;
+  background: #00aeef;
+}
+.char-overlay > .content {
+  position: relative;
+  width: 760px;
+  height: 415px;
+  padding: 20px;
+  /* close */
+  /* end of close */
+  /* char img */
+  /* end of char img */
+  /* profile name */
+  /* end of profile name */
+  /* profile desc */
+}
+.char-overlay > .content .btn-char-overlay-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: url(../img/btn_char_close.gif) 0 0 no-repeat;
+}
+.char-overlay > .content .btn-char-overlay-close:hover {
+  background-position: 0 -40px;
+}
+.char-overlay > .content .btn-char-overlay-close span {
+  display: none;
+}
+.char-overlay > .content .char-img {
+  float: left;
+  width: 270px;
+  height: 372px;
+  border: 6px solid #54c8f4;
+}
+.char-overlay > .content .char-img img {
+  display: none;
+}
+.char-overlay > .content .profile-name {
+  width: 384px;
+  height: 50px;
+  padding: 12px 0;
+  margin-left: 288px;
+  font: 1.6em montserrat, helvetica, arial;
+  font-weight: bold;
+  border-bottom: 4px solid #54c8f4;
+}
+.char-overlay > .content .profile-desc {
+  width: 384px;
+  padding: 12px 0;
+  margin-left: 288px;
+  font: 1.15em montserrat, helvetica, arial;
+}
+/* end of char overlay */
+/* video overlay */
+.video-frame {
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  margin-left: -370px;
+  width: 740px;
+  height: 440px;
+  background: #1b1b1b;
+  z-index: 101;
+}
+.video-frame > .content {
+  position: relative;
+  width: 740px;
+  height: 440px;
+  /* close */
+  /* end of close */
+  /* player */
+  /* end of player */
+}
+.video-frame > .content .btn-video-frame-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: url(../img/btn_video_close.gif) 0 0 no-repeat;
+  z-index: 101;
+}
+.video-frame > .content .btn-video-frame-close:hover {
+  background-position: 0 -40px;
+}
+.video-frame > .content .btn-video-frame-close span {
+  display: none;
+}
+.video-frame > .content .video-player {
+  position: relative;
+  width: 740px;
+  height: 440px;
+}
+/* end of video overlay */
+
+.clear {
+  clear: both;
+}
+.hide {
+  display: none;
+}

@@ -1,0 +1,54 @@
+ /*font definition */
+@font-face {
+  font-family: 'montserrat';
+  src: url('../../../fonts/montserrat-regular-webfont.eot');
+  src: url('../../../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../../fonts/montserrat-regular-webfont.woff2') format('woff2'), url('../../../fonts/montserrat-regular-webfont.woff') format('woff'), url('../../../fonts/montserrat-regular-webfont.ttf') format('truetype'), url('../../../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url('../../../fonts/montserrat-bold-webfont.eot');
+  src: url('../../../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../../fonts/montserrat-bold-webfont.woff2') format('woff2'), url('../../../fonts/montserrat-bold-webfont.woff') format('woff'), url('../../../fonts/montserrat-bold-webfont.ttf') format('truetype'), url('../../../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+.mce-content-body{background: #0BA2D9; color: #FFFFFF; font:16px montserrat, helvetica, arial}
+.mce-content-body h2 {color: #11435E; font-weight: bold;}
+.mce-content-body p{line-height:  24px; margin-bottom:  20px}
+.mce-content-body img{ border-radius: 5px; background: #5FD4FF; padding: 6px; margin-bottom: 10px}
+.mce-content-body a{color: #FFFFFF}
+
+.mce-content-body .caption{ font-size: 12px;}
+.mce-content-body .caption a{text-decoration: underline;}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    MEDIA ONLY SCREEN                                                                                                                                                */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*style*/
+@media only screen {
+  
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN ABOVE 1280px                                                                                                                                            */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1280px) {
+  
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 1279px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1279px) {
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 767px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+  
+}

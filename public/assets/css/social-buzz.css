@@ -1,0 +1,550 @@
+.social .master{background: #00AEEF}
+.withSkinner .content{max-width: 1280px}
+.btnWrap{text-align: center;}
+
+
+/* social buzz */
+.social-buzz > .content {
+  position: relative;
+  margin: auto;
+  width: 996px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* filter option */
+  /* end of filter option */
+  /* preloader */
+  /* end of preloader */
+  /* feeds */
+  /* end of feeds */
+  /* button */
+  /* end of button */
+}
+.social-buzz > .content .filter-option {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  width: 600px;
+  height: 35px;
+}
+.social-buzz > .content .filter-option ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 35px;
+}
+.social-buzz > .content .filter-option ul li {
+  float: left;
+  display: block;
+  margin-right: 5px;
+}
+.social-buzz > .content .filter-option ul li.last {
+  margin-right: 0;
+}
+/*.social-buzz > .content .filter-option ul li a {
+  display: block;
+  height: 35px;
+  padding: 10px 15px;
+  background: #224a66;
+  color: #ffffff;
+  font: 1em montserrat, helvetica, arial;
+  text-decoration: none;
+  text-transform: uppercase;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.social-buzz > .content .filter-option ul li a i {
+  width: 15px;
+}
+.social-buzz > .content .filter-option ul li a.facebook {
+  background: #3b5998;
+}
+.social-buzz > .content .filter-option ul li a.facebook:hover,
+.social-buzz > .content .filter-option ul li a.facebook.selected {
+  background: #2150b2;
+}
+.social-buzz > .content .filter-option ul li a.twitter {
+  background: #00aced;
+}
+.social-buzz > .content .filter-option ul li a.twitter:hover,
+.social-buzz > .content .filter-option ul li a.twitter.selected {
+  background: #36b5e5;
+}
+.social-buzz > .content .filter-option ul li a.instagram {
+  background: #517fa4;
+}
+.social-buzz > .content .filter-option ul li a.instagram:hover,
+.social-buzz > .content .filter-option ul li a.instagram.selected {
+  background: #3282c3;
+}
+.social-buzz > .content .filter-option ul li a:hover,
+.social-buzz > .content .filter-option ul li a.selected {
+  background: #2888a0;
+}*/
+.social-buzz > .content .feed-preloader {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 996px;
+  height: 64px;
+  padding: 16px;
+}
+.social-buzz > .content .feed-list {
+  position: relative;
+  margin: auto;
+  width: 996px;
+  min-height: 100px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  overflow: hidden;
+}
+.social-buzz > .content .feed-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 1020px;
+  /* feed li */
+  /* end of feed li */
+}
+.social-buzz > .content .feed-list ul li {
+  display: block;
+  float: left;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0 12px 12px 0;
+  overflow: hidden;
+  width: 240px;
+  height: 240px;
+  /* item */
+  /* end of item */
+}
+.social-buzz > .content .feed-list ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #254994;
+  /* post type */
+  /* end of post type */
+  /* post by */
+  /* end of post by */
+  /* img */
+  /* end of img */
+  /* message */
+  /* end of message */
+}
+.social-buzz > .content .feed-list ul li a .post-type {
+  position: absolute;
+  display: block;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  background: #00aced;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+.social-buzz > .content .feed-list ul li a .post-type.facebook {
+  background: #3b5998;
+}
+.social-buzz > .content .feed-list ul li a .post-type.instagram {
+  background: #517fa4;
+}
+.social-buzz > .content .feed-list ul li a .post-by {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: #123173;
+  padding-top: 10px;
+  z-index: 10;
+}
+.social-buzz > .content .feed-list ul li a img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.social-buzz > .content .feed-list ul li a .message {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 225px;
+  height: 165px;
+  padding: 60px 15px 0 15px;
+  color: #ffffff;
+  font-size: 1.25em;
+  word-wrap: break-word;
+}
+.social-buzz > .content .feed-list ul li a .message small {
+  font-size: 0.85em;
+}
+.social-buzz > .content .feed-list ul li a.alt {
+  background: #166d8e;
+}
+.social-buzz > .content .feed-list ul li a.alt .post-by {
+  background: #0d485e;
+}
+.social-buzz > .content .feed-list ul li.double {
+  width: 492px;
+  height: 492px;
+}
+.social-buzz > .content .feed-list ul li.double a {
+  /* message */
+  /* end of message */
+}
+.social-buzz > .content .feed-list ul li.double a .message {
+  width: 480px;
+  height: 410px;
+  padding: 75px 15px 0 15px;
+  color: #ffffff;
+  font-size: 1.75em;
+}
+.social-buzz > .content .feed-list ul li.rec {
+  width: 492px;
+  height: 240px;
+}
+.social-buzz > .content .feed-list ul li.rec a {
+  /* message */
+  /* end of message */
+}
+.social-buzz > .content .feed-list ul li.rec a .message {
+  width: 480px;
+  height: 165px;
+  padding: 45px 15px 0 15px;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+.social-buzz > .content .feed-list ul li.pos {
+  position: absolute;
+}
+.social-buzz > .content .feed-list ul li.column1 {
+  left: 0px;
+}
+.social-buzz > .content .feed-list ul li.column2 {
+  left: 252px;
+}
+.social-buzz > .content .feed-list ul li.column3 {
+  left: 504px;
+}
+.social-buzz > .content .feed-list ul li.column4 {
+  left: 756px;
+}
+.social-buzz > .content .feed-list ul li.row1 {
+  top: 0px;
+}
+.social-buzz > .content .feed-list ul li.row2 {
+  top: 252px;
+}
+.social-buzz > .content .feed-list ul li.row3 {
+  top: 504px;
+}
+.social-buzz > .content .feed-list ul li.row4 {
+  top: 756px;
+}
+.social-buzz > .content .feed-list ul li.row5 {
+  top: 1008px;
+}
+.social-buzz > .content .feed-list .clear {
+  clear: both;
+}
+/*.social-buzz > .content .button {
+  display: block;
+  margin: auto;
+  width: 176px;
+  height: 42px;
+  padding: 8px;
+  background: url(../img/btn_small.png) 0 0 no-repeat;
+  font: 1.25em montserrat, helvetica, arial;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+.social-buzz > .content .button:hover {
+  background-position: 0 -42px;
+}
+.social-buzz > .content .button.hide {
+  display: none;
+}*/
+/* end of social buzz */
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 1280px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1280px) {
+  /* below 1280px */
+  /* social bookmark */
+  ul.social-bookmark {
+    margin-left: 20px;
+  }
+  ul.social-bookmark li {
+    display: block;
+    float: left;
+    margin: 5px 5px 0 0;
+    text-align: center;
+  }
+  ul.social-bookmark li a.ico {
+    display: block;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    font-size: 1.3em;
+  }
+  /* end of social bookmark */
+  /* social buzz */
+  .social-buzz > .content {
+    width: 768px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* preloader */
+    /* end of preloader */
+    /* feeds */
+    /* end of feeds */
+  }
+  .social-buzz > .content .feed-preloader {
+    width: 768px;
+  }
+  .social-buzz > .content .feed-list {
+    width: 744px;
+  }
+  .social-buzz > .content .feed-list ul {
+    width: 768px;
+    /* feed li */
+    /* end of feed li */
+  }
+  .social-buzz > .content .feed-list ul li {
+    width: 240px;
+    height: 240px;
+  }
+  .social-buzz > .content .feed-list ul li.double {
+    width: 240px;
+    height: 240px;
+  }
+  .social-buzz > .content .feed-list ul li.double a {
+    /* message */
+    /* end of message */
+  }
+  .social-buzz > .content .feed-list ul li.double a .message {
+    width: 225px;
+    height: 165px;
+    padding: 45px 15px 0 15px;
+    color: #ffffff;
+    font-size: 1.25em;
+  }
+  .social-buzz > .content .feed-list ul li.rec {
+    width: 240px;
+    height: 240px;
+  }
+  .social-buzz > .content .feed-list ul li.rec a {
+    /* message */
+    /* end of message */
+  }
+  .social-buzz > .content .feed-list ul li.rec a .message {
+    width: 225px;
+    height: 165px;
+    padding: 45px 15px 0 15px;
+    font-size: 1.25em;
+  }
+  .social-buzz > .content .feed-list ul li.pos {
+    position: relative;
+  }
+  .social-buzz > .content .feed-list ul li.column1 {
+    left: auto;
+  }
+  .social-buzz > .content .feed-list ul li.column2 {
+    left: auto;
+  }
+  .social-buzz > .content .feed-list ul li.column3 {
+    left: auto;
+  }
+  .social-buzz > .content .feed-list ul li.column4 {
+    left: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row1 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row2 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row3 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row4 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row5 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list .clear {
+    clear: none;
+    display: none;
+  }
+  /* end of social buzz */
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 767px                                                                                                                                               */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+/* social buzz */
+  .social-buzz > .content {
+    width: 320px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /* filter option */
+    /* end of filter option */
+    /* preloader */
+    /* end of preloader */
+    /* feeds */
+    /* end of feeds */
+  }
+  .social-buzz > .content .filter-option {
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    width: 288px;
+    height: 80px;
+  }
+  .social-buzz > .content .filter-option ul {
+    height: 80px;
+  }
+  .social-buzz > .content .filter-option ul li {
+    margin-right: 0;
+    /*margin-bottom: 10px;*/
+  }
+  .social-buzz > .content .filter-option ul li.first {
+    /*margin-left: 30px;*/
+  }
+  .social-buzz > .content .filter-option ul li.last {
+    margin-right: 0;
+  }
+  .social-buzz .filter-option .btnZm{margin-bottom: 5px}
+  .social-buzz > .content .feed-preloader {
+    width: 320px;
+  }
+  .social-buzz > .content .feed-list {
+    width: 280px;
+    min-height: 30px;
+  }
+  .social-buzz > .content .feed-list ul {
+    left: 0;
+    top: 0;
+    width: 280px;
+    /* feed li */
+    /* end of feed li */
+  }
+  .social-buzz > .content .feed-list ul li {
+    float: none;
+    margin: 0 0 12px 0;
+    width: 280px;
+    height: 280px;
+    /* item */
+    /* end of item */
+  }
+  .social-buzz > .content .feed-list ul li a {
+    /* post type */
+    /* end of post type */
+    /* post by */
+    /* end of post by */
+    /* message */
+    /* end of message */
+  }
+  .social-buzz > .content .feed-list ul li a .post-type {
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    background: #00aced;
+    font-size: 1.5em;
+    color: #ffffff;
+  }
+  .social-buzz > .content .feed-list ul li a .post-by {
+    height: 65px;
+    padding-top: 10px;
+    z-index: 10;
+  }
+  .social-buzz > .content .feed-list ul li a .message {
+    width: 225px;
+    height: 165px;
+    padding: 45px 15px 0 15px;
+    color: #ffffff;
+    font-size: 1.25em;
+  }
+  .social-buzz > .content .feed-list ul li.double {
+    width: 280px;
+    height: 280px;
+  }
+  .social-buzz > .content .feed-list ul li.double a {
+    /* message */
+    /* end of message */
+  }
+  .social-buzz > .content .feed-list ul li.double a .message {
+    width: 225px;
+    height: 165px;
+    padding: 45px 15px 0 15px;
+    color: #ffffff;
+    font-size: 1.25em;
+  }
+  .social-buzz > .content .feed-list ul li.rec {
+    width: 280px;
+    height: 280px;
+  }
+  .social-buzz > .content .feed-list ul li.rec a {
+    /* message */
+    /* end of message */
+  }
+  .social-buzz > .content .feed-list ul li.rec a .message {
+    width: 225px;
+    height: 165px;
+    padding: 45px 15px 0 15px;
+    color: #ffffff;
+    font-size: 1.25em;
+  }
+  .social-buzz > .content .feed-list ul li.pos {
+    position: relative;
+  }
+  .social-buzz > .content .feed-list ul li.column1 {
+    left: auto;
+  }
+  .social-buzz > .content .feed-list ul li.column2 {
+    left: auto;
+  }
+  .social-buzz > .content .feed-list ul li.column3 {
+    left: auto;
+  }
+  .social-buzz > .content .feed-list ul li.column4 {
+    left: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row1 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row2 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row3 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row4 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list ul li.row5 {
+    top: auto;
+  }
+  .social-buzz > .content .feed-list .clear {
+    clear: none;
+    display: none;
+  }
+  /* end of social buzz */
+}

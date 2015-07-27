@@ -1,0 +1,164 @@
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    MEDIA ONLY SCREEN                                                                                                                                                */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*style*/
+@media only screen {
+  .play .master{background: #00AEEF}
+
+  .playContent p.info { color: #303E48; }
+
+  /*feed henry*/
+  .feed-henry .playContent{background: url('../images/play/feed-henry/bg_feedHenry.jpg') no-repeat center top , url('../images/play/feed-henry/bg_feedHenryRepeat.jpg') repeat-x  ; background-color: #70D1F5; min-height: 750px}
+  .football-fever .playContent{background: #6FC4C7}
+  .super-typer .playContent{background: #F16F21}
+  .protect-princess .playContent{background: #FC6655}
+
+  /*dash for coin*/
+  .dash-coin .playContent{ background: url('../images/play/dash-cash/bg-dash-coin.jpg') no-repeat center top , url('../images/play/dash-cash/bg-dash-coin-repeat.jpg') #BED458 repeat-x; }
+  
+  /*football fever*/
+  .football-fever .playContent{background: url('../images/play/bg_football_fever.jpg') no-repeat center top , url('../images/play/bg_football_fever_repeat.jpg') #BFD559 repeat-x; }
+  .football-fever .playContent .characterminigames-col{background: none}
+  .football-fever .playContent .characterminigames-desc{border-radius: 40px}
+
+  /*super typer*/
+  .super-typer .chatGameContainer{background:url('../images/play/bg_super_typer.jpg') no-repeat center top}
+  .super-typer .playContent{background:  #F37021}
+
+  /*protect the princess*/
+  .protect-princess .playContent > .container{padding: 40px 0 0}
+  .gamecanvas3wrapper{margin-bottom: 40px; padding: 20px 0}
+  .protect-princess a, .protect-princess a:hover{color: #FFFFFF}
+  .protect-princess h5{padding: 0}
+  .protect-princess .gamecanvas3wrapper a{transition:none;}
+  .protect-princess ul.menu li .sub-navi{margin:0;}
+
+  /*play*/
+  .playList{ background: #FF800F; padding:20px 0; text-align: center}
+  .playList .container{padding-top: 0; position: relative;}
+  .playList .title:before{content: ""; background: url('../images/sprites.png') -177px -404px; width: 87px; height: 47px; display: block; margin: auto; margin-bottom: 15px;}
+  .playList .title{width: 20%; font-size: 30px; display: inline-block; margin: 25px 10px 0; float: left;}
+  .playList #listItem{ width: 621px; margin: auto 30px; display: inline-block; float: right }
+  .playList #listItem li{float: left; margin-bottom: 25px}
+  .playList #playSlider{width: 100%; display: block; position: relative;height: 170px; overflow: hidden;}
+  
+  #btn-plist-next, #btn-plist-prev{position: absolute; top: 40%; z-index: 1; font-size: 26px; color: #DB2764}
+  #btn-plist-next span, #btn-plist-prev span{display: none}
+  #btn-plist-next{right: 15px; }
+  #btn-plist-prev{right:678px}
+
+  .playList .btnZm h2{margin-left: -15px; margin-right: -15px; margin-top: 10px; font-size: 16px; color: #FFFFFF; display: inline-block; font-family: "montserrat"}
+
+  /*.playFeedHenry{background:url('../images/playFeedHenry.png') no-repeat;}
+  .playSuperTyper{background:url('../images/playFeedHenry.png')no-repeat;}
+  .playSpyLeader{background:url('../images/playFeedHenry.png')no-repeat;}
+  .playFbFever{background:url('../images/playFeedHenry.png')no-repeat;}*/
+    /*play*/
+
+
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN ABOVE 1280px                                                                                                                                            */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1280px) {
+  /* above 1280px */
+  .playList .container{width: 1000px}
+  
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 1279px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1279px) {
+
+
+  /*play*/
+  .playList #listItem{ width: 414px;}
+  #btn-plist-prev{right:470px}
+    /*play*/
+
+  /*protect the princess*/
+  .protect-princess .playContent > .container{max-width:800px; width: 100%}
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 767px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+  
+  /*play*/
+  .playList .title{float: none; width: 100%}
+  .playList .title:before{display: none;}
+  .playList #listItem{ width: 240px; float: none;}
+  #btn-plist-next, #btn-plist-prev{top:51%;}
+  #btn-plist-prev{right:auto; left: 15px}
+  .playList #listItem li{width: 120px}
+  .playList #listItem li a{transform: scale(0.6);transform-origin: auto 10%; margin:0; left: -28px}
+  .playList #listItem li .btnZm:hover, .playList #listItem li .btnZm.active, .playList #listItem li .btnZm.selected{transform: scale(0.65) !important}
+    /*play*/
+
+  @keyframes btnZmMobile {
+    0%, 20%, 40%, 60%, 80%, 100% {
+      /*-webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);*/
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+      /*-webkit-transform: scale3d(1, 1, 1);
+      -webkit-perspective: 0;*/
+      transform: scale3d(0.65, 0.65, 0.65);
+      perspective: 0;
+    }
+    20% {
+      /*-webkit-transform: scale3d(1.1, 1.1, 1.1);*/
+      transform: scale3d(0.7, 0.7, 0.7);
+    }
+    40% {
+      /*-webkit-transform: scale3d(1, 1, 1);*/
+      transform: scale3d(0.65, 0.65, 0.65);
+    }
+    60% {
+      /*-webkit-transform: scale3d(1.03, 1.03, 1.03);*/
+      transform: scale3d(0.69, 0.69, 0.69);
+    }
+    80% {
+      /*-webkit-transform: scale3d(1, 1, 1);
+      -webkit-perspective: 0;*/
+      transform: scale3d(0.65, 0.65, 0.65);
+      perspective: 0;
+    }
+    100% {
+      /*-webkit-transform: scale3d(1, 1, 1);*/
+      transform: scale3d(0.65, 0.65, 0.65);
+
+    }
+  }
+
+  .btnZm:hover {
+    /*-webkit-animation-name: btnZm;*/
+    animation-name: btnZmMobile;
+  }
+
+
+  /*football fever*/
+  .football-fever .smallscreenreplacement-content{display: block;}
+  .football-fever .gamecanvas, .characterminigames-desc{display: none;}
+
+  /*spy leader custom*/
+  .gamecanvas2wrapper .container{width: 100%}
+  .gamecanvas2wrapper p.info{width: 320px}
+
+  /*super typer*/
+  .chatGameContainer{float: none; height: 544px; background: none !important}
+  .typeGameSplash{margin-bottom:40px;}
+
+  /*protect the princess*/
+  .protect-princess .playContent > .container{width: 100%}
+  .protect-princess .playContent > .container p.info{width: 320px}
+  body.protect-princess{color: #FFFFFF}
+  .protect-princess .playList .container{margin:auto;}
+
+
+}

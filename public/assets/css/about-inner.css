@@ -1,0 +1,615 @@
+
+/* CSS for About Characters Inner Page */
+.row {
+	margin:0px;
+	/*padding-left:15px;
+	padding-right:15px;*/
+}
+
+
+.inner-char {
+	background:#00aeef;
+	position: relative;
+}
+
+.inner-char-left {
+	position:relative;
+}
+
+.inner-char-left .btn_click_me {
+	position:absolute;
+	top:10px; 
+	right:120px;	
+}
+
+.inner-char-left .btn_heart {
+	position:absolute;
+	top:85px;
+	right:100px;	
+}
+
+.inner-char-left .btn_heart a i {
+	width:165px;
+	height:90px;
+	position:absolute;
+	background: url('../images/about-inner/btn_heart.png') 0 0 ;
+	top:-20px;
+	left:-50px;
+}
+
+.inner-char-left .btn_pencil {
+	position:absolute;
+	top:460px;
+	left:10px;	
+}
+
+.inner-char-left .btn_pencil a i {
+	width:110px;
+	height:115px;
+	position:absolute;
+	background: url('../images/about-inner/btn_pencil.png') 0 0 ;
+	top:-35px;
+	left:-30px;
+}
+
+.inner-char-left .btn_cupcake {
+	position:absolute;
+	top:80px;
+	left:40px;	
+}
+
+.inner-char-left .btn_cupcake a i{width: 135px; height: 125px; background: url('../images/animation/ani_cupcake.png') 0 0 ; display: block; position: absolute; top: -54px; left: -57px;}
+
+.inner-char-left .btn_cupcake a:hover i{
+	/*animation: playCupcake 0.5s steps(20) infinite;*/
+}
+
+.inner-char-left .btn_cupcake .btnActive, .inner-char-left .btn_pencil .btnActive, .inner-char-left .btn_heart .btnActive {
+	background-position: -177px -580px;
+	pointer-events: none;
+    cursor: default;
+}
+
+@keyframes playCupcake {
+   100% { background-position: -2700px; }
+}
+
+.main-character-image{
+	margin-top:80px;
+	margin-left:30px;
+  	width: 370px;
+  	height: 720px;
+  	
+   /* animation: play .8s steps(3) infinite;*/
+}
+
+/* henry-middleton|jibam|see-yew-soon|taylor-marie-smith|zack|cikgu-ayu|mazlee|anusha|jojie|sarjan-bin-mejar|cikgu-bedah|bella|zeeq|sayur|qila|puan-aida|cik-soo|encik-ariff */
+.henry-middleton .main-character-image{ background: url(../images/about-inner/henry-middleton/henry-middleton.png) 0 0 no-repeat; }
+.jibam .main-character-image{ background: url(../images/about-inner/jibam/jibam.png) 0 0 no-repeat; }
+.see-yew-soon .main-character-image{ background: url(../images/about-inner/see-yew-soon/see-yew-soon.png) 0 0 no-repeat; }
+.taylor-marie-smith .main-character-image{ background: url(../images/about-inner/taylor-marie-smith/taylor-marie-smith.png) 0 0 no-repeat; }
+.zack .main-character-image{ background: url(../images/about-inner/zack/zack.png) 0 0 no-repeat; }
+.cikgu-ayu .main-character-image{ background: url(../images/about-inner/cikgu-ayu/cikgu-ayu.png) 0 0 no-repeat; }
+.mazlee .main-character-image{ background: url(../images/about-inner/mazlee/mazlee.png) 0 0 no-repeat; }
+.anusha .main-character-image{ background: url(../images/about-inner/anusha/anusha.png) 0 0 no-repeat; }
+.jojie .main-character-image{ background: url(../images/about-inner/jojie/jojie.png) 0 0 no-repeat; }
+.sarjan-bin-mejar .main-character-image{ background: url(../images/about-inner/sarjan-bin-mejar/sarjan-bin-mejar.png) 0 0 no-repeat; }
+.cikgu-bedah .main-character-image{ background: url(../images/about-inner/cikgu-bedah/cikgu-bedah.png) 0 0 no-repeat; }
+.bella .main-character-image{ background: url(../images/about-inner/bella/bella.png) 0 0 no-repeat; }
+.zeeq .main-character-image{ background: url(../images/about-inner/zeeq/zeeq.png) 0 0 no-repeat; }
+.sayur .main-character-image{ background: url(../images/about-inner/sayur/sayur.png) 0 0 no-repeat; }
+.qila .main-character-image{ background: url(../images/about-inner/qila/qila.png) 0 0 no-repeat; }
+.puan-aida .main-character-image{ background: url(../images/about-inner/puan-aida/puan-aida.png) 0 0 no-repeat; }
+.cik-soo .main-character-image{ background: url(../images/about-inner/cik-soo/cik-soo.png) 0 0 no-repeat; }
+.encik-ariff .main-character-image{ background: url(../images/about-inner/encik-ariff/encik-ariff.png) 0 0 no-repeat; }
+
+
+.inner-char-bag {
+	width: 86px;
+  	height: 84px;
+	background: url(../images/about-inner/bag.png) 0 0 no-repeat;
+	position:absolute;
+	bottom:20px;
+	right:90px;		
+}
+
+.inner-char-books {
+	width: 121px;
+  	height: 211px;
+  	background: url(../images/about-inner/books.png) 0 0 no-repeat;	
+	animation: play 1s steps(6) infinite;
+	position:absolute;
+	bottom:0px;
+	left:0px;	
+}
+
+.inner-char > .content {
+  	padding-top: 60px;
+  	padding-bottom: 50px;
+}
+
+.inner-char-info {
+	margin-top:25px;	
+}
+
+.inner-char-info .btn_share {
+	position:absolute;
+	right:100px;
+	top:-15px;
+	margin-top:25px;	
+}
+
+
+
+.inner-char-name {
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+.inner-char-name .actor-name {	
+	/*font-size:26px;*/
+	
+}
+
+.inner-char-name h1.actor-name {	
+	  margin: 0px;
+	  padding: 0px;
+	  font-weight: bold;
+	  font-size: 26px;
+	  color: #ffffff;
+	  line-height: 0;
+	
+}
+
+.inner-char-name h2.actor-real-name {	
+	  margin: 0px;
+	  padding: 0px;
+	  color: #ffffff;
+	  font-weight: bold;
+	
+} 
+
+.inner-char-name .actor-real-name {
+	font-size:20px;
+}
+
+.inner-char-description {
+	background:#0063b8;	
+	border-radius: 10px;
+	margin-top:20px;
+	padding:30px 10px;
+	font-size:16px;
+}
+
+.inner-char-description .info-left {
+	font-weight:bold;		
+	color:#9ae4ff;
+	display:block;
+	/*width:40%;*/
+}
+
+.inner-char-description .info-right {
+	color:#FFFFFF;
+	display:block	
+}
+
+.inner-char-quote {
+	background:#95d3ff;	
+	border-radius: 10px;
+	margin-top:20px;
+	padding:25px 80px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	color:#0063b8;
+	position:relative;
+}
+
+.inner-char-quote h2 {
+	margin: 0px;
+  	padding: 0px;
+  	font-size: 16px;
+  	line-height: 22px;
+  	font-weight: bold;
+  	color: #0063b8;	
+}
+
+.inner-char-quote .fa-quote-left, .inner-char-quote .fa-quote-right {
+	font-size:30px;
+	color:#ee3885;
+}
+
+.inner-char-quote .fa-quote-left {
+	position:absolute;
+	left:15px;
+	top:15px;
+}
+
+.inner-char-quote .fa-quote-right {
+	position:absolute;
+	right:15px;
+	top:15px;	
+}
+
+.inner-char-know {
+	
+	margin-top:20px;
+	position:relative;
+}
+
+.inner-char-know .fun-fact {
+	background:#ffcc31;	
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding:15px 15px 0 15px;
+}
+
+.inner-char-know .inner-char-vector {
+	text-align:center;	
+}
+
+.inner-char-know .inner-char-vector img {
+	width:100%;
+	max-width:454px;
+}
+
+.inner-char-know .inner-char-question-mark {
+	position:absolute;
+	right:15px;
+	top:15px;
+}
+
+
+.inner-char-know .reveal-char-info a {
+	display:block;
+	width:auto;
+	font-size:18px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background:#ee3885;
+	padding: 10px 15px;	
+	border-radius: 0 0 10px 10px
+}
+
+.inner-char-know .reveal-char-info a:hover {
+	background:#db238f;	
+}
+
+.inner-char-know .reveal-char-info .fa-chevron-down, .inner-char-know .reveal-char-info .fa-chevron-up {
+	float:right;
+	padding-right:25px;
+	padding-top:3px;	
+}
+
+.inner-char-know .char-info-reveal {
+	background:#db238f;
+	color:#FFFFFF;
+	font-size:16px;
+	padding:15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: none;
+		
+}
+
+.inner-char-heard {
+	background:#1fa936;	
+	border-radius: 10px;
+	margin-top:20px;
+	padding:15px;
+}
+
+.inner-char-title {
+	font-family:grinched;
+	font-size:24px;	
+	text-transform:uppercase;
+	color:#FFFFFF;
+    text-shadow: 0 0 4px #0a8dbe,0 0 4px #0a8dbe,0 0 4px #0a8dbe,0 0 4px #0a8dbe,0 0 4px #0a8dbe,0 0 4px #0a8dbe,0 0 4px #0a8dbe,0 0 4px #0a8dbe,0 0 4px #0a8dbe,0 0 4px #0a8dbe; 
+	/*-webkit-text-stroke: 1px #0a8dbe;*/
+}
+
+.inner-char-heard .inner-char-heard-info {
+	color:#ccffd4;	
+	font-size:16px;
+	padding-top:10px;
+}
+
+.btn_trailer {
+	margin-top:40px;
+	text-align:center;	
+}
+
+.inner-char-navigation {
+	position:absolute;
+	right:0px;
+	top:30%;	
+}
+
+.inner-char-navigation .arrow-right,.inner-char-navigation .arrow-left,.inner-char-navigation .show-all {
+	background-color:#2399ca;
+	margin-top:5px;
+	text-align:center;
+}
+
+.inner-char-navigation .arrow-right a, .inner-char-navigation .arrow-left a, .inner-char-navigation .show-all a {
+	font-size:24px;
+	color:#FFFFFF;	
+	display:block;
+	width:60px;
+	height:60px;
+}
+
+.inner-char-navigation .arrow-right a, .inner-char-navigation .arrow-left a {
+	line-height:60px;
+	
+}
+
+.inner-char-navigation .arrow-right a {
+	padding-left:5px;
+}
+
+.inner-char-navigation .arrow-left a {
+	padding-right:5px; 
+}
+
+.inner-char-navigation .show-all a {
+	line-height:50px;
+}
+
+.inner-char-navigation .arrow-right a:hover, .inner-char-navigation .arrow-left a:hover, .inner-char-navigation .show-all a:hover {
+	background-color:#ffca12;
+}
+
+.showSocialButtons{position: absolute;; top: 0; left: 0; width: 112px; height: 50px; opacity: 0;}
+.socialPlugin .socials, .socialPlugin .socials.opened{position: relative; left: 35px; top: -20px }
+.socialPlugin .socials:after{margin: -1px auto !important; border-top: 15px solid #3B5998 !important}
+.socialPlugin .socials .fa-twitter:after{background-image:linear-gradient(#25C4FF 25%, #ffffff 75%) !important; color: #25C4FF !important}
+
+@keyframes play {
+   100% { background-position: -726px; }
+}
+
+
+@media only screen {
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 1279px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1279px) {
+	
+	.inner-char .row .inner-char-right {
+		/*background: linear-gradient(to bottom, #30D0FF 0%,#02AEEE 35%);
+		width:100%;*/
+	}
+	
+	.inner-char  .row > .inner-char-right:before {
+		/*content: ""; 
+		width: 62%; 
+		position: absolute; 
+		z-index: 0; 
+		left: -62%;
+		height: 100%; 
+		background: linear-gradient(to bottom,  #30D0FF 0%,#02AEEE 35%);*/
+	}
+	
+	.inner-char .row > .inner-char-right:after {
+		/*content: ""; 
+		width: 62%; 
+		position: absolute; 
+		z-index: 0; 
+		top:0; 
+		right: -62%; 
+		height: 100%; 
+		background: linear-gradient(to bottom,  #30D0FF 0%,#02AEEE 35%);*/
+	}
+	
+	.main-character-image {
+		margin-left:auto;
+		margin-right:auto;
+		height:542px;
+	
+	}
+	
+	.henry-middleton .main-character-image{ background: url(../images/about-inner/henry-middleton/henry-middleton_ipad.png) 0 0 no-repeat; }
+	.jibam .main-character-image{ background: url(../images/about-inner/jibam/jibam_ipad.png) 0 0 no-repeat; }
+	.see-yew-soon .main-character-image{ background: url(../images/about-inner/see-yew-soon/see-yew-soon_ipad.png) 0 0 no-repeat; }
+	.taylor-marie-smith .main-character-image{ background: url(../images/about-inner/taylor-marie-smith/taylor-marie-smith_ipad.png) 0 0 no-repeat; }
+	.zack .main-character-image{ background: url(../images/about-inner/zack/zack_ipad.png) 0 0 no-repeat; }
+	.cikgu-ayu .main-character-image{ background: url(../images/about-inner/cikgu-ayu/cikgu-ayu_ipad.png) 0 0 no-repeat; }
+	.mazlee .main-character-image{ background: url(../images/about-inner/mazlee/mazlee_ipad.png) 0 0 no-repeat; }
+	.anusha .main-character-image{ background: url(../images/about-inner/anusha/anusha_ipad.png) 0 0 no-repeat; }
+	.jojie .main-character-image{ background: url(../images/about-inner/jojie/jojie_ipad.png) 0 0 no-repeat; }
+	.sarjan-bin-mejar .main-character-image{ background: url(../images/about-inner/sarjan-bin-mejar/sarjan-bin-mejar_ipad.png) 0 0 no-repeat; }
+	.cikgu-bedah .main-character-image{ background: url(../images/about-inner/cikgu-bedah/cikgu-bedah_ipad.png) 0 0 no-repeat; }
+	.bella .main-character-image{ background: url(../images/about-inner/bella/bella_ipad.png) 0 0 no-repeat; }
+	.zeeq .main-character-image{ background: url(../images/about-inner/zeeq/zeeq_ipad.png) 0 0 no-repeat; }
+	.sayur .main-character-image{ background: url(../images/about-inner/sayur/sayur_ipad.png) 0 0 no-repeat; }
+	.qila .main-character-image{ background: url(../images/about-inner/qila/qila_ipad.png) 0 0 no-repeat; }
+	.puan-aida .main-character-image{ background: url(../images/about-inner/puan-aida/puan-aida_ipad.png) 0 0 no-repeat; }
+	.cik-soo .main-character-image{ background: url(../images/about-inner/cik-soo/cik-soo_ipad.png) 0 0 no-repeat; }
+	.encik-ariff .main-character-image{ background: url(../images/about-inner/encik-ariff/encik-ariff_ipad.png) 0 0 no-repeat; }
+	
+	.inner-char-bag {
+		display:none;	
+	}
+	
+	.inner-char-books {
+		display:none;	
+	}
+	
+	.inner-char-navigation {
+		top:20%;	
+	}
+	
+	.inner-char-left .btn_click_me {
+		top:10px; 
+		right:170px;	
+	}
+	
+	.inner-char-left .btn_heart {
+		top:85px;
+		right:150px;	
+	}
+	
+	.inner-char-left .btn_pencil {
+		top:420px;
+		left:150px;	
+	}
+	
+	.inner-char-left .btn_cupcake {
+		top:80px;
+		left:200px;	
+	}
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN ABOVE 1280px                                                                                                                                              */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1280px) {
+  /* above 1280px */
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 767px                                                                                                                                             */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+   .main-character-image{
+		margin-top:20px;
+		
+	   /* animation: play .8s steps(3) infinite;*/
+	}	
+	
+  /* below 767px */
+  .mbl_spacer {
+	  clear:both;
+	 margin-top:10px;  
+  }
+  
+  .main-character-image {
+		margin-left:auto;
+		margin-right:auto;
+		height:542px;
+	
+	}
+	
+	.henry-middleton .main-character-image{ background: url(../images/about-inner/henry-middleton/henry-middleton_ipad.png) 0 0 no-repeat; }
+	.jibam .main-character-image{ background: url(../images/about-inner/jibam/jibam_ipad.png) 0 0 no-repeat; }
+	.see-yew-soon .main-character-image{ background: url(../images/about-inner/see-yew-soon/see-yew-soon_ipad.png) 0 0 no-repeat; }
+	.taylor-marie-smith .main-character-image{ background: url(../images/about-inner/taylor-marie-smith/taylor-marie-smith_ipad.png) 0 0 no-repeat; }
+	.zack .main-character-image{ background: url(../images/about-inner/zack/zack_ipad.png) 0 0 no-repeat; }
+	.cikgu-ayu .main-character-image{ background: url(../images/about-inner/cikgu-ayu/cikgu-ayu_ipad.png) 0 0 no-repeat; }
+	.mazlee .main-character-image{ background: url(../images/about-inner/mazlee/mazlee_ipad.png) 0 0 no-repeat; }
+	.anusha .main-character-image{ background: url(../images/about-inner/anusha/anusha_ipad.png) 0 0 no-repeat; }
+	.jojie .main-character-image{ background: url(../images/about-inner/jojie/jojie_ipad.png) 0 0 no-repeat; }
+	.sarjan-bin-mejar .main-character-image{ background: url(../images/about-inner/sarjan-bin-mejar/sarjan-bin-mejar_ipad.png) 0 0 no-repeat; }
+	.cikgu-bedah .main-character-image{ background: url(../images/about-inner/cikgu-bedah/cikgu-bedah_ipad.png) 0 0 no-repeat; }
+	.bella .main-character-image{ background: url(../images/about-inner/bella/bella_ipad.png) 0 0 no-repeat; }
+	.zeeq .main-character-image{ background: url(../images/about-inner/zeeq/zeeq_ipad.png) 0 0 no-repeat; }
+	.sayur .main-character-image{ background: url(../images/about-inner/sayur/sayur_ipad.png) 0 0 no-repeat; }
+	.qila .main-character-image{ background: url(../images/about-inner/qila/qila_ipad.png) 0 0 no-repeat; }
+	.puan-aida .main-character-image{ background: url(../images/about-inner/puan-aida/puan-aida_ipad.png) 0 0 no-repeat; }
+	.cik-soo .main-character-image{ background: url(../images/about-inner/cik-soo/cik-soo_ipad.png) 0 0 no-repeat; }
+	.encik-ariff .main-character-image{ background: url(../images/about-inner/encik-ariff/encik-ariff_ipad.png) 0 0 no-repeat; }
+	
+	.inner-char-info .btn_share {
+		position:relative;
+		right:0px;
+		left:-125px;
+		top:0px;
+		margin-top:10px;
+		height:60px;	
+	}
+	
+	
+	
+	.inner-char-description {
+		margin-top:0px;	
+	}
+	
+	.inner-char-left .btn_click_me {
+		top:-50px; 
+		right:10px;	
+	}
+	
+	.inner-char-left .btn_heart {
+		top:25px;
+		right:-30px;	
+	}
+	
+	.inner-char-left .btn_pencil {
+		top:360px;
+		left:0px;	
+	}
+	
+	.inner-char-left .btn_cupcake {
+		top:20px;
+		left:30px;	
+	}
+	
+	.inner-char-quote {
+		padding:25px 60px;
+	}
+
+ 
+}
+
+@media only screen and (max-width: 479px){
+	/* screen size for 320 */
+	
+	.main-character-image {
+		margin-left:auto;
+		margin-right:auto;
+		width:210px;
+		height:325px;
+	}
+	
+	.henry-middleton .main-character-image{ background: url(../images/about-inner/henry-middleton/henry-middleton_mobile.png) 0 0 no-repeat; }
+	.jibam .main-character-image{ background: url(../images/about-inner/jibam/jibam_mobile.png) 0 0 no-repeat; }
+	.see-yew-soon .main-character-image{ background: url(../images/about-inner/see-yew-soon/see-yew-soon_mobile.png) 0 0 no-repeat; }
+	.taylor-marie-smith .main-character-image{ background: url(../images/about-inner/taylor-marie-smith/taylor-marie-smith_mobile.png) 0 0 no-repeat; }
+	.zack .main-character-image{ background: url(../images/about-inner/zack/zack_mobile.png) 0 0 no-repeat; }
+	.cikgu-ayu .main-character-image{ background: url(../images/about-inner/cikgu-ayu/cikgu-ayu_mobile.png) 0 0 no-repeat; }
+	.mazlee .main-character-image{ background: url(../images/about-inner/mazlee/mazlee_mobile.png) 0 0 no-repeat; }
+	.anusha .main-character-image{ background: url(../images/about-inner/anusha/anusha_mobile.png) 0 0 no-repeat; }
+	.jojie .main-character-image{ background: url(../images/about-inner/jojie/jojie_mobile.png) 0 0 no-repeat; }
+	.sarjan-bin-mejar .main-character-image{ background: url(../images/about-inner/sarjan-bin-mejar/sarjan-bin-mejar_mobile.png) 0 0 no-repeat; }
+	.cikgu-bedah .main-character-image{ background: url(../images/about-inner/cikgu-bedah/cikgu-bedah_mobile.png) 0 0 no-repeat; }
+	.bella .main-character-image{ background: url(../images/about-inner/bella/bella_mobile.png) 0 0 no-repeat; }
+	.zeeq .main-character-image{ background: url(../images/about-inner/zeeq/zeeq_mobile.png) 0 0 no-repeat; }
+	.sayur .main-character-image{ background: url(../images/about-inner/sayur/sayur_mobile.png) 0 0 no-repeat; }
+	.qila .main-character-image{ background: url(../images/about-inner/qila/qila_mobile.png) 0 0 no-repeat; }
+	.puan-aida .main-character-image{ background: url(../images/about-inner/puan-aida/puan-aida_mobile.png) 0 0 no-repeat; }
+	.cik-soo .main-character-image{ background: url(../images/about-inner/cik-soo/cik-soo_mobile.png) 0 0 no-repeat; }
+	.encik-ariff .main-character-image{ background: url(../images/about-inner/encik-ariff/encik-ariff_mobile.png) 0 0 no-repeat; }
+	
+	.inner-char-left .btn_click_me {
+		top:-80px; 
+		right:80px;	
+	}
+	
+	.inner-char-left .btn_heart {
+		top:-20px;
+		right:40px;	
+	}
+	
+	.inner-char-left .btn_pencil {
+		top:190px;
+		left:-5px;	
+	}
+	
+	.inner-char-left .btn_cupcake {
+		top:-30px;
+		left:60px;	
+	}
+	
+	.inner-char-navigation {
+		top:10%;	
+	}
+	
+	.bella .main-character-image {
+		margin-left:50px;	
+	}
+	
+	
+}
