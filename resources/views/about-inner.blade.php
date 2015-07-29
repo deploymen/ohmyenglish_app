@@ -168,7 +168,7 @@ $( document ).ready(function() {
                                 <div class="fun-fact">
                                 	<h2 class="inner-char-title">{{trans('about-inner.fun-fact-title')}}</h2>
                                     <div class="inner-char-question-mark"><img src="{{asset('assets/images/about-inner/question_mark.png')}}" /></div>
-                                    <div class="inner-char-vector"><img src='{{asset("assets/images/about-inner/{$character->id}/vector.png")}}' alt='{{trans("{$charFile}.alt-text")}}' /></div>
+                                    <div class="inner-char-vector"><img src='{{asset("assets/images/about-inner/uploads/{$character->url_slug}_vector.png")}}' alt='{{trans("{$charFile}.alt-text")}}' /></div>
                                 </div>
                                 <div class="reveal-char-info">
                                     <a class="cta">{{trans('about-inner.click-to-reveal')}} <i class="fa fa-chevron-down"></i></a>

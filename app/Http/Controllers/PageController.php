@@ -22,7 +22,7 @@ Class PageController extends Controller {
 	public function __construct() {
 
 		View::share('withSkinner', ''); //withSkinner2 or empty
-		View::share('displayLbBanner', 0);
+		View::share('displayLbBanner', 1);
 		View::share('displayLeftSkinner', 1);
 		View::share('displayRightSkinner', 1);
 		View::share('lang', App::getLocale());

@@ -48,5 +48,20 @@ Route::group(['prefix' => '/admin'], function () {
 			Route::get('/', 'AdminPageController@trailerImage');
 		});
 
+		Route::group(['prefix' => '/home-banner'], function () {
+			Route::get('/', 'AdminPageController@homeBanner');
+			Route::get('/create', 'AdminPageController@homeBannerCreate');
+			Route::get('/edit', 'AdminPageController@homeBannerEdit');
+		});
+
+		Route::group(['prefix' => '/home'], function () {
+			Route::get('/meet-characters', 'AdminPageController@meet');
+		});
+
+		Route::group(['prefix' => '/about-characters'], function () {
+			Route::get('/', 'AdminPageController@about');
+			Route::get('/edit', 'AdminPageController@aboutEdit');
+		});
+
 	});
 });

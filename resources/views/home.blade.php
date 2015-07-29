@@ -331,7 +331,7 @@
 
                                     </div>
                                 </li>
-<!--                                 <li>
+                                <li>
                                     <div class="slideWrap">
                                         <div class="equalH">
                                             <div class="imgLearnWrap">
@@ -372,7 +372,7 @@
                                         <div class="btnWrap"><a href="{{url(App::getLocale().trans('global.url_super_typer'))}}" class="btnZm btn_sm"><span><b>{{trans('home.game_btn')}}<i class="fa fa-chevron-right"></i></b></span></a></div>
 
                                     </div>
-                                </li> -->
+                                </li>
 
                             </ul>
                         </div>

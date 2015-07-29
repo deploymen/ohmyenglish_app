@@ -1,4 +1,4 @@
-@section('play_list')
+@section('play_list') 
 <div class="playList" style="display:block">
     <div class="container">
         <h2 class="title">{{trans('play.list_title')}}</h2>
@@ -13,7 +13,7 @@
                     <li><a href="{{url(App::getLocale().trans('global.url_protect_princess'))}}" class="btnZm btnImg {{$protectPrincess or ''}}"><img src="{{ url('assets/images/play/playProtectPrincess.png') }}" alt="{{trans('play.protect_princess_title')}}" /><h2><b>{{trans('play.protect_princess_title')}}</b></h2></a></li>
                 </ul>
             </div>
-
+                
         </div>
         <a id="btn-plist-prev" class="nav left"><i class="fa fa-chevron-left"></i><span>Previous</span></a>
         <a id="btn-plist-next" class="nav right"><i class="fa fa-chevron-right"></i><span>Next</span></a>

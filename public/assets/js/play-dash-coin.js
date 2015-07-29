@@ -525,7 +525,7 @@ function gameOver(){
     //remove game items
     $('.object').remove();
     DFC.isRestart = true;
-    $('.overlay-gameover .user-score').text(DFC.userScore);
+    $('.overlay-gameover .user-score').text();
     if(DFC.userBest != null || DFC.userScore > DFC.userBest ) $('.overlay-gameover .best-score span').text(DFC.userBest);
 
 

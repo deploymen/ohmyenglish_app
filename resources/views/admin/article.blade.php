@@ -47,7 +47,7 @@ OME.articles = {!!json_encode($articles)!!};
                 <th width="300">Title</th>
                 <th width="400">Content</th>
                 <th width="100">Enable</th>
-                <th width="200" colspan="3">Actions</th>
+                <th width="200" colspan="4">Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -62,8 +62,8 @@ OME.articles = {!!json_encode($articles)!!};
                 <td><button ng-click="remove(article.id)">Remove</button></td>
             </tr>
             </tbody>
-
         </table>
+        
     </div>
 </div>
 
