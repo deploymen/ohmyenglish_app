@@ -43,6 +43,14 @@
     OME.sk = '{{config('app.game_secret')}}';
     OME.unscrambleWords = {!!json_encode($scrambleWords)!!};
 
+    OME.trackCopy = {
+        "category": "{{trans('track.play_category')}}",
+
+        "playDashForCash_play_action": "{{trans('track.playDashForCash_play_action')}}",
+        "playDashForCash_play_label": "{{trans('track.playDashForCash_play_label')}}",
+
+    };
+
     $(document).ready(function() {
 
 

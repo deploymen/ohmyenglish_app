@@ -33,6 +33,14 @@
 <script type="text/javascript">
 var OME = OME || {};
 
+OME.trackCopy = {
+    "category": "{{trans('track.learn_category')}}",
+
+    "learnPersonalityQuiz_action": "{{trans('track.learnPersonalityQuiz_action')}}",
+    "learnPersonalityQuiz_firstQuestion_label": "{{trans('track.learnPersonalityQuiz_firstQuestion_label')}}",
+    
+};
+
 </script>
 <script type="text/javascript" src="{{asset('bower_components/angular/angular.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('bower_components/angular-sanitize/angular-sanitize.min.js')}}"></script>
@@ -59,7 +67,7 @@ var OME = OME || {};
                 <div class="genQuiz malaysianEnglish">
                     <h3><span>{{trans('learn-generic-quiz.quiz1_title')}}</span></h3>
                     <p class="info">{{trans('learn-generic-quiz.quiz1_info')}}</p>
-                    <div class="btnWrap"><a href="{{$urlQuiz1}}" class="btnZm btn_lg"><span><b>{{trans('learn-generic-quiz.take_btn')}}<i class="fa fa-chevron-right"></i></b></span></a></div>
+                    <div class="btnWrap"><a href="{{$urlQuiz1}}" class="btnZm btn_lg btn_quiz1"><span><b>{{trans('learn-generic-quiz.take_btn')}}<i class="fa fa-chevron-right"></i></b></span></a></div>
                 </div>
             </div>
 
@@ -67,7 +75,7 @@ var OME = OME || {};
                 <div class="genQuiz describeYou">
                     <h3><span>{{trans('learn-generic-quiz.quiz2_title')}}</span></h3>
                     <p class="info">{{trans('learn-generic-quiz.quiz2_info')}}</p>
-                    <div class="btnWrap"><a href="{{$urlQuiz2}}" class="btnZm btn_lg"><span><b>{{trans('learn-generic-quiz.take_btn')}}<i class="fa fa-chevron-right"></i></b></span></a></div>
+                    <div class="btnWrap"><a href="{{$urlQuiz2}}" class="btnZm btn_lg btn_quiz2"><span><b>{{trans('learn-generic-quiz.take_btn')}}<i class="fa fa-chevron-right"></i></b></span></a></div>
                 </div>
             </div>
 

@@ -59,6 +59,10 @@ return [
 	'abtTrailer_episode_label' => 'BM - Episod :episode',
 
 	//play - feed henry
+	'playDashForCash_play_action' => 'BM - Dash For Cash',
+	'playDashForCash_play_label' => 'BM - Play now',
+
+	//play - feed henry
 	'playFeedHenry_play_action' => 'BM - Feed Henry',
 	'playFeedHenry_play_label' => 'BM - Play now',
 
@@ -87,6 +91,28 @@ return [
 
 	'learnPopQuiz_lastCompletion_action' => 'BM - Pop Kuiz',
 	'learnPopQuiz_lastCompletion_label' => 'BM - Final Question',
+
+	//learn - personality quiz
+	'learnPersonalityQuiz_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_firstQuestion_label' => 'BM : Take the quiz sub landng',
+
+	'learnPersonalityQuiz_share_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_share_label' => 'BM : kongsi',
+
+	'learnPersonalityQuiz_takeOtherQuiz_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_takeOtherQuiz_label' => 'BM : Take another kuiz',
+
+	'learnPersonalityQuiz_takeOtherQuiz_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_takeOtherQuiz_label' => 'BM : Take another kuiz',
+
+	'learnPersonalityQuiz_result1_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_result1_label' => 'BM : Results - personality quiz 1',
+
+	'learnPersonalityQuiz_result2_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_result2_label' => 'BM : Results - personality quiz 2',
+
+	'learnPersonalityQuiz_result3_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_result3_label' => 'BM : Results - personality quiz 3',
 
 	//learn - ask henry
 	'learnAskHenry_connect_action' => 'BM : Tanya Henry',

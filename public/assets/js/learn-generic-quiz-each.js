@@ -32,7 +32,7 @@ App.controller('QuizController', function ($scope, $http, $timeout){
         console.log('nextQuestion');
         var question = $scope.questionQueue.shift();
         $scope.onQuestion = question;
-
+        
         if(!question){ 
             OME.container.addClass('complete');
             /*
@@ -64,6 +64,8 @@ App.controller('QuizController', function ($scope, $http, $timeout){
 
             console.log([$scope.onResult, $scope.opt1, $scope.opt2, $scope.opt3, $scope.opt4, $scope.opt5, $scope.opt6]);
 
+            OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_result1_action, OME.trackCopy.learnPersonalityQuiz_result1_label, 'userAction'); 
+
             $('.btn_share').shareButtons(OME.shareUrl + '?result=' + $scope.onResult, {
                 twitter: {
                     text: OME.copyTwitter + ' ' + OME.shareUrlShort,
@@ -75,9 +77,14 @@ App.controller('QuizController', function ($scope, $http, $timeout){
 
             $('.showSocialButtons').hover(function(){
                 $('.btn_xs').addClass("hovered")
+                OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_share_action, OME.trackCopy.learnPersonalityQuiz_share_label, 'userAction');
             }, function(){
                 $('.btn_xs').removeClass("hovered")
             })
+
+             $('.btn_takeQuiz').on('click touchstart', function(){
+                OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_takeOtherQuiz_action, OME.trackCopy.learnPersonalityQuiz_takeAnother_label, 'userAction');
+            });
 
         }else{
           

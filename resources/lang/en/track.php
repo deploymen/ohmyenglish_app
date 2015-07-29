@@ -59,6 +59,10 @@ return [
 	'abtTrailer_episode_label' => 'EN - Episode :episode',
 
 	//play - feed henry
+	'playDashForCash_play_action' => 'BM - Dash For Cash',
+	'playDashForCash_play_label' => 'BM - Play now',
+
+	//play - feed henry
 	'playFeedHenry_play_action' => 'EN - Feed Henry',
 	'playFeedHenry_play_label' => 'EN - Play now',
 
@@ -87,6 +91,25 @@ return [
 
 	'learnPopQuiz_lastCompletion_action' => 'EN - Pop Quiz',
 	'learnPopQuiz_lastCompletion_label' => 'EN - Final Question',
+
+	//learn - personality quiz
+	'learnPersonalityQuiz_action' => 'EN : Personality Quiz',
+	'learnPersonalityQuiz_firstQuestion_label' => 'EN - Take the quiz sub landng',
+
+	'learnPersonalityQuiz_share_action' => 'EN : Personality Quiz',
+	'learnPersonalityQuiz_share_label' => 'EN : Personatily quiz share',
+
+	'learnPersonalityQuiz_takeOtherQuiz_action' => 'EN : Personality Quiz',
+	'learnPersonalityQuiz_takeOtherQuiz_label' => 'EN : Take another kuiz',
+
+	'learnPersonalityQuiz_result1_action' => 'EN : Personality Quiz',
+	'learnPersonalityQuiz_result1_label' => 'EN : Results - personality quiz 1',
+
+	'learnPersonalityQuiz_result2_action' => 'EN : Personality Quiz',
+	'learnPersonalityQuiz_result2_label' => 'EN : Results - personality quiz 2',
+
+	'learnPersonalityQuiz_result3_action' => 'EN : Personality Quiz',
+	'learnPersonalityQuiz_result3_label' => 'EN : Results - personality quiz 3',
 
 	//learn - ask henry
 	'learnAskHenry_connect_action' => 'EN : Ask Henry',

@@ -419,6 +419,7 @@ $(function(){
                 $(this).html(' <img src="'+src+'"/> ');
             });
         }
+
         var liWidth = $(window).width();
         $(container).find('ul:first').width( Math.round($(container).find('li').length * $(window).width() ) );
         $(container).find('li').width(liWidth);

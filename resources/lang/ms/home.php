@@ -52,7 +52,7 @@ return [
 	'game_info5' => "Bantu SYS menjadi seorang jutawan dengan mengumpul sebanyak mana duit yang boleh!",
 	'game_btn' => 'MULAKAN PERMAINAN',
 
-	'coolEnglish_title1' => 'Are You A Polyglot? (No It’s Not a Pokémon!) ',
+	'coolEnglish_title1' => 'Are You A Polyglot? (No It’s Not a Pokemon!) ',
 	'coolEnglish_info1' => 'See what it takes to be a polyglot. You could be one too!',
 	'coolEnglish_title2' => '3 New Words You Won’t Believe Are In The English Dictionary!',
 	'coolEnglish_info2' => 'Check out these unbelievable gems from good old Oxford!',

@@ -67,9 +67,18 @@
                     <li><a href="/admin/ask-henry"><i class="fa fa-question-circle fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Ask Henry</span></a></li>
-                    <li><a href="/admin/trailer-image"><i class="fa fa-image fa-fw">
+                    <li><a href="/admin/trailer-image"><i class="fa fa-film fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Trailer Image</span></a></li>
+                    <li><a href="/admin/home-banner"><i class="fa fa-image fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Home Banner</span></a></li>
+                    <li><a href="/admin/home/meet-characters"><i class="fa fa-users fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Home Meet Characters</span></a></li>
+                    <li><a href="/admin/about-characters"><i class="fa fa-list-alt fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">About Inner Character</span></a></li>
                 </ul>
             </div>
         </nav>

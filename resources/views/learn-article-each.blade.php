@@ -8,18 +8,18 @@
     <meta property="og:keyword" content="{{trans('learn-article.meta_keyword')}}">
     <meta property="og:site_name" content="Oh My English"/>
 
-    <meta property="og:title" content='{!!addslashes($article->title)!!}'/>
+    <meta property="og:title" content="{!!$article->title!!}"/>
     <meta property="og:url" content="{{$url}}"/>
     <meta property="og:image" content="{{url('/assets/images/article/uploads')}}/{{$article->url_slug}}.share.jpg"/>
-    <meta property="og:description" content='{!!$article->share_desc!!}'/>
+    <meta property="og:description" content='{!!$article->meta_description!!}'/>
     <meta property="og:type" content="article" />
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Oh_My_english">
     <meta name="twitter:url" content="{{$url}}" />
-    <meta name="twitter:title" content='{!!addslashes($article->title)!!}'>
-    <meta name="twitter:description" content='{!!$article->share_desc!!}'>
+    <meta name="twitter:title" content="{!!$article->title!!}">
+    <meta name="twitter:description" content='{!!$article->meta_description!!}'>
     <meta name="twitter:keyword" content="{{trans('learn-article.meta_keyword')}}">
     <meta name="twitter:creator" content="@Oh_My_english">
     <meta name="twitter:image" content="{{url('/assets/images/article/uploads')}}/{{$article->url_slug}}.share.jpg">

@@ -15,7 +15,7 @@ return [
 	'question' => 'Question',
 	'you_are' => 'You are...',
 
-	'quiz1_meta_title' => 'How malaysian is your english? | Personality Quiz | Learn | Oh My English! Class of 2015 | Astro',
+	'quiz1_meta_title' => 'How malaysian is your english? | Oh My English! Class of 2015 | Astro',
 	'quiz1_meta_description' => "How many times do you say 'lah', 'jer' & 'dei' in a day? Find out how Malaysian your English really is!",
 	'quiz1_title' => 'How malaysian is your english?',
 	'quiz1_info' => "How many times do you say 'lah', 'jer' & 'dei' in a day? Find out how Malaysian your English really is!",
@@ -39,7 +39,7 @@ return [
 	'quiz1_result6_info' => 'Sometimes you’re really Malaysian, sometimes you’re not!',
 	'quiz1_result6_share_title' => 'I am a Mix!',
 
-	'quiz2_meta_title' => 'Which english word describes you? | Personality Quiz | Learn | Oh My English! Class of 2015 | Astro',
+	'quiz2_meta_title' => 'Which english word describes you? | Kuiz Personaliti | Belajar | Oh My English! Class of 2015 | Astro',
 	'quiz2_meta_description' => 'English is a rich language with hundreds of words to describe things and people. Find out which English word best describes you!',
 	'quiz2_title' => 'Which english word describes you?',
 	'quiz2_info' => 'English is a rich language with hundreds of words to describe things and people. Find out which English word best describes you!',

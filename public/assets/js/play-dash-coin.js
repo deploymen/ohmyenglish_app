@@ -88,6 +88,8 @@ $(function(){
     //activate buttons
     //intro
    $('.btn-start').on('click touchstart', function(){
+        OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.playDashForCash_play_action, OME.trackCopy.playDashForCash_play_label, 'userAction');
+
         if(DFC.currStage === DFC.stage.intro){
             initStage(DFC.stage.intro, DFC.stage.inGame);
         }
@@ -251,7 +253,7 @@ $(function(){
             //store name in db, ghan
 
             var name = $('.overlay-gameover .name').val(),
-                score = $('.overlay-gameover .user-score').text();
+                score = $('.overlay-gameover h1').text();
 
             if(name == ''){
                 //
@@ -525,7 +527,7 @@ function gameOver(){
     //remove game items
     $('.object').remove();
     DFC.isRestart = true;
-    $('.overlay-gameover .user-score').text(DFC.userScore);
+    $('.overlay-gameover h1').text();
     if(DFC.userBest != null || DFC.userScore > DFC.userBest ) $('.overlay-gameover .best-score span').text(DFC.userBest);
 
 

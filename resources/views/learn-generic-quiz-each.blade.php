@@ -53,6 +53,34 @@ OME.copy = {
 };
 OME.copyTwitter = "{!!$metaDescription!!}"; //same no matter what's the result.
 
+OME.trackCopy = {
+    "category": "{{trans('track.learn_category')}}",
+
+    "learnPersonalityQuiz_share_action": "{{trans('track.learnPersonalityQuiz_share_action')}}",
+    "learnPersonalityQuiz_share_label": "{{trans('track.learnPersonalityQuiz_share_label')}}",
+
+    "learnPersonalityQuiz_takeOtherQuiz_action": "{{trans('track.learnPersonalityQuiz_takeOtherQuiz_action')}}",
+    "learnPersonalityQuiz_takeOtherQuiz_label": "{{trans('track.learnPersonalityQuiz_takeOtherQuiz_label')}}",
+
+    "learnPersonalityQuiz_result1_action": "{{trans('track.learnPersonalityQuiz_result1_action')}}",
+    "learnPersonalityQuiz_result1_label": "{{trans('track.learnPersonalityQuiz_result1_label')}}",
+
+    "learnPersonalityQuiz_result2_action": "{{trans('track.learnPersonalityQuiz_result2_action')}}",
+    "learnPersonalityQuiz_result2_label": "{{trans('track.learnPersonalityQuiz_result2_label')}}",
+
+    "learnPersonalityQuiz_result3_action": "{{trans('track.learnPersonalityQuiz_result3_action')}}",
+    "learnPersonalityQuiz_result3_label": "{{trans('track.learnPersonalityQuiz_result3_label')}}",
+
+    "learnPersonalityQuiz_result4_action": "{{trans('track.learnPersonalityQuiz_result4_action')}}",
+    "learnPersonalityQuiz_result4_label": "{{trans('track.learnPersonalityQuiz_result4_label')}}",
+
+    "learnPersonalityQuiz_result5_action": "{{trans('track.learnPersonalityQuiz_result5_action')}}",
+    "learnPersonalityQuiz_result5_label": "{{trans('track.learnPersonalityQuiz_result5_label')}}",
+
+    "learnPersonalityQuiz_result6_action": "{{trans('track.learnPersonalityQuiz_result6_action')}}",
+    "learnPersonalityQuiz_result6_label": "{{trans('track.learnPersonalityQuiz_result6_label')}}",
+
+};
 
 
 
@@ -106,7 +134,7 @@ OME.copyTwitter = "{!!$metaDescription!!}"; //same no matter what's the result.
                     <p class="info">@{{resultCopy.info}}</p>
 
                     <div class="btn_share"><a class="btnZm btn_xs"><span><b><i class="fa fa-share left"></i>{{trans('learn-generic-quiz.share_btn')}}</b></span></a></div>
-                    <a href="{{$urlIndex}}" class="btnZm btn_lg"><span><b>{{trans('learn-generic-quiz.takeQuiz_btn')}}<i class="fa fa-chevron-right"></i></b></span></a>
+                    <a href="{{$urlIndex}}" class="btnZm btn_lg btn_takeQuiz"><span><b>{{trans('learn-generic-quiz.takeQuiz_btn')}}<i class="fa fa-chevron-right"></i></b></span></a>
                 </div>
             </div>
         </div>
