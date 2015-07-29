@@ -33,6 +33,24 @@ Route::group(['prefix' => '/api/trailer-image'], function () {
 	Route::post('/', 'TrailerImageController@create');
 });
 
+//Home Banner
+Route::group(['prefix' => '/api/home-banner'], function () {
+	Route::get('/', 'HomeBannerController@get');
+	Route::post('/create', 'HomeBannerController@banner');
+	Route::post('/edit', 'HomeBannerController@banner');
+	Route::delete('/{id}', 'HomeBannerController@delete');
+});
+
+//Home Characters
+Route::group(['prefix' => '/api/home/meet-characters'], function () {
+	Route::post('/', 'MeetCharactersController@edit');
+});
+
+//About Characters
+Route::group(['prefix' => '/api/about-characters'], function () {
+	Route::post('/', 'AboutCharactersController@updateCharacter');
+});
+
 //DFC
 Route::group(['prefix' => '/api/play/dfc/leaderboard'], function () {
 	Route::get('/', 'DFCController@getLeaderboard');

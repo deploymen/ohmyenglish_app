@@ -1,12 +1,17 @@
 <?php namespace App\Http\Controllers;
 
 use App;
+use App\Models\AboutCharacterEn;
+use App\Models\AboutCharacterMs;
 use App\Models\Article;
 use App\Models\AskHenry;
 use App\Models\ClassroomExercise;
+use App\Models\MeetCharacters;
+use App\Models\HomeBanner;
 use App\Models\PopQuiz;
 use App\Models\VideoTrailerEn;
 use App\Models\Week;
+use Request;
 use View;
 
 class AdminPageController extends Controller {
@@ -76,6 +81,52 @@ class AdminPageController extends Controller {
 	function trailerImage() {
 		$trailers = VideoTrailerEn::orderBy('week', 'asc')->get();
 		return view('admin.trailer-image', ['trailers' => $trailers]);
+	}
+
+	function homeBanner() {
+		$banners = HomeBanner::where('enable', 1)->get();
+		return view('admin.home-banner', ['banners' => $banners]);
+	}
+
+	function homeBannerCreate() {
+		return view('admin.home-banner-create');
+	}
+
+	function homeBannerEdit() {
+		$id =  Request::input("id" , '0');
+
+		$banners = HomeBanner::find($id);
+		return view('admin.home-banner-edit', ['banners' => $banners]);
+	}
+
+	function meet() {
+		$id =  Request::input("id" , "1");
+
+		$meet = MeetCharacters::find($id);
+		return view('admin.meet-characters', ['meet' => $meet]);
+	}
+
+	function about() {
+		$charactersEn = AboutCharacterEn::orderBy('id', 'asc')->get();
+		$charactersMs = AboutCharacterMs::orderBy('id', 'asc')->get();
+
+		return view('admin.about-characters', [
+			'charactersEn' => $charactersEn,
+			'charactersMs' => $charactersMs,
+		]);
+	}
+
+	function aboutEdit() {
+		$id =  Request::input("id" , '');
+
+		$charactersEn = AboutCharacterEn::find($id);
+		$charactersMs = AboutCharacterMs::find($id);
+		$banners = HomeBanner::find($id);
+
+		return view('admin.about-characters-edit', [
+			'charactersEn' => $charactersEn,
+			'charactersMs' => $charactersMs,
+		]);
 	}
 
 }
