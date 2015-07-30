@@ -59,8 +59,8 @@ return [
 	'abtTrailer_episode_label' => 'EN - Episode :episode',
 
 	//play - feed henry
-	'playDashForCash_play_action' => 'BM - Dash For Cash',
-	'playDashForCash_play_label' => 'BM - Play now',
+	'playDashForCash_play_action' => 'EN - Dash For Cash',
+	'playDashForCash_play_label' => 'EN - Play now',
 
 	//play - feed henry
 	'playFeedHenry_play_action' => 'EN - Feed Henry',
