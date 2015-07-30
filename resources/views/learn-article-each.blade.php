@@ -114,12 +114,15 @@ $( document ).ready(function() {
         <div class="xsellList">
             <div id="articleSlider">
                 <ul>
-                    <li ng-repeat="article in articlesMayLike track by $index">
-                        <a href="@{{article.url_slug}}" class="btnZm btnImg">
-                            <img src="/assets/images/article/uploads/@{{article.url_slug}}.xsell.png" alt="@{{article.title}}" />
-                            <span><b><h3>@{{article.title}}</h3></b></span>
-                        </a>
-                    </li>
+                    @for ($i = 0; $i < count($articlesMayLike); $i++)
+
+                        <li>
+                            <a href="{{$articlesMayLike[$i]->url_slug}}" class="btnZm btnImg">
+                                <img src="/assets/images/article/uploads/{{$articlesMayLike[$i]->url_slug}}.xsell.png" alt="{{$articlesMayLike[$i]->title}}" />
+                                <span><b><h3>{{$articlesMayLike[$i]->title}}</h3></b></span>
+                            </a>
+                        </li>
+                    @endfor
                 </ul>
             </div>
         </div>
