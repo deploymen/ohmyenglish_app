@@ -92,6 +92,10 @@ return [
 	'learnPopQuiz_lastCompletion_action' => 'EN - Pop Quiz',
 	'learnPopQuiz_lastCompletion_label' => 'EN - Final Question',
 
+	//learn - article
+	'learnArticle_share_action' => 'EN : Article',
+	'learnArticle_share_label' => 'EN - Article Share',
+
 	//learn - personality quiz
 	'learnPersonalityQuiz_action' => 'EN : Personality Quiz',
 	'learnPersonalityQuiz_firstQuestion_label' => 'EN - Take the quiz sub landng',

@@ -92,6 +92,10 @@ return [
 	'learnPopQuiz_lastCompletion_action' => 'BM - Pop Kuiz',
 	'learnPopQuiz_lastCompletion_label' => 'BM - Final Question',
 
+	//learn - article
+	'learnArticle_share_action' => 'BM : Artikel',
+	'learnArticle_share_label' => 'BM - Kongsi Artikel',
+
 	//learn - personality quiz
 	'learnPersonalityQuiz_action' => 'BM : Personaliti Kuiz',
 	'learnPersonalityQuiz_firstQuestion_label' => 'BM : Take the quiz sub landng',

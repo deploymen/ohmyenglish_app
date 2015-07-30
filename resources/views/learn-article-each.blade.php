@@ -36,6 +36,13 @@
 <script type="text/javascript">
 var OME = OME || {};
 OME.articlesMayLike = {!!json_encode($articlesMayLike)!!};
+OME.trackCopy = {
+    "category": "{{trans('track.learn_category')}}",
+
+    "learnArticle_share_action": "{{trans('track.learnArticle_share_action')}}",
+    "learnArticle_share_label": "{{trans('track.learnArticle_share_label')}}",
+
+};
 
 $( document ).ready(function() {
     //
@@ -48,6 +55,11 @@ $( document ).ready(function() {
       facebook: true,
       googlePlus: true
     });
+
+    $('.btn_share').click(function(){
+        OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnArticle_share_action, OME.trackCopy.learnArticle_share_label, 'userAction');
+    });
+
 
     $('.showSocialButtons').hover(function(){
         $('.btn_xs').addClass("hovered")

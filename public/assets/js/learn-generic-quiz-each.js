@@ -77,10 +77,13 @@ App.controller('QuizController', function ($scope, $http, $timeout){
 
             $('.showSocialButtons').hover(function(){
                 $('.btn_xs').addClass("hovered")
-                OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_share_action, OME.trackCopy.learnPersonalityQuiz_share_label, 'userAction');
             }, function(){
                 $('.btn_xs').removeClass("hovered")
             })
+
+            $('.btn_share').click(function(){
+                OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_share_action, OME.trackCopy.learnPersonalityQuiz_share_label, 'userAction');
+            });
 
              $('.btn_takeQuiz').on('click touchstart', function(){
                 OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_takeOtherQuiz_action, OME.trackCopy.learnPersonalityQuiz_takeAnother_label, 'userAction');
