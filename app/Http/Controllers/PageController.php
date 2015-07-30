@@ -60,7 +60,7 @@ Class PageController extends Controller {
 			$articles[$i]['url'] = \LaravelLocalization::getURLFromRouteNameTranslated(\LaravelLocalization::getCurrentLocale(), 'routes.learn_article_each', ['slug' => $articles[$i]['url_slug']]);
 		}
 
-		$banners = HomeBanner::where('enable' , 1)->get();
+		$banners = HomeBanner::where('enable', 1)->get();
 
 		$meetCharacters = MeetCharacters::all();
 
@@ -78,7 +78,7 @@ Class PageController extends Controller {
 			'switch_ms' => $switchMs,
 			'articles' => $articles,
 			'banners' => $banners,
-			'meetCharacters' => $meetCharacters
+			'meetCharacters' => $meetCharacters,
 		]);
 
 	}
