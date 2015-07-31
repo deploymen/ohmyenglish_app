@@ -86,7 +86,7 @@ App.controller('QuizController', function ($scope, $http, $timeout){
             });
 
              $('.btn_takeQuiz').on('click touchstart', function(){
-                OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_takeOtherQuiz_action, OME.trackCopy.learnPersonalityQuiz_takeAnother_label, 'userAction');
+                OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_takeOtherQuiz_action, OME.trackCopy.learnPersonalityQuiz_takeOtherQuiz_label, 'userAction');
             });
 
         }else{
