@@ -28,5 +28,7 @@ return [
 	'play_dash_coin' => 'main/dash-for-cash',
 
 	'social_buzz' => 'buzz-sosial',
+	
+	'sto' => 'sto',
 
 ];

@@ -29,4 +29,6 @@ return [
 
 	'social_buzz' => 'social-buzz',
 
+	'sto' => 'sto',
+
 ];

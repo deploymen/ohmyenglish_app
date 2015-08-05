@@ -579,4 +579,17 @@ Class PageController extends Controller {
 		]);
 	}
 
+	public function sto() {
+
+		$url = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.sto');
+		$switchEn = \LaravelLocalization::getURLFromRouteNameTranslated('en', 'routes.sto');
+		$switchMs = \LaravelLocalization::getURLFromRouteNameTranslated('ms', 'routes.sto');
+
+		return view('sto', [
+			'url' => $url,
+			'switch_en' => $switchEn,
+			'switch_ms' => $switchMs,
+		]);
+	}
+
 }

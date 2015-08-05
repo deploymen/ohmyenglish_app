@@ -40,4 +40,6 @@ Route::group([
 
 	Route::get(LaravelLocalization::transRoute('routes.social_buzz'), ['as' => 'social_buzz', 'uses' => 'PageController@social']);
 
+	Route::get(LaravelLocalization::transRoute('routes.sto'), ['as' => 'sto', 'uses' => 'PageController@sto']);
+
 });
