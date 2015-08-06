@@ -48,6 +48,14 @@ Route::group(['prefix' => '/admin'], function () {
 			Route::get('/', 'AdminPageController@trailerImage');
 		});
 
+		Route::group(['prefix' => '/trailer-image/detail/en'], function () {
+			Route::get('/', 'AdminPageController@trailerImageDetailEn');
+		});
+
+		Route::group(['prefix' => '/trailer-image/detail/ms'], function () {
+			Route::get('/', 'AdminPageController@trailerImageDetailMs');
+		});
+
 		Route::group(['prefix' => '/home-banner'], function () {
 			Route::get('/', 'AdminPageController@homeBanner');
 			Route::get('/create', 'AdminPageController@homeBannerCreate');
