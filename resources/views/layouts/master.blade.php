@@ -86,7 +86,7 @@
 		<!-- banner 750x550 -->
 		<script type='text/javascript'>
 		  googletag.cmd.push(function() {
-		    googletag.defineSlot('/4271715/ACM_OhMyEnglish_STOCreative_750x550', [750, 550], 'div-gpt-ad-1428392769486-0').addService(googletag.pubads());
+		    googletag.defineSlot('/4271715/ACM_OhMyEnglish_STORedirect_750x550', [750, 550], 'div-gpt-ad-1428395422463-0').addService(googletag.pubads());
 		    googletag.pubads().enableSingleRequest();
 		    googletag.pubads().enableSyncRendering();
 		    googletag.enableServices();
@@ -178,15 +178,12 @@
 
 			<!-- Begin content -->
 			<div class="content">
-				<!-- banner -->
-				<div class="sto">
-				<!-- insert STO banner here -->
-					<div class="adplacement">
-						<div id='div-gpt-ad-1428392769486-0' style='height:550px; width:750px;'>
-							<script type='text/javascript'>
-							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428392769486-0'); });
-							</script>
-						</div>
+				<!-- /4271715/ACM_OhMyEnglish_STORedirect_750x550 -->
+				<div class="sto-redirect">
+					<div id='div-gpt-ad-1428395422463-0' style='height:550px; width:750px;'>
+					<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428395422463-0'); });
+					</script>
 					</div>
 				</div>
                 @if ($displayLbBanner or 0)
