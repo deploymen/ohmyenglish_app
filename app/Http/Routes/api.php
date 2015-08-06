@@ -88,3 +88,5 @@ Route::group(['prefix' => 'api/season3/minigame'], function () {
 	Route::post('/leaderboard', 'Season3GameController@retrieve_minigamesleaderboard_forall');
 
 });
+
+Route::put('api/admin/video-trailer', 'TrailerImageController@UpdateVideoTrailer');
