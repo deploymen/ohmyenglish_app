@@ -41,7 +41,29 @@ Class AdminController extends Controller {
 		return ResponseHelper::OutputJSON('success');	
 	}
 
-	
+	public function weekEnable(){ 
+		$weekArray = Request::input('week');
+
+		try {
+			if(!$week){
+				return ResponseHelper::OutputJSON('fail','missing parameter');	
+			}
+
+	        $weekArray = json_decode($weekArray, true);
+
+			for($i=0; $i<count($weekArray); $i++){
+				$w = $weekArray[$i];
+
+				$week = Week::where('week', $w['week'])->first();
+				$week->enable =  $w['enable'];
+				$week->save();
+			}
+			return ResponseHelper::OutputJSON('success');	
+		} catch(Exception $ex) {
+			return ResponseHelper::OutputJSON('exception');
+		}
+
+	}
 
 }
 
