@@ -57,13 +57,19 @@
                     <li></li>
                     <li><a href="/admin/weeks"><i class="fa fa-cog fa-fw">
                         <div class="icon-bg bg-orange"></div>
-                    </i><span class="menu-title">Classroom Exercise</span></a></li>
+                    </i><span class="menu-title">Exercise</span></a></li>
+                    <li><a href="/admin/exercise/weeks/enable"><i class="fa fa-flag fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Exercise Enable</span></a></li>
                     <li><a href="/admin/articles"><i class="fa fa-youtube-play fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Article</span></a></li>
                     <li><a href="/admin/pop-quiz"><i class="fa fa-list fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Pop Quiz</span></a></li>
+                    <li><a href="/admin/pop-quiz/weeks/enable"><i class="fa fa-flag-checkered fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Pop Quiz Enable</span></a></li>
                     <li><a href="/admin/ask-henry"><i class="fa fa-question-circle fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Ask Henry</span></a></li>

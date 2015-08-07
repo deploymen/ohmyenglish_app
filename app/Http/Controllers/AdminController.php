@@ -47,7 +47,7 @@ Class AdminController extends Controller {
 		$weekArray = Request::input('week');
 
 		try {
-			if(!$week){
+			if(!$weekArray){
 				return ResponseHelper::OutputJSON('fail','missing parameter');	
 			}
 

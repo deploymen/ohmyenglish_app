@@ -38,6 +38,25 @@ class AdminPageController extends Controller {
 
 	}
 
+	function enableExercise() {
+		$weeks = Week::orderBy('week', 'asc')->get();
+		return view('admin.exercise-enable', ['weeks' => $weeks]);
+	}
+
+	function article() {
+		$articles = Article::where('enable', 1)->orderBy('published_at', 'desc')->get();
+		return view('admin.article', ['articles' => $articles]);
+	}
+
+	function articleCreate() {
+		return view('admin.article-create');
+	}
+
+	function articleEdit($id) {
+		$article = Article::find($id);
+		return view('admin.article-edit', ['article' => $article]);
+	}
+
 	function popQuiz() {
 		$weeks = Week::orderBy('week', 'asc')->get();
 		return view('admin.pop-quiz-setting', [
@@ -54,6 +73,11 @@ class AdminPageController extends Controller {
 		]);
 	}
 
+	function enablePopQuiz() {
+		$weeks = Week::orderBy('week', 'asc')->get();
+		return view('admin.pop-quiz-enable', ['weeks' => $weeks]);
+	}
+
 	function askHenry() {
 		return view('admin.ask-henry');
 	}
@@ -63,20 +87,6 @@ class AdminPageController extends Controller {
 		if (!$question) {return redirect('/admin/ask-henry');}
 
 		return view('admin.ask-henry-reply', ['question' => $question]);
-	}
-
-	function article() {
-		$articles = Article::where('enable', 1)->orderBy('published_at', 'desc')->get();
-		return view('admin.article', ['articles' => $articles]);
-	}
-
-	function articleCreate() {
-		return view('admin.article-create');
-	}
-
-	function articleEdit($id) {
-		$article = Article::find($id);
-		return view('admin.article-edit', ['article' => $article]);
 	}
 
 	function trailerImage() {
