@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App;
+use App\Models;
+use App\Models\Week;
 use Request;
 use DB;
 use Exception;
