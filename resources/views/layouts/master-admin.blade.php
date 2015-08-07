@@ -70,6 +70,12 @@
                     <li><a href="/admin/trailer-image"><i class="fa fa-film fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Trailer Image</span></a></li>
+                    <li><a href="/admin/trailer-image/detail/en"><i class="fa fa-file-movie-o fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Trailer Image Detail (EN)</span></a></li>
+                    <li><a href="/admin/trailer-image/detail/ms"><i class="fa fa-file-movie-o fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Trailer Image Detail (MS)</span></a></li>
                     <li><a href="/admin/home-banner"><i class="fa fa-image fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Home Banner</span></a></li>

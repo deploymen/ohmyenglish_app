@@ -10,6 +10,7 @@ use App\Models\MeetCharacters;
 use App\Models\HomeBanner;
 use App\Models\PopQuiz;
 use App\Models\VideoTrailerEn;
+use App\Models\VideoTrailerMs;
 use App\Models\Week;
 use Request;
 use View;
@@ -81,6 +82,22 @@ class AdminPageController extends Controller {
 	function trailerImage() {
 		$trailers = VideoTrailerEn::orderBy('week', 'asc')->get();
 		return view('admin.trailer-image', ['trailers' => $trailers]);
+	}
+
+	function trailerImageDetailEn() {
+		$trailerEn = VideoTrailerEn::orderBy('week', 'asc')->get();
+
+		return view('admin.trailer-image-detail-en', [
+			'trailerEn' => $trailerEn,
+		]);
+	}
+
+	function trailerImageDetailMs() {
+		$trailerMs = VideoTrailerMs::orderBy('week', 'asc')->get();
+
+		return view('admin.trailer-image-detail-ms', [
+			'trailerMs' => $trailerMs,
+		]);
 	}
 
 	function homeBanner() {
