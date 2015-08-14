@@ -7,9 +7,22 @@ Route::group(['prefix' => '/api/learn/classroom-exercise'], function () {
 	Route::put('weeks/{week}/templates/{template}', 'ClassroomExerciseController@saveWeeklyTemplateQuestions')->where('week', '\d+')->where('template', '\d+');
 });
 
+//Article
+Route::group(['prefix' => '/api/articles'], function () {
+	Route::get('/list', 'ArticleController@get');
+	Route::post('/', 'ArticleController@create'); //admin
+	Route::post('/{id}', 'ArticleController@edit'); //admin
+	Route::delete('/{id}', 'ArticleController@delete'); //admin
+});
+
 //Pop Quiz
 Route::group(['prefix' => '/api/learn/pop-quiz'], function () {
 	Route::put('weeks/{week}', 'PopQuizController@savePopQuizs')->where('week', '\d+');
+});
+
+//Enable week for Classroom Exercise & Pop Quiz
+Route::group(['prefix' => '/api/enable'], function () {
+	Route::put('/weeks', 'AdminController@weekEnable');
 });
 
 //Ask Henry
@@ -20,18 +33,13 @@ Route::group(['prefix' => '/api/learn/ask-henry'], function () {
 	Route::put('/questions/{id}', 'AskHenryController@setStatus'); //admin
 });
 
-//Article
-Route::group(['prefix' => '/api/articles'], function () {
-	Route::get('/list', 'ArticleController@get');
-	Route::post('/', 'ArticleController@create'); //admin
-	Route::post('/{id}', 'ArticleController@edit'); //admin
-	Route::delete('/{id}', 'ArticleController@delete'); //admin
-});
-
 //Trailer Image
 Route::group(['prefix' => '/api/trailer-image'], function () {
 	Route::post('/', 'TrailerImageController@create');
 });
+
+//Trailer Image Detail EN & MS
+Route::put('api/admin/video-trailer', 'TrailerImageController@UpdateVideoTrailer');
 
 //Home Banner
 Route::group(['prefix' => '/api/home-banner'], function () {
@@ -79,14 +87,10 @@ Route::group(['prefix' => 'cron'], function () {
 Route::group(['prefix' => 'api/admin'], function () {
 	Route::post('/sign-in', 'AdminController@signIn');
 	Route::post('/sign-out', 'AdminController@signOut');
-
 });
 
 Route::group(['prefix' => 'api/season3/minigame'], function () {
 	Route::post('/save-without-name', 'Season3GameController@save_withoutname_minigameleaderboard_forall');
 	Route::post('/save-name', 'Season3GameController@save_minigameleaderboard_forall');
 	Route::post('/leaderboard', 'Season3GameController@retrieve_minigamesleaderboard_forall');
-
 });
-
-Route::put('api/admin/video-trailer', 'TrailerImageController@UpdateVideoTrailer');

@@ -76,7 +76,7 @@ Class TrailerImageController extends Controller {
         	if(!isset($VideoTrailerArray[0]['language']) ){ 
 					return  [
 					'status' => "fail",
-					'message' => "invalid game result format",
+					'message' => "missing language parameter",
 				]; 
 			}
 			for($i=0; $i<count($VideoTrailerArray); $i++){
@@ -92,7 +92,7 @@ Class TrailerImageController extends Controller {
 					return ResponseHelper::OutputJSON('fail', 'invalid language');
 				}
 
-				$videoTrailer->movideo_id = $v['language'];
+				$videoTrailer->movideo_id = $v['movideo_id'];
 				$videoTrailer->url_name = $v['url_name'];
 				$videoTrailer->show_time = $v['show_time'];
 				$videoTrailer->meta_title = $v['meta_title'];

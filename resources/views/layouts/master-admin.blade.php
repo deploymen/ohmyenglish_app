@@ -57,19 +57,31 @@
                     <li></li>
                     <li><a href="/admin/weeks"><i class="fa fa-cog fa-fw">
                         <div class="icon-bg bg-orange"></div>
-                    </i><span class="menu-title">Classroom Exercise</span></a></li>
+                    </i><span class="menu-title">Exercise</span></a></li>
+                    <li><a href="/admin/exercise/weeks/enable"><i class="fa fa-flag fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Exercise Enable</span></a></li>
                     <li><a href="/admin/articles"><i class="fa fa-youtube-play fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Article</span></a></li>
                     <li><a href="/admin/pop-quiz"><i class="fa fa-list fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Pop Quiz</span></a></li>
+                    <li><a href="/admin/pop-quiz/weeks/enable"><i class="fa fa-flag-checkered fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Pop Quiz Enable</span></a></li>
                     <li><a href="/admin/ask-henry"><i class="fa fa-question-circle fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Ask Henry</span></a></li>
                     <li><a href="/admin/trailer-image"><i class="fa fa-film fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Trailer Image</span></a></li>
+                    <li><a href="/admin/trailer-image/detail/en"><i class="fa fa-file-movie-o fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Trailer Image Detail (EN)</span></a></li>
+                    <li><a href="/admin/trailer-image/detail/ms"><i class="fa fa-file-movie-o fa-fw">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">Trailer Image Detail (MS)</span></a></li>
                     <li><a href="/admin/home-banner"><i class="fa fa-image fa-fw">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Home Banner</span></a></li>

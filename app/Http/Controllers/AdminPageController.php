@@ -10,6 +10,7 @@ use App\Models\MeetCharacters;
 use App\Models\HomeBanner;
 use App\Models\PopQuiz;
 use App\Models\VideoTrailerEn;
+use App\Models\VideoTrailerMs;
 use App\Models\Week;
 use Request;
 use View;
@@ -37,31 +38,9 @@ class AdminPageController extends Controller {
 
 	}
 
-	function popQuiz() {
+	function enableExercise() {
 		$weeks = Week::orderBy('week', 'asc')->get();
-		return view('admin.pop-quiz-setting', [
-			'weeks' => $weeks,
-		]);
-	}
-
-	function popQuizWeek($week) {
-		$quizs = PopQuiz::where('week', $week)->orderBy('week', 'asc')
-		                                      ->select("id", "week", "question", "option1", "option2", "option3", "answer")->get();
-		return view('admin.pop-quiz-week', [
-			'week' => $week,
-			'quizs' => $quizs,
-		]);
-	}
-
-	function askHenry() {
-		return view('admin.ask-henry');
-	}
-
-	function askHenryReply($id) {
-		$question = AskHenry::find($id);
-		if (!$question) {return redirect('/admin/ask-henry');}
-
-		return view('admin.ask-henry-reply', ['question' => $question]);
+		return view('admin.exercise-enable', ['weeks' => $weeks]);
 	}
 
 	function article() {
@@ -78,9 +57,57 @@ class AdminPageController extends Controller {
 		return view('admin.article-edit', ['article' => $article]);
 	}
 
+	function popQuiz() {
+		$weeks = Week::orderBy('week', 'asc')->get();
+		return view('admin.pop-quiz-setting', [
+			'weeks' => $weeks,
+		]);
+	}
+
+	function popQuizWeek($week) {
+		$quizs = PopQuiz::where('week', $week)->orderBy('week', 'asc')
+		                                      ->select("id", "week", "question", "option1", "option2", "option3", "answer")->get();
+		return view('admin.pop-quiz-week', [
+			'week' => $week,
+			'quizs' => $quizs,
+		]);
+	}
+
+	function enablePopQuiz() {
+		$weeks = Week::orderBy('week', 'asc')->get();
+		return view('admin.pop-quiz-enable', ['weeks' => $weeks]);
+	}
+
+	function askHenry() {
+		return view('admin.ask-henry');
+	}
+
+	function askHenryReply($id) {
+		$question = AskHenry::find($id);
+		if (!$question) {return redirect('/admin/ask-henry');}
+
+		return view('admin.ask-henry-reply', ['question' => $question]);
+	}
+
 	function trailerImage() {
 		$trailers = VideoTrailerEn::orderBy('week', 'asc')->get();
 		return view('admin.trailer-image', ['trailers' => $trailers]);
+	}
+
+	function trailerImageDetailEn() {
+		$trailerEn = VideoTrailerEn::orderBy('week', 'asc')->get();
+
+		return view('admin.trailer-image-detail-en', [
+			'trailerEn' => $trailerEn,
+		]);
+	}
+
+	function trailerImageDetailMs() {
+		$trailerMs = VideoTrailerMs::orderBy('week', 'asc')->get();
+
+		return view('admin.trailer-image-detail-ms', [
+			'trailerMs' => $trailerMs,
+		]);
 	}
 
 	function homeBanner() {
