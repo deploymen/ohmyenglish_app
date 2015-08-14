@@ -292,11 +292,13 @@ $(function(){
 
     function bindHomeSlider(container, prevTrigger, nextTrigger, speed, interval, animTimer, slotIndicator, rotating, isdisplayCount){
         var totalItems = $(container).find('li').length;
-        var containerWidth = $(window).width();//$(container).width();
+        var containerWidth = $('.withSkinner').length ? $('.withSkinner .content').width() : $(window).width();//$(container).width();
         var displayItem = 1;//Math.round(Number( containerWidth/$(container).find('li').width() ) );
         var containerScrollWidth = Number( totalItems * containerWidth);//Number( totalItems/ ( containerWidth/$(container).find('li').width() ) ) * containerWidth;
         $(container).find('li').width(containerWidth);
         var liWidth = containerWidth;
+
+            console.log('container width = ', containerWidth, $('.withSkinner').length, $('.withSkinner .content').width())
 
         /*if(rotating){
             var animBannerTimer = setInterval(function(){ $(nextTrigger).click(); }, 7000);
@@ -403,12 +405,12 @@ $(function(){
 
     function alignBanner(container){
 
-        if($(window).width() <= 1280 && $(window).width() >= 768){
+        if($(window).width() <= 1280 && $(window).width() >= 768 || ($('.withSkinner').length && $(window).width() >= 768)){
             $('.mast-head ul li a').each(function(){
                 var src = $(this).data('src')
                 $(this).html(' <img src="'+src.replace(/.{7}$/g, '_sm.jpg')+'"/> ');
             });
-        }  else if($(window).width() < 768){
+        }  else if($(window).width() < 768 || ($('.withSkinner').length && $(window).width() && $(window).width() < 768 ) ){
             $('.mast-head ul li a').each(function(){
                 var src = $(this).data('src')
                 $(this).html(' <img src="'+src.replace(/.{7}$/g, '_xs.jpg')+'"/> ');
@@ -420,7 +422,7 @@ $(function(){
             });
         }
 
-        var liWidth = $(window).width();
+        var liWidth = $('.withSkinner').length ? $('.withSkinner .content').width() : $(window).width();
         $(container).find('ul:first').width( Math.round($(container).find('li').length * $(window).width() ) );
         $(container).find('li').width(liWidth);
         $(container).find('.liWidth:first').val(liWidth);
@@ -431,14 +433,17 @@ $(function(){
         var imgWidth,
             imgLeft;
 
-        if($(window).width()  <= 1280 && $(window).width()  >= 768){
+        if($(window).width()  <= 1280 && $(window).width()  >= 768 ){
             imgWidth = 1280;
-        }else if( $(window).width() < 768){
+        }else if($('.withSkinner').length && $(window).width()  >= 768 ){
+            imgWidth = $(window).width();
+        }else if( $(window).width() < 768 || ($('.withSkinner').length && $(window).width() < 768)){
             imgWidth = 768;
+
         } else {
             imgWidth = 1920;
         }
-
+        console.log(imgWidth);
         imgLeft = -(imgWidth - $(window).width()) /2;
         //console.log(imgLeft)
         $('.slide').css('left', imgLeft)
