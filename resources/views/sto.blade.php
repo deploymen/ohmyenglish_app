@@ -32,6 +32,7 @@
 	    background: #000000;
 		font-size: 20px;
 		text-align: center;
+		z-index: 10
 		}
 		.btn-close:hover{color: #999999; border-color: #999999}
 		</style>
@@ -42,18 +43,11 @@
 
 
 		<script type='text/javascript'>
-			var googletag = googletag || {};
-			googletag.cmd = googletag.cmd || [];
 			(function() {
-			var gads = document.createElement('script');
-			gads.async = true;
-			gads.type = 'text/javascript';
-			var useSSL = 'https:' == document.location.protocol;
-			gads.src = (useSSL ? 'https:' : 'http:') +
-			'//www.googletagservices.com/tag/js/gpt.js';
-			var node = document.getElementsByTagName('script')[0];
-			node.parentNode.insertBefore(gads, node);
-			})();
+           	var useSSL = 'https:' == document.location.protocol;
+           	var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+           	document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+           	})();
 		</script>
 		
 		<!-- banner 750x550 -->
@@ -81,9 +75,6 @@
 		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','{{Config::get('app.gtm')}}');</script>
         <!-- End Google Tag Manager TAG0269/Astro/Izura/Astro Digital/Google/17122013 -->
-
-		<!-- code is as follows: acmMiniNav(<insert maximum page width in pixels>); -->
-		<script>acmMiniNav(1000);</script>
 
 		<!-- Begin main content -->
 
