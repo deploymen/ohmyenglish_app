@@ -30,5 +30,8 @@ return [
 	'social_buzz' => 'buzz-sosial',
 	
 	'sto' => 'sto',
+	
+	'oh_my_goat' => 'oh-my-goat',
+	'oh_my_goat_blank' => 'oh-my-goat-blank',
 
 ];

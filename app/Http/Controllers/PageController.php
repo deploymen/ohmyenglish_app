@@ -592,4 +592,28 @@ Class PageController extends Controller {
 		]);
 	}
 
+	function ohMyGoat() {
+		$url = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.oh_my_goat');
+		$switchEn = \LaravelLocalization::getURLFromRouteNameTranslated('en', 'routes.oh_my_goat');
+		$switchMs = \LaravelLocalization::getURLFromRouteNameTranslated('ms', 'routes.oh_my_goat');
+
+		return view('oh-my-goat', [
+			'url' => $url,
+			'switch_en' => $switchEn,
+			'switch_ms' => $switchMs,
+		]);
+	}
+
+	function ohMyGoatBlank() {
+		$url = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.oh_my_goat_blank');
+		$switchEn = \LaravelLocalization::getURLFromRouteNameTranslated('en', 'routes.oh_my_goat_blank');
+		$switchMs = \LaravelLocalization::getURLFromRouteNameTranslated('ms', 'routes.oh_my_goat_blank');
+
+		return view('oh-my-goat-blank', [
+			'url' => $url,
+			'switch_en' => $switchEn,
+			'switch_ms' => $switchMs,
+		]);
+	}
+
 }

@@ -42,4 +42,7 @@ Route::group([
 
 	Route::get(LaravelLocalization::transRoute('routes.sto'), ['as' => 'sto', 'uses' => 'PageController@sto']);
 
+	Route::get(LaravelLocalization::transRoute('routes.oh_my_goat'), ['as' => 'oh_my_goat', 'uses' => 'PageController@ohMyGoat']);
+	Route::get(LaravelLocalization::transRoute('routes.oh_my_goat_blank'), ['as' => 'oh_my_goat_blank', 'uses' => 'PageController@ohMyGoatBlank']);
+
 });
