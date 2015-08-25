@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master-ohmygoat')
 
 @section('meta_include')
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" />
