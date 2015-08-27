@@ -28,37 +28,32 @@
 @stop
 
 @section('css_include')
-    <link rel="stylesheet" href="{{ asset('assets/css/omg.css') }}" /> 
+    <link rel="stylesheet" href="{{ asset('assets/css/omg.css') }}" />
 @stop
 
 @section('javascript_include')
-<?php 
-    $charPath = asset('assets/images/omg/characters');
+<?php
+$charPath = asset('assets/images/omg/characters');
 ?>
 <script type="text/javascript" src="{{ asset('assets/js/flash_detect_min.js') }}"></script>
 <script type="text/javascript" src="//static.movideo.com/js/movideo.min.latest.js"></script>
 
 <script type="text/javascript">
     var OME = OME || {};
-    <?php
-    $videoId = array('1308526','1312973','1278236');
-    $js_videoId = json_encode($videoId);
-    echo "OME.videoID = ". $js_videoId . ";\n";
-     ?>
-    OME.charInfo = [],
-    OME.readMore = "{{trans('omg.synopsis_more')}}",
+
+    OME.videoIds = <?php echo json_encode($videoIds);?>;
+    OME.charInfo = [];
+    OME.readMore = "{{trans('omg.synopsis_more')}}";
     OME.readLess = "{{trans('omg.synopsis_less')}}";
 
     @for ($o = 1; $o <= 13; $o++)
-        <?php $charNo = sprintf("%02d", $o); ?>
-         
-        var eachInfo = {};
-        eachInfo.imgUrl = "{{ $charPath.'/'.trans('omg.char_img_'.$charNo) }}";
-        eachInfo.charName = "{{ trans('omg.char_name_'.$charNo) }}";
-        eachInfo.actorName = "{{ trans('omg.actor_name_'.$charNo) }}";
-        eachInfo.charDesc = "{{ trans('omg.char_description_'.$charNo) }}";
-        OME.charInfo.push(eachInfo);
-
+        <?php $charNo = sprintf("%02d", $o);?>
+        OME.charInfo.push({
+            "imgUrl":       "{{ $charPath.'/'.trans('omg.char_img_'.$charNo) }}",
+            "charName":     "{{ trans('omg.char_name_'.$charNo) }}",
+            "actorName":    "{{ trans('omg.actor_name_'.$charNo) }}",
+            "charDesc":     "{{ trans('omg.char_description_'.$charNo) }}"
+        });
     @endfor
 
 
@@ -75,8 +70,8 @@
         <div class="content">
             <div class="trailerSlider">
                 <ul>
-                    @for ($u = 1; $u <= count($videoId); $u++)
-                    <li class="video<?php echo $u; if($u == 1) echo ' active' ?>">
+                    @for ($u = 1; $u <= count($videoIds); $u++)
+                    <li class="video{{$u}} <?php echo ($u == 1) ? 'active' : '';?>">
                         <div id="video-frame" class="video-frame">
                             <div class="content">
                                 <div id="video-player" class="video-player"></div>
@@ -104,28 +99,28 @@
             <h2 class="title">{{trans('omg.meet_char_content_title')}}</h2>
 
             <div class="char-list">
-                <ul>                            
+                <ul>
                     <li class="empty slot1"></li>
 
 
 
 
-                    <?php $slot = 1; ?>
+                    <?php $slot = 1;?>
                     @for ($i = 1; $i <= 13; $i++)
-                        <?php $index = sprintf("%02d", $i); ?>
+                        <?php $index = sprintf("%02d", $i);?>
                         <li>
                             <div class="char-item">
                                 <input type="hidden" class="char-img" value="{{ $charPath.'/'.trans('omg.char_img_'.$index) }}" alt="{{ trans('omg.char_name_'.$index) }}" />
                                 <div class="char-know-more">
                                     <div class="char-know-more-content">
-                                        <a href="javascript:void(0);" class="char-name" data-index="<?php echo $i ?>">{{ trans('omg.char_name_'.$index) }}<i class="fa fa-chevron-right"></i></a>                                   
+                                        <a href="javascript:void(0);" class="char-name" data-index="<?php echo $i?>">{{ trans('omg.char_name_'.$index) }}<i class="fa fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                        </li>          
+                        </li>
                         @if($i == 2)
                             <li class="empty slot{{$slot++}}"></li>
-                        @endif                    
+                        @endif
 
                     @endfor
 

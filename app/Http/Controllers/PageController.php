@@ -599,8 +599,10 @@ Class PageController extends Controller {
 
 		return view('oh-my-goat', [
 			'url' => $url,
+			'title' => trans('omg.title'),
 			'switch_en' => $switchEn,
 			'switch_ms' => $switchMs,
+			'videoIds' => ['1308526', '1312973', '1278236'],
 		]);
 	}
 
