@@ -12,6 +12,24 @@ $(function(){
 
     $('.close').click(function(e){
         $('.overlay').fadeToggle('fast');
+        $('.char-item').removeClass('expand');
+    });
+    $(document).on('keyup',function(evt) {
+        if (evt.keyCode == 27) {
+           if($('.overlay').css('display') == 'block'){
+                $('.close').click();
+           }
+        }
+    });
+
+    $('.synopsis .cta').click(function(){
+        if($('.synopsis .more').css('display') == 'none'){
+            $(this).find('b').html(OME.readLess + '<i class="fa fa-chevron-right"></i>');
+
+        } else {
+            $(this).find('b').html(OME.readMore + '<i class="fa fa-chevron-right"></i>');
+        }
+        $('.synopsis .more').fadeToggle();
     });
 
     $('.char-item').click(function(e){

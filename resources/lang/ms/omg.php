@@ -9,9 +9,12 @@ return [
 	'meta_keyword' => 'oh my english, musim 4, class of 2015, henry middleton, belajar Bahasa Inggeris',
 
 	'synopsis_title' => 'Sinopsis',
-	'synopsis_desc' => 'Ceritanya bermula dengan Mr. Middleton dalam perjalanan ke SK Dalam Ayer, sebuah sekolah pedalaman. Beliau tinggal bersendirian di sebuah kawasan terpencil yang hanya mempunyai keperluan asas. Keadaan bertambah buruk apabila Mr. Middleton terpaksa bersusah-payah untuk memenangi hati dan mendapatkan penghormatan  daripada para pelajar baharunya iaitu sekumpulan budak nakal. Meskipun terdapat seekor kambing liar yang sentiasa menemani beliau, Mr. Middleton masih berasa sunyi dan keseorangan. Sementara itu di Ayer Dalam, Cikgu Ayu dan Cikgu Ariff semakin intim. Para pelajar 5 Merah mengharapkan agar Mr. Middleton dapat kembali untuk menghalang Cikgu Ariff dan Cikgu Ayu yang berkemungkinan melangsungkan perkahwinan. Para pelajar merancang untuk mengunjungi Mr. Middleton. Semasa mereka menginap di Dalam Ayer, berlakunya ribut besar menyebabkan Mr. Middleton dan yang lain dalam ketakutan. Cikgu Ayu dan para pelajar kini berharap agar Mr. Middleton kembali ke Ayer Dalam. Mr. Middleton dalam dilema. Adakah beliau akan memilih Ayer Dalam ataupun Dalam Ayer? ',
+	'synopsis_desc' => 'Ceritanya bermula dengan Mr. Middleton dalam perjalanan ke SK Dalam Ayer, sebuah sekolah pedalaman. Beliau tinggal bersendirian di sebuah kawasan terpencil yang hanya mempunyai keperluan asas. Keadaan bertambah buruk apabila Mr. Middleton terpaksa bersusah-payah untuk memenangi hati dan mendapatkan penghormatan daripada para pelajar baharunya iaitu sekumpulan budak nakal. ',
+	'synopsis_desc_more' => 'Meskipun terdapat seekor kambing liar yang sentiasa menemani beliau, Mr. Middleton masih berasa sunyi dan keseorangan. Sementara itu di Ayer Dalam, Cikgu Ayu dan Cikgu Ariff semakin intim. Para pelajar 5 Merah mengharapkan agar Mr. Middleton dapat kembali untuk menghalang Cikgu Ariff dan Cikgu Ayu yang berkemungkinan melangsungkan perkahwinan. Para pelajar merancang untuk mengunjungi Mr. Middleton. Semasa mereka menginap di Dalam Ayer, berlakunya ribut besar menyebabkan Mr. Middleton dan yang lain dalam ketakutan. Cikgu Ayu dan para pelajar kini berharap agar Mr. Middleton kembali ke Ayer Dalam. Mr. Middleton dalam dilema. Adakah beliau akan memilih Ayer Dalam ataupun Dalam Ayer?',
+	'synopsis_more' => 'Read more',
+	'synopsis_less' => 'Read less',
 
-	'meet_char_content_title' => 'Bertemu pelakon', 
+	'meet_char_content_title' => 'Temui Watak-watak', 
 
 	'char_img_01' => 'henry-middleton.jpg',
     'char_name_01' => 'Henry Middleton',

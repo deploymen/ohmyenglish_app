@@ -184,6 +184,19 @@
         <a href="#0" class="cd-top">Top</a>
         <!-- End Back to Top Button !-->
 
+        <div class="overlay">
+		    <div class="content">
+		        <div class="char-info">
+		            <a href="javascript:void(0);" class="close"><i class="fa fa-close"></i></a>
+		            <div class="char-thumb"></div>
+		            <div class="char-desc">
+		                <h3></h3>
+		                <p class="info"></p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
 	    <!--End Footer-->
 		<script type="text/javascript">
 			var OME = OME || {};

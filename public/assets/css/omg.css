@@ -29,12 +29,15 @@
 .omg .synopsis{background: #EAE5D2; color: #603913}
 .omg .synopsis p.info{max-width: 900px}
 
+
+.btnWrap{text-align: center;}
+
 /*meet char*/
 .omg .meet-char > .content .char-list ul { list-style: none; padding: 0; margin: 0; display: block; margin:0 auto; max-width: 984px;}
 .omg .meet-char > .content .char-list ul li.empty{ width: 240px}
 .omg .meet-char > .content .char-list ul li{position: relative; float: left; display: block; width: 240px; height: 240px; margin: 3px; padding: 0; overflow: hidden;}
 .omg .meet-char > .content .char-list ul li .char-item{width: 100%; display: block; transition: all 0.25s ease-out;}
-.omg .meet-char > .content .char-list ul li .char-item img{width: 100%}
+.omg .meet-char > .content .char-list ul li .char-item img{width: 100% !important; height: 100%}
 .omg .meet-char > .content .char-list ul li .char-item .char-know-more { position: absolute; left: 0; bottom: -30px; width: 100%; height: 30px; background: #0070B0; z-index: 50; color: #ffffff; font-size: 0.95em; text-transform: uppercase; text-align: center;
   -transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -45,7 +48,7 @@
   -webkit-transform: translate3d(0, 0, 0);
 }
 .omg .meet-char > .content .char-list ul li .char-item .char-know-more a{display: block; padding:8px;}
-.omg .meet-char > .content .char-list ul li .char-item:hover{cursor: pointer; border: 4px solid #0070B0; }
+.omg .meet-char > .content .char-list ul li .char-item:hover, .omg .meet-char > .content .char-list ul li .char-item.expand{cursor: pointer; border: 4px solid #0070B0; }
 .omg .meet-char > .content .char-list ul li .char-item.expand .char-know-more, .meet-char > .content .char-list ul li .char-item:hover .char-know-more{bottom: 0}
 
 .omg .meet-char > .content .char-list ul li .char-item .char-know-more .char-know-more-content .fa{margin-left: 5px}
@@ -62,14 +65,17 @@
   z-index: 1000000;
 }
 
-.overlay .content{max-width: 760px; width: 100%; background: #00BBB4; position: absolute;top: 0; bottom: 0; left: 0; right: 0; margin: auto; max-height: 400px; padding:40px; display: table; z-index: 2000000}
+.overlay .content{max-width: 760px; width: 100%; position: absolute;top: 0; bottom: 0; left: 0; right: 0; margin: auto; max-height: 400px; z-index: 2000000}
+.overlay .content .char-info{display: table; background: #00BBB4; padding:40px}
 .overlay .content .close{font-size: 20px; right: 0; padding:10px 12px; background: #FF0581; line-height: 20px; position: absolute; top: 0; right: 0}
 
 .overlay .char-thumb{width: 240px; display: inline-block; margin-right: 30px; display: table-cell;}
 .overlay .char-thumb img{width: 100%; border:4px solid #0070B2}
 .overlay .char-desc{display: table-cell; vertical-align: top; text-align: left;padding-left: 30px; color: #FFFFFF}
-.overlay h3{ border-bottom: 2px solid #FFFFFF; color: #FFFFFF; padding-bottom: 10px; font-size: 22px; margin-top: 0;}
+.overlay h3{ border-bottom: 2px solid #FFFFFF; color: #FFFFFF; padding-bottom: 10px; font-size: 22px; margin-top: 0; margin-bottom: 14px}
 .overlay p.info{text-align: left; line-height: 26px; margin-bottom: 0}
+
+.noScroll{display: none;}
 
 
 @media only screen {
@@ -98,7 +104,7 @@
 
   .omg .trailer .nav.left{left: 100px}
   .omg .trailer .nav.right{right: 100px}
-  .omg .trailer > .content ul li.video1{background: url('../images/omg/omg_trailer_bg.png') center 97px no-repeat}
+  .omg .trailer .content .trailerSlider{background: url('../images/omg/omg_trailer_bg.png') center 77px no-repeat}
 
 
 }
@@ -119,8 +125,24 @@
   .omg .meet-char > .content .char-list ul li{width: 234px}
   .omg .meet-char > .content .char-list ul li.empty{ width: 0; margin:0;}
 
-  .overlay .content{max-width: 480px; display: block; position: relative; max-height: 100%; overflow-y: auto;}
+  .synopsis p.info{padding:0 15px;}
+
+  .overlay .content{max-width: 480px; display: block; position: relative; max-height: 100%; overflow-y: auto; }
+  .overlay .content .char-info{padding-top: 50px}
   .overlay .char-thumb, .overlay .char-desc{width: 100%; display: block;}
   .overlay .char-desc{padding-left: 0; margin-top: 30px}
   
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*    SCREEN BELOW 480px                                                                                                                                             */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  .omg .header{background-size: 95%}
+  .omg .trailerSlider{height: 150px}
+  .omg .video-player{max-width: 260px; height: 150px}
+
+  .omg .synopsis .more{ display: none;}
+
+  .omg .meet-char > .content .char-list ul li{ width: 48.1%; height: auto}
 }

@@ -9,7 +9,10 @@ return [
 	'meta_keyword' => 'oh my english, season 4, class of 2015, henry middleton, learn english',
 
 	'synopsis_title' => 'Synopsis',
-	'synopsis_desc' => 'The story begins with Henry on a bumpy journey to SK Dalam Ayer, a rural school. Henry has high hopes for a new future. He is living alone in a strange place with only basic facilities. To make matters worse, Henry struggles to win the hearts and respect of his new students who turn out to be a bunch of unruly misfits. Apart from a stray goat to keep him company, Henry is lonely in Dalam Ayer. Meanwhile back in Ayer Dalam, Cikgu Ayu and Encik Ariff are becoming closer and the students of 5 Merah want Henry to come back and stop them from potentially getting married. The students plan a trip to visit Henry. During their stay at Dalam Ayer, a storm breaks out, placing Henry and everyone in a dire situation.  Now both the students and Cikgu Ayu want Henry to come back to Ayer Dalam. Henry is in a dilemma. Will he choose Ayer Dalam or Dalam Ayer?',
+	'synopsis_desc' => 'The story begins with Henry on a bumpy journey to SK Dalam Ayer, a rural school. Henry has high hopes for a new future. He is living alone in a strange place with only basic facilities. To make matters worse, Henry struggles to win the hearts and respect of his new students who turn out to be a bunch of unruly misfits. ',
+	'synopsis_desc_more' => 'Apart from a stray goat to keep him company, Henry is lonely in Dalam Ayer. Meanwhile back in Ayer Dalam, Cikgu Ayu and Encik Ariff are becoming closer and the students of 5 Merah want Henry to come back and stop them from potentially getting married. The students plan a trip to visit Henry. During their stay at Dalam Ayer, a storm breaks out, placing Henry and everyone in a dire situation.  Now both the students and Cikgu Ayu want Henry to come back to Ayer Dalam. Henry is in a dilemma. Will he choose Ayer Dalam or Dalam Ayer?',
+	'synopsis_more' => 'Read more',
+	'synopsis_less' => 'Read less',
 
 	'meet_char_content_title' => 'Meet the cast', 
 

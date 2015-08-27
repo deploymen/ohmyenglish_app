@@ -1,4 +1,4 @@
-@extends('layouts.master-ohmygoat', ['pageTitle' => trans("omg.page"), 'page' => 'omg', 'subPage' => ''])
+@extends('layouts.master-ohmygoat', ['pageTitle' => trans("omg.page"), 'page' => 'omg', 'subPage' => '', 'title' => trans("omg.title")])
 
 @section('meta_include')
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" />
@@ -41,11 +41,13 @@
 <script type="text/javascript">
     var OME = OME || {};
     <?php
-    $videoId = array('1308526','1281938','1278236');
+    $videoId = array('1308526','1312973','1278236');
     $js_videoId = json_encode($videoId);
     echo "OME.videoID = ". $js_videoId . ";\n";
      ?>
-    OME.charInfo = [];
+    OME.charInfo = [],
+    OME.readMore = "{{trans('omg.synopsis_more')}}",
+    OME.readLess = "{{trans('omg.synopsis_less')}}";
 
     @for ($o = 1; $o <= 13; $o++)
         <?php $charNo = sprintf("%02d", $o); ?>
@@ -91,7 +93,10 @@
     <section id="synopsis" class="synopsis">
         <div class="content">
             <h2 class="title">{{trans('omg.synopsis_title')}}</h2>
-            <p class="info">{{trans('omg.synopsis_desc')}} </p>
+            <p class="info">{{trans('omg.synopsis_desc')}} <span class="more">{{trans('omg.synopsis_desc_more')}}</span></p>
+            <div class="btnWrap mbl_show">
+                <a href="javascript:void(0)" class="cta btnZm btn_lg"><span><b>{{trans('omg.synopsis_more')}}<i class="fa fa-chevron-right"></i></b></span></a>
+            </div>
         </div>
     </section>
     <section id="meet-char" class="meet-char">
@@ -131,14 +136,5 @@
     </section>
 
 </div>
-<div class="overlay">
-    <div class="content">
-        <a href="javascript:void(0);" class="close"><i class="fa fa-close"></i></a>
-        <div class="char-thumb"></div>
-        <div class="char-desc">
-            <h3></h3>
-            <p class="info"></p>
-        </div>
-    </div>
-</div>
+
 @stop
