@@ -33,65 +33,11 @@
 
 
 
-		<script type='text/javascript'>
-			(function() {
-           	var useSSL = 'https:' == document.location.protocol;
-           	var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
-           	document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-           	})();
-		</script>
-		<!-- banner 300x250 -->
-		<script type='text/javascript'>
-			googletag.cmd.push(function() {
-			googletag.defineSlot('/4271715/ACM_OhMyEnglish_300x250', [300, 250], 'div-gpt-ad-1399458227946-0').addService(googletag.pubads());
-			googletag.pubads().enableSingleRequest();
-			googletag.enableServices();
-			});
-		</script>
-
-		<!-- banner 728x90 -->
-		<script type='text/javascript'>
-		  googletag.cmd.push(function() {
-		    googletag.defineSlot('/4271715/ACM_OhMyEnglish_728x90', [728, 90], 'div-gpt-ad-1428392658884-0').addService(googletag.pubads());
-		    googletag.pubads().enableSingleRequest();
-		    googletag.pubads().enableSyncRendering();
-		    googletag.enableServices();
-		  });
-		</script>
-
-		<!-- banner 468x60 -->
-		<script type='text/javascript'>
-		  googletag.cmd.push(function() {
-		    googletag.defineSlot('/4271715/ACM_OhMyEnglish_468x60', [468, 60], 'div-gpt-ad-1428392544777-0').addService(googletag.pubads());
-		    googletag.pubads().enableSingleRequest();
-		    googletag.enableServices();
-		  });
-		</script>
-		<!-- banner 320x50 -->
-		<script type='text/javascript'>
-		  googletag.cmd.push(function() {
-		    googletag.defineSlot('/4271715/ACM_OhMyEnglish_320x50', [320, 50], 'div-gpt-ad-1428392414442-0').addService(googletag.pubads());
-		    googletag.pubads().enableSingleRequest();
-		    googletag.pubads().enableSyncRendering();
-		    googletag.enableServices();
-		  });
-		</script>
-		<!-- banner 750x550 -->
-		<script type='text/javascript'>
-		  googletag.cmd.push(function() {
-		    googletag.defineSlot('/4271715/ACM_OhMyEnglish_STORedirect_750x550', [750, 550], 'div-gpt-ad-1428395422463-0').addService(googletag.pubads());
-		    googletag.pubads().enableSingleRequest();
-		    googletag.pubads().enableSyncRendering();
-		    googletag.enableServices();
-		  });
-		</script>
-
-
 
 
 	</head>
 	<body class="{{$page or ''}} {{$subPage or ''}}" >
-		<!-- <h1 class="hide">Oh My English! Class of 2015</h1> -->
+		<!-- <h1 class="hide">Oh My Goat Telemovie</h1> -->
 		<!-- Google Tag Manager TAG0269/Astro/Izura/Astro Digital/Google/17122013 -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{Config::get('app.gtm')}}"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -120,48 +66,11 @@
 	        <nav id="nav" class="ome">
 	            <div class="container">
 	                <ul class="menu">
-	                    <li class="home"><a class="home" href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.home'))}}">{{trans('global.home_menu')}}</a></li>
-	                    <li class="dropdown-menu"><a class="about" href="javascript:;" >{{trans('global.about_menu')}}</a>
-                            <ul class="sub-navi">
-                                <li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.about_show'))}}" class="show">{{trans('global.show_menu')}}</a></li>
-                               <li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.about_characters'))}}" class="characters">{{trans('global.character_menu')}}</a></li>
-                               <li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.about_trailers'))}}" class="trailers">{{trans('global.trailer_menu')}}</a></li>
-                            </ul>
-                        </li>
-	                    <li class="dropdown-menu"><a class="learn" href="javascript:;" >{{trans('global.learn_menu')}}</a>
-	                    	<ul class="sub-navi">
-	                    		<li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.learn_exercise'))}}" class="classroom-exercises">{{trans('global.exercise_menu')}}</a></li>
-                                <li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.learn_ask_henry'))}}" class="ask-henry">{{trans('global.ask_henry_menu')}}</a></li>
-                               <li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.learn_pop_quiz'))}}" class="pop-quiz">{{trans('global.pop_quiz_menu')}}</a></li>
-                               <li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.learn_article'))}}" class="article">{{trans('global.learn_article')}}</a></li>
-                               <li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.learn_generic_quiz'))}}" class="generic-quiz">{{trans('global.learn_generic_quiz')}}</a></li>
-                            </ul>
-	                    </li>
-	                    <li class="dropdown-menu"><a class="play" href="javascript:;" >{{trans('global.play_menu')}}</a>
-	                    	<ul class="sub-navi">
-	                    		<li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.play_dash_coin'))}}" class="dash-coin">{{trans('global.play_dash_coin')}}</a></li>
-	                    		<li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.play_feed_henry'))}}" class="feed-henry">{{trans('global.feed_henry_menu')}}</a></li>
-	                    		<li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.play_spy_leader'))}}" class="spy-leader">{{trans('global.spy_leader_menu')}}</a></li>
-	                    		<li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.play_football_fever'))}}" class="football-fever">{{trans('global.football_fever_menu')}}</a></li>
-	                    		<li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.play_super_typer'))}}" class="super-typer">{{trans('global.super_typer_menu')}}</a></li>
-	                    		<li><a href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.play_protect_princess'))}}" class="protect-princess">{{trans('global.protect_princess_menu')}}</a></li>
-                            </ul>
-	                    </li>
-	                    <li><a class="social" href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.social_buzz'))}}" >{{trans('global.social_buzz_menu')}}</a></li>
+	                    <li class="home"><a class="home" href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.home'))}}"><i class="fa fa-home"></i></a></li>
+	                    <li class="lang-sel"><a href="{{$switch_en}}" class="en">EN</a></li>
+		                <li class="lang-sel"><a href="{{$switch_ms}}" class="ms">BM</a></li>
+	                    
 	                </ul>
-	                <div class="sub-menu">
-		                <ul class="social-bookmark">
-		                    <li><a class="ico twitter" target="_blank" href="https://twitter.com/oh_my_english">
-		                        <i class="fa fa-twitter"></i></a></li>
-		                    <li><a class="ico facebook" target="_blank" href="https://www.facebook.com/OhMyEnglish"><i class="fa fa-facebook"></i></a></li>
-		                    <li><a class="ico youtube" target="_blank" href="https://www.youtube.com/user/OhMyEnglishTV"><i class="fa fa-youtube-play"></i></a></li>
-		                    <li><a class="ico instagram" target="_blank" href="https://instagram.com/ohmyenglish"><i class="fa fa-instagram"></i></a></li>
-		                </ul>
-		                <ul class="lang-sel">
-		                    <li><a href="{{$switch_en}}" class="en">EN</a></li>
-		                    <li><a href="{{$switch_ms}}" class="ms">BM</a></li>
-		                </ul>
-		            </div>
 	                <div class="clear"></div>
 	            </div>
 	        </nav>
@@ -171,66 +80,7 @@
 
 			<!-- Begin content -->
 			<div class="content">
-				<!-- /4271715/ACM_OhMyEnglish_STORedirect_750x550 -->
-				<div class="sto-redirect">
-					<div id='div-gpt-ad-1428395422463-0' style='height:550px; width:750px;'>
-					<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428395422463-0'); });
-					</script>
-					</div>
-				</div>
-                @if ($displayLbBanner or 0)
-                	<!-- 728x90 -->
-					<div class="lbBanner">
-						<div id='div-gpt-ad-1428392658884-0' style='height:90px; width:100%;'><!-- 728px -->
-							<script type='text/javascript'>
-							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428392658884-0'); });
-							</script>
-						</div>
-					</div>
-					<!-- 468x60 -->
-					<div class="mhBanner">
-		                <div id='div-gpt-ad-1428392544777-0' style='height:60px; width:468px;'>
-							<script type='text/javascript'>
-							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428392544777-0'); });
-							</script>
-						</div>
-					</div>
-					<!-- 320x50 -->
-					<div class="mvBanner">
-		                <div id='div-gpt-ad-1428392414442-0' style='height:50px; width:320px;'>
-							<script type='text/javascript'>
-							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428392414442-0'); });
-							</script>
-						</div>
-					</div>
-                @endif
-
-                @if ($displayLeftSkinner or 0)
-					<div class="leftSkinner">
-						<!-- insert left skinner banner here -->
-						<div id='div-gpt-ad-1428392658884-0' style='height:650px; width:200px;'>
-							<script type='text/javascript'>
-							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428392658884-0'); });
-							</script>
-						</div>
-					</div>
-                @endif
-
-                @if ($displayRightSkinner or 0)
-					<div class="rightSkinner">
-						<!-- insert right skinner banner here -->
-						<div id='div-gpt-ad-1428392658884-0' style='height:650px; width:200px;'>
-							<script type='text/javascript'>
-							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428392658884-0'); });
-							</script>
-						</div>
-					</div>
-                @endif
-
-
-
-				<!-- banner -->
+				
 				<div class="innerContent">
 				@yield('content')
 				</div>
