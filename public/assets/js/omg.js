@@ -77,7 +77,9 @@ function startVideo(){
 
     $('#btn-video-prev, #btn-video-next').click(function(){
         if(!$(this).hasClass('disable')){
-            $(".video-player").player("stop");
+            $(".video-player").each(function(){
+                //$(this).player("stop");
+            });
         }
     });
     //console.log('startVideo');

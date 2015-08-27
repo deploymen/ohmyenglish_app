@@ -9,7 +9,7 @@
 
 .ome .logo, .overlay{display: none;}
 
-.omg .header{ width: 100%; min-height: 100px; margin-top: 10px}
+.omg .header:lang(en), .omg .header:lang(ms){ width: 100%; min-height: 100px; margin-top: 10px}
 
 .trailer .content, .synopsis .content, .meet-char .content { position: relative; margin: auto; width: 1280px; padding-top: 20px; padding-bottom: 20px;}
 .omg .meet-char{padding-bottom: 50px}
@@ -86,11 +86,16 @@
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 1279px) {
   /* below 1279px */
-  .omg .header{background: url('../images/omg/omg_header.png') center no-repeat; height: 181px }
+
+  .omg .header:lang(en){background: url('../images/omg/omg_header.png') center no-repeat; height: 181px }
+  .omg .header:lang(ms){background: url('../images/omg/omg_header_ms.png') center no-repeat; height: 181px }
+  .omg .header:lang(en), .omg .header:lang(ms){background-size: 85%}
 
   .trailer .content, .synopsis .content, .meet-char .content{width: 100%; max-width: 768px}
   .omg .trailerSlider{height: 400px}
   .omg .video-player{max-width: 700px; height: 400px}
+
+  .synopsis p.info{padding:0 15px;}
 
   .omg .meet-char > .content .char-list ul { max-width: 744px;}
   .omg .meet-char > .content .char-list ul li.empty{ width: 120px}
@@ -100,7 +105,8 @@
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1280px) {
   /* above 1280px */
-  .omg .header{background: url('../images/omg/omg_header.png') center no-repeat; height: 181px }
+  .omg .header:lang(en){background: url('../images/omg/omg_header.png') center no-repeat; height: 181px }
+  .omg .header:lang(ms){background: url('../images/omg/omg_header_ms.png') center no-repeat; height: 181px }
 
   .omg .trailer .nav.left{left: 100px}
   .omg .trailer .nav.right{right: 100px}
@@ -117,7 +123,9 @@
   ul.menu li{float: left; width: 33.33%}
   .omg ul.menu li a, .omg ul.menu .lang-sel a{margin-right: 0; height: 44px}
 
-  .omg .header{background: url('../images/omg/omg_header_sm.png') center no-repeat; height: 277px }
+
+  .omg .header:lang(en){background: url('../images/omg/omg_header_sm.png') center no-repeat; height: 277px }
+  .omg .header:lang(ms){background: url('../images/omg/omg_header_sm_ms.png') center no-repeat; height: 277px }
 
   .trailer .content, .synopsis .content, .meet-char .content{max-width: 480px}
   .omg .trailerSlider{height: 244px}
@@ -125,10 +133,10 @@
   .omg .meet-char > .content .char-list ul li{width: 234px}
   .omg .meet-char > .content .char-list ul li.empty{ width: 0; margin:0;}
 
-  .synopsis p.info{padding:0 15px;}
+  
 
   .overlay .content{max-width: 480px; display: block; position: relative; max-height: 100%; overflow-y: auto; }
-  .overlay .content .char-info{padding-top: 50px}
+  .overlay .content .char-info{padding-top: 50px; position: relative;}
   .overlay .char-thumb, .overlay .char-desc{width: 100%; display: block;}
   .overlay .char-desc{padding-left: 0; margin-top: 30px}
   
@@ -138,7 +146,7 @@
 /*    SCREEN BELOW 480px                                                                                                                                             */
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 480px){
-  .omg .header{background-size: 95%}
+  .omg .header:lang(en), .omg .header:lang(ms){background-size: 95%}
   .omg .trailerSlider{height: 150px}
   .omg .video-player{max-width: 260px; height: 150px}
 
