@@ -68,17 +68,18 @@ function startVideo(){
             flashAppAlias: "flashApp",
             iosAppAlias: "iPhone",
             api: "//api.movideo.com/rest/",
-            mediaId: OME.videoID[videoNo],//charInfo[index].video,
+            mediaId: OME.videoIds[videoNo],//charInfo[index].video,
             autoPlay: false,
             shareLinkGeneratorFunction: 'moVideoShareLink'            
-        });
+        });        
+
         videoNo++;
     });
 
     $('#btn-video-prev, #btn-video-next').click(function(){
         if(!$(this).hasClass('disable')){
             $(".video-player").each(function(){
-                //$(this).player("stop");
+                $(this).player("pause");
             });
         }
     });
