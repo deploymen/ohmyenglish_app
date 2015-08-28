@@ -341,9 +341,11 @@ function loadImage(elementName, index, max, delay){
     var src = $(item).val();
     var elem = $(item).parent();
     var imgLoaded = $(elem).find('img').length; 
+    var imgAlt = $(item).prop('alt');
     
     if(!imgLoaded){
         var img = new Image();
+        img.alt = imgAlt;
 
         $(img).load(function(){
             $(elem).append(img);
