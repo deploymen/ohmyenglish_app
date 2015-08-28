@@ -7,6 +7,7 @@ return [
 	'about_category' => 'OME : About',
 	'play_category' => 'OME : Play',
 	'learn_category' => 'OME : Learn',
+	'omg_category' => 'OME : Oh My Goat',
 
 	//home page
 	'home_sneakPeak_action' => 'EN - Sneak Peek',
@@ -121,5 +122,24 @@ return [
 
 	'learnAskHenry_category_action' => 'EN : Ask Henry',
 	'learnAskHenry_category_label' => 'EN : :category',
+
+	//oh my goat
+	'home_category_action' => 'EN : Navigation',
+	'home_category_label' => 'EN : Home Button',
+
+	'switchBMLanguage_category_action' => 'EN : Navigation',
+	'switchBMLanguage_category_label' => 'EN : Switch Language BM',
+
+	'switchENLanguage_category_action' => 'EN : Navigation',
+	'switchENLanguage_category_label' => 'EN : Switch Language EN',
+
+	'teaserVideoPlay_category_action' => 'EN : Videos',
+	'teaserVideoPlay_category_label' => 'EN : Teaser Video Play',
+
+	'campaignVideoPlay_category_action' => 'EN : Videos',
+	'campaignVideoPlay_category_label' => 'EN : Campaign Video Play',
+
+	'meetCast_category_action' => 'EN : Meet The Cast',
+	'meetCast_category_label' => 'EN : Profile ',
 
 ];

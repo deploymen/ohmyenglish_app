@@ -56,6 +56,23 @@ $charPath = asset('assets/images/omg/characters');
         });
     @endfor
 
+    OME.trackCopy = {
+        "category": "{{trans('track.omg_category')}}",
+
+        "home_category_action": "{{trans('track.home_category_action')}}",
+        "home_category_label": "{{trans('track.home_category_label')}}",
+        "switchBMLanguage_category_action": "{{trans('track.switchBMLanguage_category_action')}}",
+        "switchBMLanguage_category_label": "{{trans('track.switchBMLanguage_category_label')}}",
+        "switchENLanguage_category_action": "{{trans('track.switchENLanguage_category_action')}}",
+        "switchENLanguage_category_label": "{{trans('track.switchENLanguage_category_label')}}",
+        "teaserVideoPlay_category_action": "{{trans('track.teaserVideoPlay_category_action')}}",
+        "teaserVideoPlay_category_label": "{{trans('track.teaserVideoPlay_category_label')}}",
+        "campaignVideoPlay_category_action": "{{trans('track.campaignVideoPlay_category_action')}}",
+        "campaignVideoPlay_category_label": "{{trans('track.campaignVideoPlay_category_label')}}",
+
+        "meetCast_category_action": "{{trans('track.meetCast_category_action')}}",
+        "meetCast_category_label": "{{trans('track.meetCast_category_label')}}",
+    };
 
 </script>
 <script type="text/javascript" src="{{ asset('assets/js/omg.js') }}"></script>

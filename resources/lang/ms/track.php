@@ -7,6 +7,7 @@ return [
 	'about_category' => 'OME : Tentang',
 	'play_category' => 'OME : Main',
 	'learn_category' => 'OME : Belajar',
+	'omg_category' => 'OME : Oh My Goat',
 
 	//home page
 	'home_sneakPeak_action' => 'BM - Sekilas Pandang',
@@ -124,5 +125,24 @@ return [
 
 	'learnAskHenry_category_action' => 'BM : Tanya Henry',
 	'learnAskHenry_category_label' => 'BM : :category',
+
+	//oh my goat
+	'home_category_action' => 'BM : Navigation',
+	'home_category_label' => 'BM : Home Button',
+
+	'switchBMLanguage_category_action' => 'BM : Navigation',
+	'switchBMLanguage_category_label' => 'BM : Switch Language BM',
+
+	'switchENLanguage_category_action' => 'BM : Navigation',
+	'switchENLanguage_category_label' => 'BM : Switch Language EN',
+
+	'teaserVideoPlay_category_action' => 'BM : Videos',
+	'teaserVideoPlay_category_label' => 'BM : Teaser Video Play',
+
+	'campaignVideoPlay_category_action' => 'BM : Videos',
+	'campaignVideoPlay_category_label' => 'BM : Campaign Video Play',
+
+	'meetCast_category_action' => 'BM : Meet The Cast',
+	'meetCast_category_label' => 'BM : Profile ',
 
 ];

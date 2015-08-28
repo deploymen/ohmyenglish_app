@@ -36,6 +36,10 @@ $(function(){
         var thisNo = $(this).find('.char-name').data('index'),
             charImg = "<img src='"+ OME.charInfo[thisNo-1].imgUrl +"' alt='"+ OME.charInfo[thisNo-1].charName +"'/>"
             charTitle = OME.charInfo[thisNo-1].charName + " (" + OME.charInfo[thisNo-1].actorName + ")";
+
+        OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.meetCast_category_action, OME.trackCopy.meetCast_category_label + OME.charInfo[thisNo-1].charName, 'userAction');
+
+        console.log(OME.charInfo[thisNo-1].charName);
         $('.overlay .char-thumb').html(charImg);
         $('.overlay h3').html(charTitle);
         $('.overlay p.info').html(OME.charInfo[thisNo-1].charDesc);
@@ -133,3 +137,22 @@ function flashIsInstalled(){
     }
 }
 /* end of util */
+
+
+/* event tracking */
+$(function(){ 
+
+    $('li.home a.home').on('click touchstart', function(){
+        OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.home_category_action, OME.trackCopy.home_category_label, 'userAction');
+    });
+
+    $('li.lang-sel a.ms').on('click touchstart', function(){
+        OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.switchBMLanguage_category_action, OME.trackCopy.switchBMLanguage_category_label, 'userAction');
+    });
+
+    $('li.lang-sel a.en').on('click touchstart', function(){
+        OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.switchENLanguage_category_action, OME.trackCopy.switchENLanguage_category_label, 'userAction');
+    });
+
+});
+/* end of event trancking */
