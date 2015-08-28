@@ -37,7 +37,7 @@
 
 	</head>
 	<body class="{{$page or ''}} {{$subPage or ''}}" >
-		<!-- <h1 class="hide">Oh My Goat Telemovie</h1> -->
+		<h1 class="hide">Oh My Goat Telemovie</h1>
 		<!-- Google Tag Manager TAG0269/Astro/Izura/Astro Digital/Google/17122013 -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{Config::get('app.gtm')}}"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
