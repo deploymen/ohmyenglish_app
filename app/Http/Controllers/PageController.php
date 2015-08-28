@@ -602,7 +602,7 @@ Class PageController extends Controller {
 			'title' => trans('omg.title'),
 			'switch_en' => $switchEn,
 			'switch_ms' => $switchMs,
-			'videoIds' => ['1308526', '1312973', '1278236'],
+			'videoIds' => ['1308526', '1312973'],
 		]);
 	}
 

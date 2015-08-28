@@ -1,4 +1,4 @@
-@extends('layouts.master-ohmygoat', ['pageTitle' => trans("omg.page"), 'page' => 'omg', 'subPage' => '', 'title' => trans("omg.title")])
+@extends('layouts.master-ohmygoat', ['pageTitle' => trans("omg.page"), 'page' => 'omg', 'subPage' => ''])
 
 @section('meta_include')
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" />
@@ -12,7 +12,7 @@
 
     <meta property="og:title" content="{{trans('omg.title')}}"/>
     <meta property="og:url" content="{{$url}}"/>
-    <meta property="og:image" content="{{asset('assets/images/share/share-rectangle.png')}}"/>
+    <meta property="og:image" content="{{asset('assets/images/share/omg-share-rectangle.png')}}"/>
     <meta property="og:description" content="{{trans('omg.meta_description')}}"/>
 
     <!-- Twitter Card data -->
@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="{{trans('omg.meta_description')}}">
     <meta name="twitter:keyword" content="{{trans('global.meta_keyword')}}">
     <meta name="twitter:creator" content="@Oh_My_english">
-    <meta name="twitter:image" content="{{asset('assets/images/share/share-rectangle.png')}}">
+    <meta name="twitter:image" content="{{asset('assets/images/share/omg-share-rectangle.png')}}">
 
 @stop
 
