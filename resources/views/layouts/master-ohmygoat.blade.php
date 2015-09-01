@@ -12,7 +12,7 @@
 		<link rel="shortcut icon" href="/favicon.ico">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
-		<meta name="robots" content="noindex,nofollow">
+		<meta name="robots" content="{{config('app.meta_robots')}}">
 		<meta name="googlebot" content="NOODP">
 	    <!-- Open Graph data -->
 	    @yield('meta_include')
@@ -69,7 +69,7 @@
 	                    <li class="home"><a class="home" href="{{LaravelLocalization::getLocalizedURL($lang, trans('routes.home'))}}"><i class="fa fa-home"></i></a></li>
 	                    <li class="lang-sel"><a href="{{$switch_en}}" class="en">EN</a></li>
 		                <li class="lang-sel"><a href="{{$switch_ms}}" class="ms">BM</a></li>
-	                    
+
 	                </ul>
 	                <div class="clear"></div>
 	            </div>
@@ -80,7 +80,7 @@
 
 			<!-- Begin content -->
 			<div class="content">
-				
+
 				<div class="innerContent">
 				@yield('content')
 				</div>
