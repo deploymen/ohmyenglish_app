@@ -89,7 +89,7 @@
 
   .omg .header:lang(en){background: url('../images/omg/omg_header.png') center no-repeat; height: 181px }
   .omg .header:lang(ms){background: url('../images/omg/omg_header_ms.png') center no-repeat; height: 181px }
-  .omg .header:lang(en), .omg .header:lang(ms){background-size: 85%}
+  .omg .header:lang(en), .omg .header:lang(ms){background-size: 65%}
 
   .trailer .content, .synopsis .content, .meet-char .content{width: 100%; max-width: 768px}
   .omg .trailerSlider{height: 400px}
