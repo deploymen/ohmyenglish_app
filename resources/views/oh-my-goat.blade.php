@@ -12,7 +12,7 @@
 
     <meta property="og:title" content="{{trans('omg.title')}}"/>
     <meta property="og:url" content="{{$url}}"/>
-    <meta property="og:image" content="{{asset('assets/images/share/omg-share-rectangle.png')}}"/>
+    <meta property="og:image" content="{{asset('assets/images/share/omg-share-rectangle.jpg')}}"/>
     <meta property="og:description" content="{{trans('omg.meta_description')}}"/>
 
     <!-- Twitter Card data -->
@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="{{trans('omg.meta_description')}}">
     <meta name="twitter:keyword" content="{{trans('global.meta_keyword')}}">
     <meta name="twitter:creator" content="@Oh_My_english">
-    <meta name="twitter:image" content="{{asset('assets/images/share/omg-share-rectangle.png')}}">
+    <meta name="twitter:image" content="{{asset('assets/images/share/omg-share-rectangle.jpg')}}">
 
 @stop
 
