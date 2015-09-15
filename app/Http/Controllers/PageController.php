@@ -41,6 +41,12 @@ Class PageController extends Controller {
 	public function home() {
 		$lang = App::getLocale();
 
+		$data = session('visited_sto');
+		if((!$data) || (time() - $data) > 60*60*24) {	
+			session(['visited_sto' => time()]);		
+			return redirect('/'.$lang.'/sto');
+		}
+
 		$url = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.home');
 		$switchEn = \LaravelLocalization::getURLFromRouteNameTranslated('en', 'routes.home');
 		$switchMs = \LaravelLocalization::getURLFromRouteNameTranslated('ms', 'routes.home');

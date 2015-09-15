@@ -2,7 +2,14 @@
 use App\Libraries\OhMyEnglishHelper;
 
 Route::get('/', function () {
-	return redirect('/ms/sto');
+	$data = session('visited_sto');
+
+	if((!$data) || (time() - $data) > 60*60*24) {
+		session(['visited_sto' => time()]);
+		return redirect('/ms/sto');
+	}else{
+		return redirect('/ms/utama');
+	}
 });
 
 Route::group([
