@@ -2,7 +2,7 @@
 use App\Libraries\OhMyEnglishHelper;
 
 Route::get('/', function () {
-	return redirect('/ms/utama');
+	return redirect('/ms/sto');
 });
 
 Route::group([
