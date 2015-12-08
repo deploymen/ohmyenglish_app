@@ -1,7 +1,7 @@
 <?php
 use App\Libraries\OhMyEnglishHelper;
 
-Route::get('/', function () {
+/*Route::get('/', function () {
 	$data = session('visited_sto');
 
 	if((!$data) || (time() - $data) > 60*60*24) {
@@ -10,7 +10,9 @@ Route::get('/', function () {
 	}else{
 		return redirect('/ms/utama');
 	}
-});
+});*/
+
+Route::get('/', function(){ return Redirect::to('/ms/utama'); });
 
 Route::group([
 	'prefix' => LaravelLocalization::setLocale(),
@@ -36,7 +38,7 @@ Route::group([
 	Route::get(LaravelLocalization::transRoute('routes.learn_article_each'), ['as' => 'learn_article_each', 'uses' => 'PageController@learnArticleEach'])->where('slug', OhMyEnglishHelper::GetArticleUrlNames());
 	Route::get(LaravelLocalization::transRoute('routes.learn_generic_quiz'), ['as' => 'learn_generic_quiz', 'uses' => 'PageController@learnGenericQuiz']);
 	Route::get(LaravelLocalization::transRoute('routes.learn_generic_quiz_each'), ['as' => 'learn_generic_quiz_each', 'uses' => 'PageController@learnGenericQuizEach'])
-	->where('quiz', '(how-malaysian-is-your-english|which-english-words-describes-you|which-character-are-you)');
+	->where('quiz', '(how-malaysian-is-your-english|which-english-words-describes-you|which-character-are-you||whats-your-perfect-job)');
 
 	Route::get(LaravelLocalization::transRoute('routes.play_feed_henry'), ['as' => 'play_feed_henry', 'uses' => 'PageController@playFeedHenry']);
 	Route::get(LaravelLocalization::transRoute('routes.play_spy_leader'), ['as' => 'play_spy_leader', 'uses' => 'PageController@playSpyLeader']);

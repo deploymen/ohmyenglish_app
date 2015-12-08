@@ -41,11 +41,11 @@ Class PageController extends Controller {
 	public function home() {
 		$lang = App::getLocale();
 
-		$data = session('visited_sto');
+		/*$data = session('visited_sto');
 		if((!$data) || (time() - $data) > 60*60*24) {	
 			session(['visited_sto' => time()]);		
 			return redirect('/'.$lang.'/sto');
-		}
+		}*/
 
 		$url = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.home');
 		$switchEn = \LaravelLocalization::getURLFromRouteNameTranslated('en', 'routes.home');
@@ -411,7 +411,8 @@ Class PageController extends Controller {
 
 		$urlQuiz1 = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.learn_generic_quiz_each', ['quiz' => "how-malaysian-is-your-english"]);
 		$urlQuiz2 = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.learn_generic_quiz_each', ['quiz' => "which-english-words-describes-you"]);
-		$urlQuiz3 = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.learn_generic_quiz_each', ['quiz' => "which-character-are-you"]);
+		// $urlQuiz3 = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.learn_generic_quiz_each', ['quiz' => "which-character-are-you"]);
+		$urlQuiz3 = \LaravelLocalization::getURLFromRouteNameTranslated(App::getLocale(), 'routes.learn_generic_quiz_each', ['quiz' => "whats-your-perfect-job"]);
 
 		return view('learn-generic-quiz', [
 			'url' => $url,
@@ -440,7 +441,8 @@ Class PageController extends Controller {
 				break;
 			case 'which-english-words-describes-you':$quizIndex = 2;
 				break;
-			case 'which-character-are-you':$quizIndex = 3;
+			// case 'which-character-are-you':$quizIndex = 3;
+			case 'whats-your-perfect-job':$quizIndex = 3;
 				break;
 		}
 

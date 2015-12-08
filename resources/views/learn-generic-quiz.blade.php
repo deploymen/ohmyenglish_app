@@ -79,6 +79,14 @@ OME.trackCopy = {
                 </div>
             </div>
 
+            <div class="col-xs-12 col-lg-4 col-centered">
+                <div class="genQuiz describeYou">
+                    <h3><span>{{trans('learn-generic-quiz.quiz2_title')}}</span></h3>
+                    <p class="info">{{trans('learn-generic-quiz.quiz2_info')}}</p>
+                    <div class="btnWrap"><a href="{{$urlQuiz3}}" class="btnZm btn_lg btn_quiz2"><span><b>{{trans('learn-generic-quiz.take_btn')}}<i class="fa fa-chevron-right"></i></b></span></a></div>
+                </div>
+            </div>
+
             <!-- <div class="col-xs-12 col-lg-4 col-centered">
                 <div class="genQuiz omeCharacter">
                     <h3><span>{{trans('learn-generic-quiz.quiz3_title')}}</span></h3>
