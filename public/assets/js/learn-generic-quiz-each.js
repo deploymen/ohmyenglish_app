@@ -23,7 +23,7 @@ App.controller('QuizController', function ($scope, $http, $timeout){
             case 'how-malaysian-is-your-english': OME.container.addClass('malaysianEnglish'); break;
             case 'which-english-words-describes-you': OME.container.addClass('describeYou'); break;
             // case 'which-character-are-you': OME.container.addClass('omeCharacter'); break;
-            case 'whats-your-perfect-job': OME.container.addClass('describeYou'); break;
+            case 'whats-your-perfect-job': OME.container.addClass('perfectJob'); break;
         }
 
         $scope.nextQuestion();

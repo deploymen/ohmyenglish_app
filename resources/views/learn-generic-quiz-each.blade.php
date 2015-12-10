@@ -96,7 +96,7 @@ OME.trackCopy = {
     </div>
 
     <div class="container">
-        <div class="quiz-container"><!-- <=== control type 1 - malaysianEnglish, 2 - describeYou, 3 - omeCharacter ,<=== once done - complete -->
+        <div class="quiz-container"><!-- <=== control type 1 - malaysianEnglish, 2 - describeYou, 3 - perfectJob ,<=== once done - complete -->
             <div class="quizTop">
                 <h1>{{trans('learn-generic-quiz.quiz'.$quizIndex.'_title')}}</h1>
                 <p class="info">{{trans('learn-generic-quiz.quiz'.$quizIndex.'_info')}}</p>
