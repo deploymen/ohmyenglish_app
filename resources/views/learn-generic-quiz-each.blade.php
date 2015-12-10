@@ -123,7 +123,7 @@ OME.trackCopy = {
                 </div>
             </div>
 
-            <div class="quiz-container-result result1"><!-- result1, result2, result3, result4, result5, result6 -->
+            <div class="quiz-container-result "><!-- result1, result2, result3, result4, result5, result6 -->
                 <div class="bubble">
                     <span>{{trans('learn-generic-quiz.you_are')}}</span>
                 </div>

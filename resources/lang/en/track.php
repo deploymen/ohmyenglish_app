@@ -116,6 +116,15 @@ return [
 	'learnPersonalityQuiz_result3_action' => 'EN : Personality Quiz',
 	'learnPersonalityQuiz_result3_label' => 'EN : Results - personality quiz 3',
 
+	'learnPersonalityQuiz_result4_action' => 'EN : Personality Quiz',
+	'learnPersonalityQuiz_result4_label' => 'EN : Results - personality quiz 4',
+
+	'learnPersonalityQuiz_result5_action' => 'EN : Personality Quiz',
+	'learnPersonalityQuiz_result5_label' => 'EN : Results - personality quiz 5',
+
+	'learnPersonalityQuiz_result6_action' => 'EN : Personality Quiz',
+	'learnPersonalityQuiz_result6_label' => 'EN : Results - personality quiz 6',
+
 	//learn - ask henry
 	'learnAskHenry_connect_action' => 'EN : Ask Henry',
 	'learnAskHenry_connect_label' => 'EN : Connect to ask',

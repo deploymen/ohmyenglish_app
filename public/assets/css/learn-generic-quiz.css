@@ -18,6 +18,9 @@
 .describeYou h3 span:before{content:''; position: absolute; display: block;width:40px; height: 45px; background: url('../images/article/describe-you-left.png'); top: -30px; left: -30px}
 .describeYou h3 span:after{content:''; position: absolute; display: block;width:35px; height: 65px; background: url('../images/article/describe-you-right.png'); top: -30px; right: -30px}
 
+.perfectJob h3 span:before{content:''; position: absolute; display: block;width:52px; height: 45px; background: url('../images/article/perfect-job-left.png'); top: -30px; left: -50px}
+.perfectJob h3 span:after{content:''; position: absolute; display: block;width:50px; height: 26px; background: url('../images/article/perfect-job-right.png'); top: -25px; right: -50px}
+
 .omeCharacter h3 span:before{content:''; position: absolute; display: block;width:60px; height: 50px; background: url('../images/article/ome-character-left.png'); top: -30px; left: -50px}
 .omeCharacter h3 span:after{content:''; position: absolute; display: block;width:60px; height: 40px; background: url('../images/article/ome-character-right.png'); top: -25px; right: -50px}
 
@@ -61,7 +64,16 @@
 .describeYou .result4 h2:before{background-position: -152px -465px}
 .describeYou .result5 h2:before{background-position: -152px -520px}
 .describeYou .result6 h2:before{background-position: -152px -575px}
-a
+
+/*custom for perfect job*/
+.perfectJob .quiz-container-result  h2:before{content: ''; width: 86px; height:66px; background: url('../images/learn/gen-quiz/perfect-job-icons.png'); display: inline-block; margin: auto; top: -10px; left: 0; right: 0; position: absolute;}
+.perfectJob .result1 h2:before{background-position: 0 0}
+.perfectJob .result2 h2:before{background-position: 0 -66px}
+.perfectJob .result3 h2:before{background-position: 0 -132px}
+.perfectJob .result4 h2:before{background-position: 0 -198px}
+.perfectJob .result5 h2:before{background-position: 0 -264px}
+.perfectJob .result6 h2:before{background-position: 0 -330px}
+
 .btn_xs{margin-bottom: 15px}
 
 
@@ -90,6 +102,10 @@ a
   .malaysianEnglish .quizBottom .leftFront{ width: 258px; height: 220px; background: url('../images/learn/gen-quiz/malaysian-english-left-front.png'); position: absolute; left: 80px; bottom:0}
   .malaysianEnglish .quizBottom .rightFront{ width: 356px; height: 214px; background: url('../images/learn/gen-quiz/malaysian-english-right-front.png'); position: absolute; right: 10px; bottom:0}
 
+   /*article props - perfect job*/
+  .perfectJob .quizBottom .leftFront{ width: 279px; height: 198px; background: url('../images/learn/gen-quiz/perfect-job-left-front.png'); position: absolute; left: -85px; bottom:20px}
+  .perfectJob .quizBottom .rightFront{ width: 253px; height: 229px; background: url('../images/learn/gen-quiz/perfect-job-right-front.png'); position: absolute; right: -65px; bottom:20px}
+
   .quiz-container-result .bubble{ position: absolute; font-family: grinched; font-size: 18px; color: #000000; text-transform: uppercase;width: 131px; height: 105px; background: url('../images/learn/spritesLearn.png') -152px -195px; display: inline-block; text-align: center; padding:24px 10px; top:-25px; left: 5%;}
   
 }
@@ -111,6 +127,13 @@ a
   .malaysianEnglish .quiz-container-result .leftFront{width: 266px; height: 339px; background: url('../images/learn/gen-quiz/malaysian-english-result-left.png'); position: absolute;; bottom: 0; left: 75px}
   .malaysianEnglish .quiz-container-result .rightFront{width: 255px; height: 321px; background: url('../images/learn/gen-quiz/malaysian-english-result-right.png'); position: absolute;; bottom: 0; right: 75px}
 
+  /*article props - malaysianEnglish*/
+  .perfectJob .quiz-container-result .leftFront{width: 315px; height: 334px; background: url('../images/learn/gen-quiz/perfect-job-result-left.png'); position: absolute;; bottom: 0; left: 75px}
+  .perfectJob .quiz-container-result .rightFront{width: 251px; height: 361px; background: url('../images/learn/gen-quiz/perfect-job-result-right.png'); position: absolute;; bottom: 0; right: 75px}
+
+  .perfectJob .quizBottom .leftFront{ left: 80px}
+  .perfectJob .quizBottom .rightFront{ right: 60px}
+
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -127,6 +150,9 @@ a
 
   .describeYou h3 span:before{left: -80px}
   .describeYou h3 span:after{right: -80px}
+
+  .perfectJob h3 span:before{left: -80px}
+  .perfectJob h3 span:after{right: -80px}
 
   .omeCharacter h3 span:before{left: -100px}
   .omeCharacter h3 span:after{right: -100px}
@@ -157,6 +183,8 @@ a
   .malaysianEnglish h3 span:after{right:-40px}
   .describeYou h3 span:before{left: -35px}
   .describeYou h3 span:after{right: -35px}
+  .perfectJob h3 span:before{left: -35px}
+  .perfectJob h3 span:after{right: -35px}
   .omeCharacter h3 span:before{left: -30px}
   .omeCharacter h3 span:after{right: -30px}
 

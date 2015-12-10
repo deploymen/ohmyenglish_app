@@ -119,6 +119,15 @@ return [
 	'learnPersonalityQuiz_result3_action' => 'BM : Personaliti Kuiz',
 	'learnPersonalityQuiz_result3_label' => 'BM : Results - personality quiz 3',
 
+	'learnPersonalityQuiz_result4_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_result4_label' => 'BM : Results - personality quiz 4',
+
+	'learnPersonalityQuiz_result5_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_result5_label' => 'BM : Results - personality quiz 5',
+
+	'learnPersonalityQuiz_result6_action' => 'BM : Personaliti Kuiz',
+	'learnPersonalityQuiz_result6_label' => 'BM : Results - personality quiz 6',
+
 	//learn - ask henry
 	'learnAskHenry_connect_action' => 'BM : Tanya Henry',
 	'learnAskHenry_connect_label' => 'BM : Tanya di Twitter',

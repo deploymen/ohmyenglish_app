@@ -1,6 +1,7 @@
 var App = App || angular.module('omeApp', ['ngSanitize']);
 var OME = OME || {};
 OME.container = $('.quiz-container');
+OME.result = $('.quiz-container-result');
 
 App.controller('QuizController', function ($scope, $http, $timeout){
 
@@ -36,6 +37,7 @@ App.controller('QuizController', function ($scope, $http, $timeout){
         
         if(!question){ 
             OME.container.addClass('complete');
+
             /*
                 If A > B or C , equal to personality 1
                 If B > A or C , equal to personality 2
@@ -52,6 +54,7 @@ App.controller('QuizController', function ($scope, $http, $timeout){
             if($scope.opt2 > $scope.opt1 && $scope.opt2 > $scope.opt3){ $scope.onResult = 2; }
             if($scope.opt3 > $scope.opt1 && $scope.opt3 > $scope.opt2){ $scope.onResult = 3; }            
 
+            OME.result.addClass('result'+$scope.onResult);
             switch($scope.onResult){
                 case 1: $scope.resultCopy = OME.copy.result1; break;
                 case 2: $scope.resultCopy = OME.copy.result2; break;
