@@ -68,7 +68,7 @@ App.controller('QuizController', function ($scope, $http, $timeout){
 
             console.log([$scope.onResult, $scope.opt1, $scope.opt2, $scope.opt3, $scope.opt4, $scope.opt5, $scope.opt6]);
 
-            OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_result1_action, OME.trackCopy.learnPersonalityQuiz_result1_label, 'userAction'); 
+            OME.trackPush(dataLayer, OME.trackCopy.category, OME.trackCopy.learnPersonalityQuiz_result_action, OME.trackCopy.learnPersonalityQuiz_result_label, 'userAction'); 
 
             $('.btn_share').shareButtons(OME.shareUrl + '?result=' + $scope.onResult, {
                 twitter: {

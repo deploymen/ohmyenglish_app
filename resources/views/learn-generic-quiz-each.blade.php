@@ -62,23 +62,8 @@ OME.trackCopy = {
     "learnPersonalityQuiz_takeOtherQuiz_action": "{{trans('track.learnPersonalityQuiz_takeOtherQuiz_action')}}",
     "learnPersonalityQuiz_takeOtherQuiz_label": "{{trans('track.learnPersonalityQuiz_takeOtherQuiz_label')}}",
 
-    "learnPersonalityQuiz_result1_action": "{{trans('track.learnPersonalityQuiz_result1_action')}}",
-    "learnPersonalityQuiz_result1_label": "{{trans('track.learnPersonalityQuiz_result1_label')}}",
-
-    "learnPersonalityQuiz_result2_action": "{{trans('track.learnPersonalityQuiz_result2_action')}}",
-    "learnPersonalityQuiz_result2_label": "{{trans('track.learnPersonalityQuiz_result2_label')}}",
-
-    "learnPersonalityQuiz_result3_action": "{{trans('track.learnPersonalityQuiz_result3_action')}}",
-    "learnPersonalityQuiz_result3_label": "{{trans('track.learnPersonalityQuiz_result3_label')}}",
-
-    "learnPersonalityQuiz_result4_action": "{{trans('track.learnPersonalityQuiz_result4_action')}}",
-    "learnPersonalityQuiz_result4_label": "{{trans('track.learnPersonalityQuiz_result4_label')}}",
-
-    "learnPersonalityQuiz_result5_action": "{{trans('track.learnPersonalityQuiz_result5_action')}}",
-    "learnPersonalityQuiz_result5_label": "{{trans('track.learnPersonalityQuiz_result5_label')}}",
-
-    "learnPersonalityQuiz_result6_action": "{{trans('track.learnPersonalityQuiz_result6_action')}}",
-    "learnPersonalityQuiz_result6_label": "{{trans('track.learnPersonalityQuiz_result6_label')}}",
+    "learnPersonalityQuiz_result_action": "{{trans('track.learnPersonalityQuiz_result'.$quizIndex.'_action')}}",
+    "learnPersonalityQuiz_result_label": "{{trans('track.learnPersonalityQuiz_result'.$quizIndex.'_label')}}",
 
 };
 
